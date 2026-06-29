@@ -1,8 +1,8 @@
 {
   "zakazky": [
     {
-      "nazev": "1-etapa-zakladova-deska-veseli-nad-luznici",
-      "slozka": "1-etapa-zakladova-deska-veseli-nad-luznici",
+      "nazev": "1",
+      "slozka": "1",
       "v_realizaci": false,
       "fotky": [
            "106f11da-b47d-4f33-9566-f3e6bffd6eee.webp"
@@ -40,8 +40,49 @@
     }
         ,
     {
-      "nazev": "2-etapa-kompletni-rekonstrukce-domu-s-novou-vystavbou-podkrovi-mazice",
-      "slozka": "2-etapa-kompletni-rekonstrukce-domu-s-novou-vystavbou-podkrovi-mazice",
+      "nazev": "1",
+      "slozka": "1",
+      "v_realizaci": false,
+      "fotky": [
+           "06F7A2A8-8899-47D2-A4BD-68E98BEA3881.webp"
+           ,
+           "12B3D331-075D-4F14-890A-55F756A2DE54.webp"
+           ,
+           "212C2D22-910E-40EC-AB6E-6C3B89C34CA4.webp"
+           ,
+           "220D1A78-E582-47B9-A6DB-D07DA644E4C5.webp"
+           ,
+           "33FB7750-0169-4828-ADCE-C892907E89FD.webp"
+           ,
+           "349FB79C-7E49-4BA8-BFC8-EEDF45FCF3A7.webp"
+           ,
+           "3EEDE75D-74BE-4340-841F-C62862C7027C.webp"
+           ,
+           "5534A0B2-B351-4951-9B87-207B7823A844.webp"
+           ,
+           "6909A2FB-A21B-4E90-B1AC-44B1CBB0EC9E.webp"
+           ,
+           "70FF865C-7F65-492B-9C1C-4B739A3A3FC4.webp"
+           ,
+           "777EA07D-B4B5-49B3-A3D1-AE0EFEA3896C.webp"
+           ,
+           "9198D616-4509-4B88-BA26-BE85C1EF154F-scaled.webp"
+           ,
+           "934C7E81-8B59-4FB6-B20D-19E853965725.webp"
+           ,
+           "95FB471F-8054-4E04-AD0B-1E749A7BCE1C.webp"
+           ,
+           "9E55D8DD-65F5-4CFA-8D5C-182B6FE6F385.webp"
+           ,
+           "E963675C-0116-45BA-8E35-7661EC79D6D0.webp"
+           ,
+           "F35EC284-18F4-40D6-A76B-B3686C5F20C6.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "2",
+      "slozka": "2",
       "v_realizaci": false,
       "fotky": [
            "1A234578-4F3A-4E58-8E22-B9D2916BBB12.webp"
@@ -163,8 +204,51 @@
     }
         ,
     {
-      "nazev": "2-etapa-vystavba-rodinneho-domu-veseli-nad-luznici",
-      "slozka": "2-etapa-vystavba-rodinneho-domu-veseli-nad-luznici",
+      "nazev": "2",
+      "slozka": "2",
+      "v_realizaci": false,
+      "fotky": [
+           "4dc6e849-b603-498e-ad97-fb5adc3486f2.webp"
+           ,
+           "5ae07453-2750-4176-98f7-729dcb4e66fa.jpg.webp"
+           ,
+           "5ae07453-2750-4176-98f7-729dcb4e66fa.webp"
+           ,
+           "5fa60a15-d7e1-4a88-848a-29e6f20a1def.webp"
+           ,
+           "5fe6b3fd-1782-495c-a5e0-e054c48cb18b.webp"
+           ,
+           "686f5906-2ace-438c-a32a-92e2e197e8e5.jpg.webp"
+           ,
+           "686f5906-2ace-438c-a32a-92e2e197e8e5.webp"
+           ,
+           "7a2a54be-4c5a-4e35-91de-d774eb2aaeec.webp"
+           ,
+           "861f37d6-78a8-4b4a-b00e-4438719e6f9c.webp"
+           ,
+           "b4c7ad94-de38-4c9f-923c-7a653f7284f0.webp"
+           ,
+           "bd1f8b56-5a50-4881-ad55-baf66fe24045.webp"
+           ,
+           "e99813fb-d4ca-44ae-bd68-12fc047d0ebf.webp"
+           ,
+           "f7650462-9034-4844-b045-654efc295ff5.webp"
+           ,
+           "f9d62546-1c52-4a84-b55d-143fbc4c36d3.webp"
+           ,
+           "WhatsApp-Image-2026-05-04-at-13.32.08-1.webp"
+           ,
+           "WhatsApp-Image-2026-05-04-at-13.32.08-2.webp"
+           ,
+           "WhatsApp-Image-2026-05-04-at-13.32.08-3.webp"
+           ,
+           "WhatsApp-Image-2026-05-04-at-13.32.08.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "2",
+      "slozka": "2",
       "v_realizaci": false,
       "fotky": [
            "021F2CF1-B6B6-416B-990D-9C24A478CD30.webp"
@@ -392,8 +476,8 @@
     }
         ,
     {
-      "nazev": "balkony-borkovice",
-      "slozka": "balkony-borkovice",
+      "nazev": "Balkóny - Borkovice",
+      "slozka": "Balkóny - Borkovice",
       "v_realizaci": false,
       "fotky": [
            "2F11E18A-08E5-448C-9852-59761C64F457.webp"
@@ -437,9 +521,9 @@
     }
         ,
     {
-      "nazev": "betony-zalsi - v realizaci",
-      "slozka": "betony-zalsi - v realizaci",
-      "v_realizaci": true,
+      "nazev": "Betony - Zálší",
+      "slozka": "Betony - Zálší",
+      "v_realizaci": false,
       "fotky": [
            "12f08847-785a-4a63-9ab6-e89b7c2142c7.webp"
            ,
@@ -456,316 +540,8 @@
     }
         ,
     {
-      "nazev": "byt-bechyne",
-      "slozka": "byt-bechyne",
-      "v_realizaci": false,
-      "fotky": [
-           "10c7a764-3d03-4c0a-9397-31734ec69a2f.webp"
-           ,
-           "2b5a1e3c-b787-4c56-9b36-f5a301030b31.webp"
-           ,
-           "43600d39-2062-419b-9c7d-a4d02466632c.webp"
-           ,
-           "4a2d4efa-efa9-4481-97f4-09b6684358f8.webp"
-           ,
-           "5e4965b2-b4a5-482c-89fb-c9e0c77e6f3f.webp"
-           ,
-           "5f27c9e9-abfc-478f-9f5f-1ea3ba8d4051.webp"
-           ,
-           "8bb5749f-a00f-4595-9aea-f5b32d0ee9de.webp"
-           ,
-           "8f467212-e7e0-4e96-a381-e237bd6738eb.webp"
-           ,
-           "a54aee14-7be0-4183-ad3d-f42466d4c036.webp"
-           ,
-           "a7236680-dd98-4927-93a2-cd932aa72ac4.webp"
-           ,
-           "b2c8d9eb-a50d-472f-a4af-4c9c848584ef.webp"
-           ,
-           "be21fdda-ad51-484e-98f1-dbeb24d1ecba.webp"
-           ,
-           "e2ffb117-9627-4056-8505-a8764d0ba0f1.webp"
-           ,
-           "IMG_3126.webp"
-           ,
-           "IMG_3127.webp"
-           ,
-           "IMG_3128.webp"
-           ,
-           "IMG_3129.webp"
-           ,
-           "IMG_3130.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "byt-ceske-budejovice",
-      "slozka": "byt-ceske-budejovice",
-      "v_realizaci": false,
-      "fotky": [
-           "0645febd-f94a-4973-9bb8-c37e14fdc82e.webp"
-           ,
-           "32901318-43d4-455c-a003-fc03f4f51a5b.webp"
-           ,
-           "acfec37a-9bee-4b96-a786-c4bf71e7e819.webp"
-           ,
-           "ca755755-d233-495a-bbf0-08a952312b34.webp"
-           ,
-           "de9becb9-1864-47a1-9018-a586d7f1577f.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "byt-ceske-budejovice-1",
-      "slozka": "byt-ceske-budejovice-1",
-      "v_realizaci": false,
-      "fotky": [
-           "IMG-20180623-WA0000.webp"
-           ,
-           "IMG_20180622_151336.webp"
-           ,
-           "IMG_20180622_151359.webp"
-           ,
-           "IMG_20180622_151405.webp"
-           ,
-           "IMG_20180622_151445.webp"
-           ,
-           "received_1112276762255790.webp"
-           ,
-           "received_228384964524867.webp"
-           ,
-           "received_464107340774950.webp"
-           ,
-           "received_672025053173243.webp"
-           ,
-           "received_702076940127372.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "byt-ceske-budejovice-13",
-      "slozka": "byt-ceske-budejovice-13",
-      "v_realizaci": false,
-      "fotky": [
-           "00ba8149-7e1b-4268-8688-04bc533e76c6.webp"
-           ,
-           "089a6d76-0c2c-47f2-9159-f0dbdc84b407.webp"
-           ,
-           "14bc3c76-f0f8-4911-be68-ae126a556368.webp"
-           ,
-           "1701ec0b-0bdf-44bb-95c8-5517e04311c6.webp"
-           ,
-           "38a4c282-ec0d-44d3-bda4-fb26cc8a4cec.webp"
-           ,
-           "3a8b81e0-0023-45a0-ace2-31030611d48b.webp"
-           ,
-           "50e45cfd-edf4-47b8-864e-f0eea71b153b.webp"
-           ,
-           "52989fbc-edfd-4380-a5f5-dd2cb69e533a.webp"
-           ,
-           "55c318c4-d4b0-4588-8e61-6149237c44b6.webp"
-           ,
-           "5f4499c4-561d-4b20-b5b9-37a56ac47f9f.webp"
-           ,
-           "69aa561c-8005-4565-a011-23c8ed334f85.webp"
-           ,
-           "8d67a7cd-5c04-49f7-8c3b-9e8e1af37d7a.webp"
-           ,
-           "938f6036-9b28-4b05-ab5a-f61b2f271b9f.webp"
-           ,
-           "9ff04a24-c7f9-4a32-91b5-e93ba29f994f.webp"
-           ,
-           "acd9ff7e-1f8a-4756-8523-1e486d097ceb.webp"
-           ,
-           "b600f34a-3e24-44e5-93bc-87f2a222c9bb.webp"
-           ,
-           "bafc9c9e-fc8d-4338-8073-972e8e158470.webp"
-           ,
-           "d69f39f4-1a76-49ef-90d3-50d04e086011.webp"
-           ,
-           "d8133550-2898-4362-aba7-aacf33b6e25c.webp"
-           ,
-           "db4c8244-c807-4625-ad0f-6d3da31e60ea.webp"
-           ,
-           "e59e2741-3bf9-465b-bb03-92e21a317939.webp"
-           ,
-           "f4537607-1305-4295-88f0-7c728ace0746.webp"
-           ,
-           "fb27afce-b088-4a77-8372-ba0f0533fbcd.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "byt-ceske-budejovice-5",
-      "slozka": "byt-ceske-budejovice-5",
-      "v_realizaci": false,
-      "fotky": [
-           "20171015_112052.webp"
-           ,
-           "20171015_153044.webp"
-           ,
-           "20171015_153051.webp"
-           ,
-           "20171015_153136.webp"
-           ,
-           "20171019_204540.webp"
-           ,
-           "20171019_204621.webp"
-           ,
-           "20171019_210132.webp"
-           ,
-           "20171019_210355.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "byt-ceske-budejovice-8",
-      "slozka": "byt-ceske-budejovice-8",
-      "v_realizaci": false,
-      "fotky": [
-           "20171015_112052.webp"
-           ,
-           "20171015_153044.webp"
-           ,
-           "20171015_153051.webp"
-           ,
-           "20171015_153136.webp"
-           ,
-           "20171019_204540.webp"
-           ,
-           "20171019_204621.webp"
-           ,
-           "20171019_210132.webp"
-           ,
-           "20171019_210355.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "byt-jihlava",
-      "slozka": "byt-jihlava",
-      "v_realizaci": false,
-      "fotky": [
-           "20171124_193118.webp"
-           ,
-           "20171124_193130.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "byt-tyn-nad-vltavou",
-      "slozka": "byt-tyn-nad-vltavou",
-      "v_realizaci": false,
-      "fotky": [
-           "0b0984a8-7216-4205-bc86-f3866f3c808e..webp"
-           ,
-           "2d6195bd-3baa-4e36-b592-df0f1896ecc.webp"
-           ,
-           "31309266-d96d-42b6-99a2-97d59f0b8d8.webp"
-           ,
-           "790af700-22e8-49ca-859d-a048103136e.webp"
-           ,
-           "88f3b53e-4200-4979-9599-835dbfda2cc.webp"
-           ,
-           "dce57f76-0569-412b-a8a6-25756c039f5.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "byt-tyn-nad-vltavou-1",
-      "slozka": "byt-tyn-nad-vltavou-1",
-      "v_realizaci": false,
-      "fotky": [
-           "0b230aa7-c2d1-43f3-a6f4-85b241491323.webp"
-           ,
-           "197d136e-175a-47c3-b6a4-cf1eaaa01283.webp"
-           ,
-           "58908f1b-197a-42cd-85b1-d44cd5001180.webp"
-           ,
-           "a7896be7-832f-42c4-8c55-83c1b6212163.webp"
-           ,
-           "cd585a9a-b541-4d41-a6d4-6c8ddf0cae81.webp"
-           ,
-           "f59af810-8b50-4984-91c4-59b742b26866.webp"
-           ,
-           "fa8af088-cc34-4816-91be-b266ae538b32.webp"
-           ,
-           "fd97a543-4839-407e-b673-114570a6975b.webp"
-           ,
-           "WhatsApp-Image-2021-05-24-at-21.59.40.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "byt-veseli-nad-luznici",
-      "slozka": "byt-veseli-nad-luznici",
-      "v_realizaci": false,
-      "fotky": [
-           "024a2406-3699-48d3-a2c8-afd32f03c8c7.webp"
-           ,
-           "1d5e7761-fe80-4bd7-bf15-2cf96ca4914d.webp"
-           ,
-           "2441050e-a6b3-4565-ae78-48ffd5ba74c8.webp"
-           ,
-           "374fe71e-aaea-4504-8a42-195dd9c7b209.webp"
-           ,
-           "38e2ce14-b629-41bb-94ec-392e0107e798.webp"
-           ,
-           "3aa39437-8be8-4fb1-8589-4506ee2a6965.webp"
-           ,
-           "4c0368a6-b625-4695-b79a-560a3c6cb7da.webp"
-           ,
-           "59cb0662-04e8-4417-9bc0-d468646cd4b5.webp"
-           ,
-           "60cbc088-208c-4145-8579-4b5e1c0640da.webp"
-           ,
-           "70a99231-5227-4cf8-a31f-adde3b94f4df.webp"
-           ,
-           "78e1e00d-26c4-4962-82a5-2702d3c0ca54.webp"
-           ,
-           "797cf2f1-8aa0-4908-8e04-7e390fd08379.webp"
-           ,
-           "7af42b53-dc9c-4d7f-9738-68e758d9af5b.webp"
-           ,
-           "7d4e6b99-7328-48bc-b7ea-b7046217e2e9.webp"
-           ,
-           "8096b789-b9e7-43d8-a7de-c611e6d23fa0.webp"
-           ,
-           "83888076-0e72-4540-9288-ebb61edff065.webp"
-           ,
-           "8cc196f7-14b9-4a53-b2bb-e7fcc71c75a9.webp"
-           ,
-           "8d2830ea-d4f9-4ced-9f15-41a81aa634a8.webp"
-           ,
-           "a944d480-1d71-4b28-b58b-09d3bd9689ea.webp"
-           ,
-           "b31ded83-a9c6-4312-b921-96720d2aa0de.webp"
-           ,
-           "b8a1975c-67e6-4a92-82c0-7961df5901a2.webp"
-           ,
-           "bd5dc213-62b4-4d33-b38f-d8f5dd9a168a.webp"
-           ,
-           "c206e08c-bdd8-4bd3-b720-294a0eb3d11f.webp"
-           ,
-           "e08dd74e-5956-449a-a51b-81a1dcf4240b.webp"
-           ,
-           "e486478e-53f8-44c1-97f6-cfebbda1b932.webp"
-           ,
-           "e4ab2e95-cd64-4268-8e71-2d9b421d50e3.webp"
-           ,
-           "ed354958-4868-4a5e-9de2-d3c993cfe7b8.webp"
-           ,
-           "fc1982ec-5fa4-44f4-8a93-e4a9eb9d3d32.webp"
-           ,
-           "fcea0f0c-5244-4354-903e-a206e7b9c396.webp"
-           ,
-           "uvodka.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "chalupa-veseli-nad-luznici",
-      "slozka": "chalupa-veseli-nad-luznici",
+      "nazev": "Chalupa - Veselí nad Lužnicí",
+      "slozka": "Chalupa - Veselí nad Lužnicí",
       "v_realizaci": false,
       "fotky": [
            "IMG_20180409_150031.webp"
@@ -793,88 +569,29 @@
     }
         ,
     {
-      "nazev": "ddddddd1dveri-1",
-      "slozka": "ddddddd1dveri-1",
+      "nazev": "Dlažby - DVstav",
+      "slozka": "Dlažby - DVstav",
       "v_realizaci": false,
       "fotky": [
-           "04969845-548d-4768-92c8-87ce4a894efa.webp"
+           "11e8147c-807c-4864-bc00-b4e1ebb6a66a.webp"
            ,
-           "3ffe7fa7-2cdd-4057-a33b-a47c2e48456f.webp"
+           "21a4ae65-8311-4613-8eb8-aa3ef4b88ce0.webp"
            ,
-           "4a4f8a22-7a5c-4f76-812e-9900e84d75ea.webp"
+           "2edc46f7-03f4-41d7-8bd5-561d4aa26fe7.webp"
            ,
-           "6cb1d59b-d31b-4bfa-a8c6-f9ffd5fe0f10.webp"
+           "a1927764-b8ca-4398-bd5f-50c140024f62.webp"
            ,
-           "73eefa7c-85ad-49c2-999c-664b01c3d764.webp"
+           "c5618bc3-41f1-443f-af9c-c230749ede0b.webp"
            ,
-           "7d91d5fb-46e3-4606-98dc-3c5d24a9f5d2.webp"
+           "de439937-491a-4403-85cc-740e9c050f9f.webp"
            ,
-           "8cbc4865-6453-4fb5-bd09-efa198f467ed.webp"
-           ,
-           "96186a09-5630-4975-9b7e-2aa18f084aac.webp"
-           ,
-           "9afcdaea-e75f-4103-9185-08d53141d7fe.webp"
-           ,
-           "a2e57447-7d7e-424a-9157-06a208a32fb5.webp"
-           ,
-           "a4bc3e80-8e5f-4877-8af1-8546e7a743bf.webp"
-           ,
-           "a55603b5-126a-4d44-bd99-596614283217.webp"
-           ,
-           "b3325733-8e17-44cf-ad88-671a8bf17238.webp"
-           ,
-           "e01c234a-ae11-4ca6-b113-9dd892a870bf.webp"
-           ,
-           "e28b60a9-cf84-4104-89ee-657c4bac6314.webp"
+           "ec3ca142-bd28-43c0-9443-35743817096e.webp"
       ]
     }
         ,
     {
-      "nazev": "detsky-den-2022-mazice",
-      "slozka": "detsky-den-2022-mazice",
-      "v_realizaci": false,
-      "fotky": [
-           "4832625f-2a95-431e-bf8c-7a5f5214b7c6.webp"
-           ,
-           "50ada502-8462-4be2-86b0-7be9de66adae.webp"
-           ,
-           "702c80cd-6af5-49d8-8687-5c8561ed89c5.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "detsky-den-2022-ms-hlinecka-tyn-nad-vltavou",
-      "slozka": "detsky-den-2022-ms-hlinecka-tyn-nad-vltavou",
-      "v_realizaci": false,
-      "fotky": [
-           "03d48cbc-f0e8-4a24-ad7b-48b24323aaca.webp"
-           ,
-           "368a59b7-6629-42cc-a210-83a0fd655625.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "detsky-den-2023-mazice",
-      "slozka": "detsky-den-2023-mazice",
-      "v_realizaci": false,
-      "fotky": [
-           "152073c3-3a65-4565-a397-0f7bcb57f478.webp"
-           ,
-           "3ce1e49c-9967-4f5e-aa40-d9a8d0c20b49.webp"
-           ,
-           "499b7afb-e859-497d-90cd-91f7df65df01.webp"
-           ,
-           "705f2570-420d-4435-ab3b-6c482fdf172e.webp"
-           ,
-           "8648c334-e640-4a70-8337-cfae5c7db13f.webp"
-           ,
-           "df3b5c13-3488-4d8e-80d3-9e1168fc293d.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "dodelani-rekonstrukce-domu-mazice",
-      "slozka": "dodelani-rekonstrukce-domu-mazice",
+      "nazev": "Dodělání rekonstrukce domu - Mažice",
+      "slozka": "Dodělání rekonstrukce domu - Mažice",
       "v_realizaci": false,
       "fotky": [
            "IMG-20180513-WA0013.webp"
@@ -972,8 +689,241 @@
     }
         ,
     {
-      "nazev": "fasada-domu-pasky-klinker-sirociny",
-      "slozka": "fasada-domu-pasky-klinker-sirociny",
+      "nazev": "Drobné zednické práce - Mažice",
+      "slozka": "Drobné zednické práce - Mažice",
+      "v_realizaci": false,
+      "fotky": [
+           "1c64b9f4-dced-4a63-a5c9-7ddb6fd213b7.webp"
+           ,
+           "2daac980-9dd4-42bd-9aa1-a0f6974323c0.webp"
+           ,
+           "686a4a63-10dd-4e88-a155-5069ce9d5709.webp"
+           ,
+           "7564fb4c-597a-4989-a06e-73da3b20da16.webp"
+           ,
+           "97b398c2-1dbc-4d24-b57b-157c5ca453f2.webp"
+           ,
+           "994b20c0-2f17-46bd-9762-d182d30df2cb.webp"
+           ,
+           "ca6bd635-8eae-4187-b611-0b355eb15170.webp"
+           ,
+           "d7d2e14a-374a-4ab4-bc04-0797a49f188a.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Drobné zednické práce - Týn nad Vltavou",
+      "slozka": "Drobné zednické práce - Týn nad Vltavou",
+      "v_realizaci": false,
+      "fotky": [
+           "IMG_8966.webp"
+           ,
+           "IMG_8967.webp"
+           ,
+           "IMG_8968.webp"
+           ,
+           "IMG_8969.webp"
+           ,
+           "IMG_8970.webp"
+           ,
+           "IMG_8971.webp"
+           ,
+           "IMG_8972.webp"
+           ,
+           "IMG_8973.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Fasáda - Vesce",
+      "slozka": "Fasáda - Vesce",
+      "v_realizaci": false,
+      "fotky": [
+           "1_index.webp"
+           ,
+           "1_index2.webp"
+           ,
+           "1_index3.webp"
+           ,
+           "1_index4.webp"
+           ,
+           "1_index5.webp"
+           ,
+           "1_index6.webp"
+           ,
+           "2_index.webp"
+           ,
+           "indesx.webp"
+           ,
+           "index.webp"
+           ,
+           "index10.webp"
+           ,
+           "index11.webp"
+           ,
+           "index12.webp"
+           ,
+           "index13.webp"
+           ,
+           "index14.webp"
+           ,
+           "index2.webp"
+           ,
+           "index3.webp"
+           ,
+           "index4.webp"
+           ,
+           "index5.webp"
+           ,
+           "index6.webp"
+           ,
+           "index7.webp"
+           ,
+           "index8.webp"
+           ,
+           "index9.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Fasáda - České Budějovice",
+      "slozka": "Fasáda - České Budějovice",
+      "v_realizaci": false,
+      "fotky": [
+           "084abdd1-e4f4-4c7d-9c72-5d8a560cf1ba.webp"
+           ,
+           "0e6578c8-5aa9-4ac1-ad1b-b5f57e38b7e8.webp"
+           ,
+           "0ed1164c-b87f-4d56-a9cc-ee22908b7f02.webp"
+           ,
+           "19aa18bc-8b1b-47dd-8765-5a6f38e1a910.webp"
+           ,
+           "1b8e9e19-86de-4eb7-b932-f9f197c37d29.webp"
+           ,
+           "4ced97ae-c01e-4a56-bec8-ecb8336c0c80.webp"
+           ,
+           "52b5a214-39e5-4faf-9d7d-52d6f18d3677.webp"
+           ,
+           "631a9c20-493d-451e-ab1f-2ddf7fcac248.webp"
+           ,
+           "665122df-b648-475d-83c3-9c27caee083c.webp"
+           ,
+           "727c4be5-a24b-43f2-918e-049b6f72a144.webp"
+           ,
+           "74590f69-15d2-4eef-9cb6-a7be4fb67c80.webp"
+           ,
+           "8151f7d2-fe14-4c16-be67-c73e2e4a53ef.webp"
+           ,
+           "84eac33c-160a-4f6f-bca2-e4859a07e426.webp"
+           ,
+           "87756d57-db41-43e7-9e9e-f80e9947d2b4.webp"
+           ,
+           "9390949f-afe4-4805-9447-c9a8e9fbc566.webp"
+           ,
+           "9a99f8f7-f514-4dae-b752-fb9dcee60eee.webp"
+           ,
+           "9c6498df-b423-46f1-859d-101a33868eb1.webp"
+           ,
+           "9d9c41c5-b118-4903-92d6-8d9754485a60.webp"
+           ,
+           "b44d7c1d-012a-4102-af42-255ea5f72816.webp"
+           ,
+           "b9825f4e-32a7-49ee-9b89-27566283292d.webp"
+           ,
+           "c935ee5a-1bb5-4524-bf81-e952b1565aa8.webp"
+           ,
+           "cb977105-d6e4-473a-9632-02a853202f72.webp"
+           ,
+           "df4e8e64-8932-4333-9af2-80b11a244135.webp"
+           ,
+           "f0d887dd-7a85-4656-816b-7317a31b5b2b.webp"
+           ,
+           "f284adda-09ab-4f5a-8798-224aad969ef4.webp"
+           ,
+           "f93a308c-5abb-4728-954b-8062a715844c.webp"
+           ,
+           "fc08105b-7666-4e46-953e-49cbbb938a66.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Fasáda pro DVstav - Tábor",
+      "slozka": "Fasáda pro DVstav - Tábor",
+      "v_realizaci": false,
+      "fotky": [
+           "3d892fec-580f-4b0b-a5d5-727bca7463ec.webp"
+           ,
+           "c3790844-1545-4b8d-b459-ca270f4b9601.webp"
+           ,
+           "fasfasdsa.webp"
+           ,
+           "IMG_20210601_140105.webp"
+           ,
+           "IMG_20210608_103110.webp"
+           ,
+           "IMG_20210608_103129.webp"
+           ,
+           "IMG_20210715_100637.webp"
+           ,
+           "IMG_20210715_174357.webp"
+           ,
+           "IMG_20210719_154614.webp"
+           ,
+           "IMG_20210725_125428.webp"
+           ,
+           "IMG_20210729_103605.webp"
+           ,
+           "IMG_20210812_063808.webp"
+           ,
+           "IMG_20210820_075949.webp"
+           ,
+           "IMG_20210820_102513.webp"
+           ,
+           "IMG_20210820_102904.webp"
+           ,
+           "IMG_20210820_103112.webp"
+           ,
+           "IMG_20210825_163149.webp"
+           ,
+           "IMG_20210825_163306.webp"
+           ,
+           "IMG_20210916_091918.webp"
+           ,
+           "IMG_20210916_095333.webp"
+           ,
+           "IMG_20210924_135113.webp"
+           ,
+           "IMG_20210924_135216.webp"
+           ,
+           "IMG_20211020_174859.webp"
+           ,
+           "IMG_20211030_145506.webp"
+           ,
+           "IMG_20211103_114555.webp"
+           ,
+           "IMG_20211110_090533.webp"
+           ,
+           "IMG_20211110_090626.webp"
+           ,
+           "IMG_20211110_090634.webp"
+           ,
+           "IMG_20211110_090644.webp"
+           ,
+           "IMG_20211110_090716.webp"
+           ,
+           "IMG_20211110_090813.webp"
+           ,
+           "IMG_20211110_091159.webp"
+           ,
+           "index.webp"
+           ,
+           "safsafas.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Fasáda pásky klinker - Širočiny",
+      "slozka": "Fasáda pásky klinker - Širočiny",
       "v_realizaci": false,
       "fotky": [
            "1_PHOTO-2023-09-26-15-41-55.webp"
@@ -995,8 +945,8 @@
     }
         ,
     {
-      "nazev": "fasada-rodinneho-domu-veseli-nad-luznici",
-      "slozka": "fasada-rodinneho-domu-veseli-nad-luznici",
+      "nazev": "Fasáda rodinného domu - Veselí nad Lužnicí",
+      "slozka": "Fasáda rodinného domu - Veselí nad Lužnicí",
       "v_realizaci": false,
       "fotky": [
            "0114a758-d002-4269-a975-09612c96bef7.webp"
@@ -1086,83 +1036,8 @@
     }
         ,
     {
-      "nazev": "fasada-zatepleni-mineralni-vatou-sportovni-stadion-tabor",
-      "slozka": "fasada-zatepleni-mineralni-vatou-sportovni-stadion-tabor",
-      "v_realizaci": false,
-      "fotky": [
-           "3d892fec-580f-4b0b-a5d5-727bca7463ec.webp"
-           ,
-           "c3790844-1545-4b8d-b459-ca270f4b9601.webp"
-           ,
-           "fasfasdsa.webp"
-           ,
-           "IMG_20210601_140105.webp"
-           ,
-           "IMG_20210608_103110.webp"
-           ,
-           "IMG_20210608_103129.webp"
-           ,
-           "IMG_20210715_100637.webp"
-           ,
-           "IMG_20210715_174357.webp"
-           ,
-           "IMG_20210719_154614.webp"
-           ,
-           "IMG_20210725_125428.webp"
-           ,
-           "IMG_20210729_103605.webp"
-           ,
-           "IMG_20210812_063808.webp"
-           ,
-           "IMG_20210820_075949.webp"
-           ,
-           "IMG_20210820_102513.webp"
-           ,
-           "IMG_20210820_102904.webp"
-           ,
-           "IMG_20210820_103112.webp"
-           ,
-           "IMG_20210825_163149.webp"
-           ,
-           "IMG_20210825_163306.webp"
-           ,
-           "IMG_20210916_091918.webp"
-           ,
-           "IMG_20210916_095333.webp"
-           ,
-           "IMG_20210924_135113.webp"
-           ,
-           "IMG_20210924_135216.webp"
-           ,
-           "IMG_20211020_174859.webp"
-           ,
-           "IMG_20211030_145506.webp"
-           ,
-           "IMG_20211103_114555.webp"
-           ,
-           "IMG_20211110_090533.webp"
-           ,
-           "IMG_20211110_090626.webp"
-           ,
-           "IMG_20211110_090634.webp"
-           ,
-           "IMG_20211110_090644.webp"
-           ,
-           "IMG_20211110_090716.webp"
-           ,
-           "IMG_20211110_090813.webp"
-           ,
-           "IMG_20211110_091159.webp"
-           ,
-           "index.webp"
-           ,
-           "safsafas.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "fasada-zatepleni-zadni-steny-veseli-nad-luznici",
-      "slozka": "fasada-zatepleni-zadni-steny-veseli-nad-luznici",
+      "nazev": "Fasáda zateplení zadní stěny - Veselí nad Lužnicí",
+      "slozka": "Fasáda zateplení zadní stěny - Veselí nad Lužnicí",
       "v_realizaci": false,
       "fotky": [
            "0E4FB1D3-2133-4A5D-B8DB-D6A1AFC46DB7.webp"
@@ -1188,73 +1063,97 @@
     }
         ,
     {
-      "nazev": "fooooooo",
-      "slozka": "fooooooo",
+      "nazev": "Fasáda, kamen",
+      "slozka": "Fasáda, kamen",
       "v_realizaci": false,
       "fotky": [
-           "20151004_140838.webp"
+           "18F718AD-26C9-4D89-B9A5-F09F81A64510.webp"
            ,
-           "20151011_111623.webp"
+           "1B43498D-CE22-420C-8569-E9E7614B9EB8.webp"
            ,
-           "20151029_102248.webp"
+           "1bad091f-2ad3-4585-92c7-cad2af9b26a3.webp"
            ,
-           "20151029_102306.webp"
+           "39d09e87-be68-43ef-a58a-c85b4086a582.webp"
            ,
-           "20151029_102316.webp"
+           "57ccf77c-b04c-4804-93dd-1eb535784198.webp"
            ,
-           "20151029_102338.webp"
+           "615F628C-1EFD-4CDF-970C-B894C640CE39.webp"
            ,
-           "20151029_102352.webp"
+           "776F88B2-DD4A-4BA7-B176-130EF43B84AB.webp"
            ,
-           "20151029_102424.webp"
+           "78A38A23-A43C-466B-9439-A1711CD8A807.webp"
            ,
-           "20160304_214704.webp"
+           "A2E663B8-2FE9-4544-B311-44221058DEB6.webp"
            ,
-           "20160304_214719.webp"
+           "A6275DB2-74B5-4379-8BBF-C94F82CFA174.webp"
            ,
-           "20160501_215010.webp"
+           "cd860e9a-18a9-4f81-9740-dacd6ab337a1.webp"
            ,
-           "20160501_215020.webp"
+           "d6e52a1b-883b-4d08-bc87-0f061bbcbdef.webp"
            ,
-           "Kotelna-po-rekonstrukci-4.webp"
+           "EC58F5CA-38BC-4E53-AEA3-EE5F2FE44985.webp"
            ,
-           "Kotelna-pred-rekonstrukci-1.webp"
+           "IMG_0792.webp"
            ,
-           "Kotelna-v-rekonstrukci2.webp"
+           "IMG_0868.webp"
            ,
-           "koupelna-po-rekonstrukci-2.webp"
+           "IMG_5328.webp"
            ,
-           "koupelna-po-rekonstrukci.webp"
+           "IMG_5332.webp"
            ,
-           "Koupelna-pred-rekonstrukci.webp"
+           "IMG_5343.webp"
            ,
-           "Koupelna-v-rekonstrukci.webp"
+           "IMG_5399.webp"
            ,
-           "Koupelna.webp"
+           "IMG_5689.webp"
            ,
-           "Obyv.pokojkuchyn.webp"
+           "IMG_6312.webp"
            ,
-           "Obyvaci-pokojKuchyn-v-rekonstrukci.webp"
+           "IMG_6315.webp"
            ,
-           "Obyvyci-p.kuchyn.webp"
+           "IMG_6317.webp"
            ,
-           "Obyyv.kuchyn-v-rekonstrukci.webp"
+           "IMG_6318.webp"
            ,
-           "Veranda-po-rekonstrukci.webp"
+           "IMG_6419.webp"
            ,
-           "Veranda-pred-rekonstrukci.webp"
+           "IMG_6673.webp"
            ,
-           "Veranda-v-rekonstrukci.webp"
+           "IMG_6705.webp"
            ,
-           "Vyzdeni-plotu-2.webp"
+           "IMG_6706.webp"
            ,
-           "Vyzdeni-plotu.webp"
+           "IMG_6764.webp"
+           ,
+           "IMG_6765.webp"
+           ,
+           "IMG_6766.webp"
+           ,
+           "IMG_6835.webp"
+           ,
+           "IMG_6931.webp"
+           ,
+           "IMG_6953.webp"
+           ,
+           "IMG_6954.webp"
+           ,
+           "IMG_7248.webp"
+           ,
+           "IMG_7249.webp"
+           ,
+           "IMG_7250.webp"
+           ,
+           "IMG_7251.webp"
+           ,
+           "IMG_7254.webp"
+           ,
+           "IMG_7255.webp"
       ]
     }
         ,
     {
-      "nazev": "garsonka-ceske-budejovice",
-      "slozka": "garsonka-ceske-budejovice",
+      "nazev": "Garsonka - České Budějovice",
+      "slozka": "Garsonka - České Budějovice",
       "v_realizaci": false,
       "fotky": [
            "IMG-20180326-WA0011.webp"
@@ -1272,17 +1171,8 @@
     }
         ,
     {
-      "nazev": "hasicsky-ples-2019-sdh-mazice-a-zalsi",
-      "slozka": "hasicsky-ples-2019-sdh-mazice-a-zalsi",
-      "v_realizaci": false,
-      "fotky": [
-           "TombolaMaziceZalsi-kopie.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "izolace-podlah-pod-podlahove-topeni-bechyne",
-      "slozka": "izolace-podlah-pod-podlahove-topeni-bechyne",
+      "nazev": "Izolace podlah pod podlahové topení - Bechyně",
+      "slozka": "Izolace podlah pod podlahové topení - Bechyně",
       "v_realizaci": false,
       "fotky": [
            "0b99eac4-0f33-4cf7-93df-8ea7603da8de.webp"
@@ -1306,83 +1196,83 @@
     }
         ,
     {
-      "nazev": "jihlavadddd-1",
-      "slozka": "jihlavadddd-1",
+      "nazev": "Komp",
+      "slozka": "Komp",
       "v_realizaci": false,
       "fotky": [
-           "20171019_092052-1.webp"
+           "IMG-20190425-WA0000.webp"
            ,
-           "20171019_092100-1.webp"
+           "IMG-20190426-WA0007.webp"
            ,
-           "20171019_092104-1.webp"
+           "IMG-20190430-WA0003.webp"
            ,
-           "20171019_092112-1.webp"
+           "IMG_20190324_131253.webp"
            ,
-           "20171019_092117-1.webp"
+           "IMG_20190403_105440.webp"
            ,
-           "20171019_092120-1.webp"
+           "IMG_20190404_100628.webp"
            ,
-           "20171019_092124-1.webp"
+           "IMG_20190404_100640.webp"
            ,
-           "20171019_092131-1.webp"
+           "IMG_20190404_100704.webp"
            ,
-           "20171019_092140-1.webp"
+           "IMG_20190404_100715.webp"
            ,
-           "20171019_140821-1.webp"
+           "IMG_20190404_100725.webp"
            ,
-           "20171019_140836-1.webp"
+           "IMG_20190404_100738.webp"
            ,
-           "20171027_100626.webp"
+           "IMG_20190404_100744.webp"
            ,
-           "20171106_131624.webp"
+           "IMG_20190404_100817.webp"
            ,
-           "20171114_123822.webp"
+           "IMG_20190423_161220.webp"
            ,
-           "20171114_123907.webp"
+           "IMG_20190424_142943.webp"
            ,
-           "20171116_204917.webp"
+           "IMG_20190424_143007.webp"
            ,
-           "20171116_204929.webp"
+           "IMG_20190424_143014.webp"
            ,
-           "20171116_205011.webp"
+           "IMG_20190424_143033.webp"
            ,
-           "20171116_205025.webp"
+           "IMG_20190424_155148.webp"
            ,
-           "20171116_205106.webp"
+           "IMG_20190426_142205.webp"
            ,
-           "20171116_205120.webp"
+           "IMG_20190426_142241.webp"
            ,
-           "20171116_205134.webp"
+           "IMG_20190502_160251.webp"
            ,
-           "20171124_193036.webp"
+           "IMG_20190502_160302.webp"
            ,
-           "20171124_193047.webp"
+           "IMG_20190502_160316.webp"
            ,
-           "20171124_193059.webp"
+           "IMG_20190503_094711.webp"
            ,
-           "20171124_193118.webp"
+           "IMG_20190503_094719.webp"
            ,
-           "20171124_193130.webp"
+           "IMG_20190503_094756.webp"
            ,
-           "20171124_193142.webp"
+           "IMG_20190503_094823.webp"
            ,
-           "20171124_193159.webp"
+           "IMG_20190503_130834.webp"
            ,
-           "20171124_193229.webp"
+           "IMG_20190509_191744.webp"
            ,
-           "20171124_193233.webp"
+           "IMG_20190513_102337.webp"
            ,
-           "20171124_193243.webp"
+           "IMG_20190513_102410.webp"
            ,
-           "20171124_193308.webp"
+           "IMG_20190513_102444.webp"
            ,
-           "20171124_193320.webp"
+           "IMG_20190513_102457.webp"
       ]
     }
         ,
     {
-      "nazev": "kompletni-dodelani-rodinneho-domu-mazice",
-      "slozka": "kompletni-dodelani-rodinneho-domu-mazice",
+      "nazev": "Kompletní dodělání rodinného domu - Mažice",
+      "slozka": "Kompletní dodělání rodinného domu - Mažice",
       "v_realizaci": false,
       "fotky": [
            "00ed11b5-a3df-4bd8-af7f-2d23c509e14f.webp"
@@ -1598,8 +1488,8 @@
     }
         ,
     {
-      "nazev": "kompletni-dodelani-rodinneho-domu-zdobena-fasada-podle-foto-a-pamatkaru-mazice",
-      "slozka": "kompletni-dodelani-rodinneho-domu-zdobena-fasada-podle-foto-a-pamatkaru-mazice",
+      "nazev": "Kompletní dodělání rodinného domu, zdobená fasáda podle foto a památkářů - Mažice",
+      "slozka": "Kompletní dodělání rodinného domu, zdobená fasáda podle foto a památkářů - Mažice",
       "v_realizaci": false,
       "fotky": [
            "0aa0ac2f-b19c-472e-843d-49fc3547859b.webp"
@@ -1645,8 +1535,442 @@
     }
         ,
     {
-      "nazev": "kompletni-rekonstrukce-bytu-3-1-prestavba-na-2-bytove-jednotky-ceske-budejovice",
-      "slozka": "kompletni-rekonstrukce-bytu-3-1-prestavba-na-2-bytove-jednotky-ceske-budejovice",
+      "nazev": "Kompletní rekonstrukce bytu - Bechyně",
+      "slozka": "Kompletní rekonstrukce bytu - Bechyně",
+      "v_realizaci": false,
+      "fotky": [
+           "01fa94bd-5932-4440-a074-a1313ec22a25.webp"
+           ,
+           "080eaa03-972c-438b-9a65-7b1aace2d356..webp"
+           ,
+           "10c7a764-3d03-4c0a-9397-31734ec69a2f.webp"
+           ,
+           "13c51b52-9d24-4ca5-ac7f-fb7ffc32b4cf-1..webp"
+           ,
+           "1429e521-c340-48ea-9551-7b9180e1381e.webp"
+           ,
+           "17573e5d-d346-42f3-b2cc-b99c4ec9d002.webp"
+           ,
+           "1837b2d5-5a23-4f47-a6f3-73df63418441.webp"
+           ,
+           "1a735533-5ba2-4d3b-843d-8af93f6d6ebb.webp"
+           ,
+           "1f32e595-d038-4052-a2bc-7cc9314d0d53.webp"
+           ,
+           "1fe26f4b-d3c5-46f6-8ce3-35837fc8b971.webp"
+           ,
+           "205704ef-3874-4451-95f9-c31144fad396.webp"
+           ,
+           "2abeaa4f-035d-4c28-8263-47665923c391.webp"
+           ,
+           "2b5a1e3c-b787-4c56-9b36-f5a301030b31.webp"
+           ,
+           "2c1401e3-4d4c-4996-8f2a-e3033c8ee7b8.webp"
+           ,
+           "31ada58c-86c9-4e5f-b458-c1939dcc75a3.webp"
+           ,
+           "33457f74-be66-498a-95c7-aceb2cd75a2d.webp"
+           ,
+           "36963b8c-e330-41d4-99cc-8c87fc528a2f.webp"
+           ,
+           "3dc9d556-4cc7-4ada-9bcd-0dd6174c8a22.webp"
+           ,
+           "43600d39-2062-419b-9c7d-a4d02466632c.webp"
+           ,
+           "4934915f-27b0-4146-95db-4a17e57dbd7e.webp"
+           ,
+           "49e069f9-42ec-4e5c-929a-4a90c3a5c37e.webp"
+           ,
+           "4a2d4efa-efa9-4481-97f4-09b6684358f8.webp"
+           ,
+           "518d6148-aeee-4319-9c74-6d953a969a1e.webp"
+           ,
+           "524133c3-fc3f-4424-ad4b-dbd1e482ed2e.webp"
+           ,
+           "54afdc12-1c3a-4811-b253-4ee0079ca9e6.webp"
+           ,
+           "5c1dce62-db71-4c0e-a1f2-c851fd9697d8.webp"
+           ,
+           "5e4965b2-b4a5-482c-89fb-c9e0c77e6f3f.webp"
+           ,
+           "5f27c9e9-abfc-478f-9f5f-1ea3ba8d4051.webp"
+           ,
+           "61de933c-d111-48e4-84d1-536bbdf3d925.webp"
+           ,
+           "6b7ab740-bb43-4b0a-bfb4-64f6663423c5.webp"
+           ,
+           "6d8f4c68-ac60-432a-b40f-7ba3c8d8b8a1.webp"
+           ,
+           "6deb565c-3a0d-413c-be21-989cb97466d8.webp"
+           ,
+           "7198bcb7-430d-411b-aef4-a70e8706cdaf.webp"
+           ,
+           "74ae73ae-4720-4847-b085-01e21144695b.webp"
+           ,
+           "810ea3e4-43ec-4b2d-85e4-3ac09ba0f28f.webp"
+           ,
+           "88375dcc-0073-4d4a-965b-5e275e9a0242.webp"
+           ,
+           "883ff089-8be0-4064-81eb-301bdd178b84.webp"
+           ,
+           "8bb5749f-a00f-4595-9aea-f5b32d0ee9de.webp"
+           ,
+           "8c01645b-a9c1-4523-8948-c085562ea175.webp"
+           ,
+           "8f467212-e7e0-4e96-a381-e237bd6738eb.webp"
+           ,
+           "92f80447-ed9a-4746-b832-340594f67263.webp"
+           ,
+           "936dccc1-2a26-40bb-928d-8a49e23542a9.webp"
+           ,
+           "938d860d-094a-4411-8474-f8adacc056a6.webp"
+           ,
+           "9b219078-0ad6-46a7-bed0-0240c75daf45.webp"
+           ,
+           "a23463ab-0fbb-4ba5-ae7a-ff20c0bf2011.webp"
+           ,
+           "a50ce1fe-e5f2-4586-9929-f3f2d2d8fd7e.webp"
+           ,
+           "a54aee14-7be0-4183-ad3d-f42466d4c036.webp"
+           ,
+           "a7236680-dd98-4927-93a2-cd932aa72ac4.webp"
+           ,
+           "a8797e37-8f7a-4c7a-8927-be4fdbe14fcb.webp"
+           ,
+           "a8b3aca0-cefe-4e83-9288-c1f94aad8c60.webp"
+           ,
+           "af3f92ce-8054-45e2-91b6-42719594bfa2.webp"
+           ,
+           "b08fb86b-e918-4b52-aefa-f6d45681fcd1.webp"
+           ,
+           "b2c8d9eb-a50d-472f-a4af-4c9c848584ef.webp"
+           ,
+           "be21fdda-ad51-484e-98f1-dbeb24d1ecba.webp"
+           ,
+           "c1311107-2ce5-440c-ab6a-25cdc75d9571.webp"
+           ,
+           "ce52ec24-c645-4de8-883a-320d320f00d7.webp"
+           ,
+           "d07642c6-6913-422c-bca6-d50b68853d1e.webp"
+           ,
+           "d10c59c0-0311-40b7-96f3-e5923d1f2fa5.webp"
+           ,
+           "dabd56d3-28cc-4855-9145-901b46461ce9.webp"
+           ,
+           "df40c780-3e6e-433b-81d3-7f619fc01266.webp"
+           ,
+           "e0cfd6ee-0ffe-47d6-910a-0eb1323bcf40.webp"
+           ,
+           "e2ffb117-9627-4056-8505-a8764d0ba0f1.webp"
+           ,
+           "e4033615-ad58-4bd9-8b19-6b9dc1ae4a33.webp"
+           ,
+           "e52e8243-5724-4f17-ad3a-a3da63ca2a5e.webp"
+           ,
+           "ed8b8f2d-ae7c-4ca3-a216-64b831057e25.webp"
+           ,
+           "eee6e0b0-1b61-4b47-adc4-c137aa824c75.webp"
+           ,
+           "f56ac2de-399b-4a27-b04f-1103b1476291.webp"
+           ,
+           "f5dcc9c4-845e-499f-9a59-413be621f9e8.webp"
+           ,
+           "f934ed73-14bb-4f09-a72d-a312023da78c.webp"
+           ,
+           "fc91301f-83c5-4739-8b68-d61bb08f6f71.webp"
+           ,
+           "feb61a3e-0bb7-4a0b-b238-78f775499c98.webp"
+           ,
+           "IMG_3126.webp"
+           ,
+           "IMG_3127.webp"
+           ,
+           "IMG_3128.webp"
+           ,
+           "IMG_3129.webp"
+           ,
+           "IMG_3130.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Kompletní rekonstrukce bytu - Jihlava",
+      "slozka": "Kompletní rekonstrukce bytu - Jihlava",
+      "v_realizaci": false,
+      "fotky": [
+           "20171019_092052-1.webp"
+           ,
+           "20171019_092100-1.webp"
+           ,
+           "20171019_092104-1.webp"
+           ,
+           "20171019_092112-1.webp"
+           ,
+           "20171019_092117-1.webp"
+           ,
+           "20171019_092120-1.webp"
+           ,
+           "20171019_092124-1.webp"
+           ,
+           "20171019_092131-1.webp"
+           ,
+           "20171019_092140-1.webp"
+           ,
+           "20171019_140821-1.webp"
+           ,
+           "20171019_140836-1.webp"
+           ,
+           "20171027_100626.webp"
+           ,
+           "20171106_131624.webp"
+           ,
+           "20171114_123822.webp"
+           ,
+           "20171114_123907.webp"
+           ,
+           "20171116_204917.webp"
+           ,
+           "20171116_204929.webp"
+           ,
+           "20171116_205011.webp"
+           ,
+           "20171116_205025.webp"
+           ,
+           "20171116_205106.webp"
+           ,
+           "20171116_205120.webp"
+           ,
+           "20171116_205134.webp"
+           ,
+           "20171124_193036.webp"
+           ,
+           "20171124_193047.webp"
+           ,
+           "20171124_193059.webp"
+           ,
+           "20171124_193118.webp"
+           ,
+           "20171124_193130.webp"
+           ,
+           "20171124_193142.webp"
+           ,
+           "20171124_193159.webp"
+           ,
+           "20171124_193229.webp"
+           ,
+           "20171124_193233.webp"
+           ,
+           "20171124_193243.webp"
+           ,
+           "20171124_193308.webp"
+           ,
+           "20171124_193320.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Kompletní rekonstrukce bytu 3+1  Týn nad Vltavou",
+      "slozka": "Kompletní rekonstrukce bytu 3+1  Týn nad Vltavou",
+      "v_realizaci": false,
+      "fotky": [
+           "057af1a8-b7e9-4a00-b1ad-df5bc16f0bbe.webp"
+           ,
+           "0acf66d7-abdb-49df-81ff-1633c1d2a038.webp"
+           ,
+           "0b0984a8-7216-4205-bc86-f3866f3c808e..webp"
+           ,
+           "18de3311-bfca-4d47-a515-049fa3b50427.webp"
+           ,
+           "201b4804-e80c-4b08-a8db-52f02ef86222.webp"
+           ,
+           "20968b57-3fa4-432f-8466-a922c794b6a9.webp"
+           ,
+           "20baeca0-7e54-4301-97ce-85181ef5b6ed.webp"
+           ,
+           "28f32463-b09f-4640-b47b-587679aeb86.webp"
+           ,
+           "2d12b2c3-ae75-477e-84b6-572efd7a55e8.webp"
+           ,
+           "2d6195bd-3baa-4e36-b592-df0f1896ecc.webp"
+           ,
+           "31309266-d96d-42b6-99a2-97d59f0b8d8.webp"
+           ,
+           "38034a03-20e3-4d24-a7ca-2200c874fdde.webp"
+           ,
+           "413b2201-652c-4cd8-92d1-9095743e40fb.webp"
+           ,
+           "46efdba1-6a0f-4390-b5ef-9ff9e75d190f.webp"
+           ,
+           "4999d0f9-0c58-4624-b6ce-ec6ad4e9d237.webp"
+           ,
+           "57d353b8-652c-4b9a-8c9e-d4332ca58585.webp"
+           ,
+           "630da1aa-d990-4c11-83c9-fc97fe7e8277.webp"
+           ,
+           "74342b9d-e22d-4a36-9e52-77b68053cc99.webp"
+           ,
+           "755f3aeb-b136-413f-aa53-aa3e38431668.webp"
+           ,
+           "787eb90f-01a2-4b39-ad52-6220ee9eaaa3.webp"
+           ,
+           "790af700-22e8-49ca-859d-a048103136e.webp"
+           ,
+           "80ca1682-62b4-4455-bd01-aa0e23661ec9.webp"
+           ,
+           "81abf093-bee2-4576-a543-3230dab6b83e.webp"
+           ,
+           "84c40677-2f2c-4266-9646-a544f66f0694.webp"
+           ,
+           "88f3b53e-4200-4979-9599-835dbfda2cc.webp"
+           ,
+           "8a535147-87ee-48f2-a723-ddfbfe0895ca.webp"
+           ,
+           "94a565c9-5ed6-45a1-b6d2-05834b4f8b08.webp"
+           ,
+           "9d095ebc-9c95-46d6-a4b0-f40da0e22f94.webp"
+           ,
+           "a37a0371-af59-4509-87fb-31782aa65cd5.webp"
+           ,
+           "a5e2a383-3d8c-4152-b06e-c60d3d98ca80.webp"
+           ,
+           "b187c7f4-5ee4-447b-a514-458c7ba87a0f.webp"
+           ,
+           "c69b0db8-6c14-4e1b-b2a6-52ae59ea3cbe.webp"
+           ,
+           "d85680fe-bd63-4e7e-a164-fe581564004.webp"
+           ,
+           "dce57f76-0569-412b-a8a6-25756c039f5.webp"
+           ,
+           "dee25ea3-f133-4829-b35f-220574b1ffc8.webp"
+           ,
+           "f34ed320-cf39-4b3e-bd2d-e16924c6a956.webp"
+           ,
+           "f7c23600-8a66-4bcb-b691-a9d22b28d4a8.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Kompletní rekonstrukce bytu 3+1 - České Budějovice",
+      "slozka": "Kompletní rekonstrukce bytu 3+1 - České Budějovice",
+      "v_realizaci": false,
+      "fotky": [
+           "IMG-20180513-WA0002.webp"
+           ,
+           "IMG-20180623-WA0000.webp"
+           ,
+           "IMG_20180509_082940.webp"
+           ,
+           "IMG_20180509_083012.webp"
+           ,
+           "IMG_20180509_083029.webp"
+           ,
+           "IMG_20180509_140758.webp"
+           ,
+           "IMG_20180509_140804.webp"
+           ,
+           "IMG_20180509_140811.webp"
+           ,
+           "IMG_20180509_140819.webp"
+           ,
+           "IMG_20180509_140826.webp"
+           ,
+           "IMG_20180509_140833.webp"
+           ,
+           "IMG_20180511_141814.webp"
+           ,
+           "IMG_20180524_144353.webp"
+           ,
+           "IMG_20180524_144401.webp"
+           ,
+           "IMG_20180529_075520.webp"
+           ,
+           "IMG_20180529_075526.webp"
+           ,
+           "IMG_20180529_075530.webp"
+           ,
+           "IMG_20180529_075535.webp"
+           ,
+           "IMG_20180611_105637.webp"
+           ,
+           "IMG_20180611_105654.webp"
+           ,
+           "IMG_20180616_133148.webp"
+           ,
+           "IMG_20180616_133207.webp"
+           ,
+           "IMG_20180616_133226.webp"
+           ,
+           "IMG_20180616_133233.webp"
+           ,
+           "IMG_20180616_133330.webp"
+           ,
+           "IMG_20180616_133340.webp"
+           ,
+           "IMG_20180616_133354.webp"
+           ,
+           "IMG_20180616_133414.webp"
+           ,
+           "IMG_20180616_133431.webp"
+           ,
+           "IMG_20180616_133507.webp"
+           ,
+           "IMG_20180621_151647.webp"
+           ,
+           "IMG_20180621_151658.webp"
+           ,
+           "IMG_20180621_151708.webp"
+           ,
+           "IMG_20180621_151717.webp"
+           ,
+           "IMG_20180622_151336.webp"
+           ,
+           "IMG_20180622_151359.webp"
+           ,
+           "IMG_20180622_151405.webp"
+           ,
+           "IMG_20180622_151445.webp"
+           ,
+           "IMG_20180625_130708.webp"
+           ,
+           "received_10209044781795009.webp"
+           ,
+           "received_10209044781915012.webp"
+           ,
+           "received_10209044782075016.webp"
+           ,
+           "received_10209044782155018.webp"
+           ,
+           "received_1112276762255790.webp"
+           ,
+           "received_228384964524867.webp"
+           ,
+           "received_245128696197263.webp"
+           ,
+           "received_262126147762540.webp"
+           ,
+           "received_291466758316899.webp"
+           ,
+           "received_316957292203065.webp"
+           ,
+           "received_464107340774950.webp"
+           ,
+           "received_465233773990492.webp"
+           ,
+           "received_526207231165494.webp"
+           ,
+           "received_672025053173243.webp"
+           ,
+           "received_702076940127372.webp"
+           ,
+           "received_706710503027217.webp"
+           ,
+           "received_714436758898040.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Kompletní rekonstrukce bytu 3+1 na 2 bytové jednotky - České Budějovice",
+      "slozka": "Kompletní rekonstrukce bytu 3+1 na 2 bytové jednotky - České Budějovice",
       "v_realizaci": false,
       "fotky": [
            "00ba8149-7e1b-4268-8688-04bc533e76c6.webp"
@@ -1826,248 +2150,8 @@
     }
         ,
     {
-      "nazev": "kompletni-rekonstrukce-bytu-3-1-tyn-nad-vltavou",
-      "slozka": "kompletni-rekonstrukce-bytu-3-1-tyn-nad-vltavou",
-      "v_realizaci": false,
-      "fotky": [
-           "057af1a8-b7e9-4a00-b1ad-df5bc16f0bbe.webp"
-           ,
-           "0acf66d7-abdb-49df-81ff-1633c1d2a038.webp"
-           ,
-           "0b0984a8-7216-4205-bc86-f3866f3c808e..webp"
-           ,
-           "18de3311-bfca-4d47-a515-049fa3b50427.webp"
-           ,
-           "201b4804-e80c-4b08-a8db-52f02ef86222.webp"
-           ,
-           "20968b57-3fa4-432f-8466-a922c794b6a9.webp"
-           ,
-           "20baeca0-7e54-4301-97ce-85181ef5b6ed.webp"
-           ,
-           "28f32463-b09f-4640-b47b-587679aeb86.webp"
-           ,
-           "2d12b2c3-ae75-477e-84b6-572efd7a55e8.webp"
-           ,
-           "2d6195bd-3baa-4e36-b592-df0f1896ecc.webp"
-           ,
-           "31309266-d96d-42b6-99a2-97d59f0b8d8.webp"
-           ,
-           "38034a03-20e3-4d24-a7ca-2200c874fdde.webp"
-           ,
-           "413b2201-652c-4cd8-92d1-9095743e40fb.webp"
-           ,
-           "46efdba1-6a0f-4390-b5ef-9ff9e75d190f.webp"
-           ,
-           "4999d0f9-0c58-4624-b6ce-ec6ad4e9d237.webp"
-           ,
-           "57d353b8-652c-4b9a-8c9e-d4332ca58585.webp"
-           ,
-           "630da1aa-d990-4c11-83c9-fc97fe7e8277.webp"
-           ,
-           "74342b9d-e22d-4a36-9e52-77b68053cc99.webp"
-           ,
-           "755f3aeb-b136-413f-aa53-aa3e38431668.webp"
-           ,
-           "787eb90f-01a2-4b39-ad52-6220ee9eaaa3.webp"
-           ,
-           "790af700-22e8-49ca-859d-a048103136e.webp"
-           ,
-           "80ca1682-62b4-4455-bd01-aa0e23661ec9.webp"
-           ,
-           "81abf093-bee2-4576-a543-3230dab6b83e.webp"
-           ,
-           "84c40677-2f2c-4266-9646-a544f66f0694.webp"
-           ,
-           "88f3b53e-4200-4979-9599-835dbfda2cc.webp"
-           ,
-           "8a535147-87ee-48f2-a723-ddfbfe0895ca.webp"
-           ,
-           "94a565c9-5ed6-45a1-b6d2-05834b4f8b08.webp"
-           ,
-           "9d095ebc-9c95-46d6-a4b0-f40da0e22f94.webp"
-           ,
-           "a37a0371-af59-4509-87fb-31782aa65cd5.webp"
-           ,
-           "a5e2a383-3d8c-4152-b06e-c60d3d98ca80.webp"
-           ,
-           "b187c7f4-5ee4-447b-a514-458c7ba87a0f.webp"
-           ,
-           "c69b0db8-6c14-4e1b-b2a6-52ae59ea3cbe.webp"
-           ,
-           "d85680fe-bd63-4e7e-a164-fe581564004.webp"
-           ,
-           "dce57f76-0569-412b-a8a6-25756c039f5.webp"
-           ,
-           "dee25ea3-f133-4829-b35f-220574b1ffc8.webp"
-           ,
-           "f34ed320-cf39-4b3e-bd2d-e16924c6a956.webp"
-           ,
-           "f7c23600-8a66-4bcb-b691-a9d22b28d4a8.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "kompletni-rekonstrukce-bytu-bechyne",
-      "slozka": "kompletni-rekonstrukce-bytu-bechyne",
-      "v_realizaci": false,
-      "fotky": [
-           "01fa94bd-5932-4440-a074-a1313ec22a25.webp"
-           ,
-           "080eaa03-972c-438b-9a65-7b1aace2d356..webp"
-           ,
-           "10c7a764-3d03-4c0a-9397-31734ec69a2f.webp"
-           ,
-           "13c51b52-9d24-4ca5-ac7f-fb7ffc32b4cf-1..webp"
-           ,
-           "1429e521-c340-48ea-9551-7b9180e1381e.webp"
-           ,
-           "17573e5d-d346-42f3-b2cc-b99c4ec9d002.webp"
-           ,
-           "1837b2d5-5a23-4f47-a6f3-73df63418441.webp"
-           ,
-           "1a735533-5ba2-4d3b-843d-8af93f6d6ebb.webp"
-           ,
-           "1f32e595-d038-4052-a2bc-7cc9314d0d53.webp"
-           ,
-           "1fe26f4b-d3c5-46f6-8ce3-35837fc8b971.webp"
-           ,
-           "205704ef-3874-4451-95f9-c31144fad396.webp"
-           ,
-           "2abeaa4f-035d-4c28-8263-47665923c391.webp"
-           ,
-           "2b5a1e3c-b787-4c56-9b36-f5a301030b31.webp"
-           ,
-           "2c1401e3-4d4c-4996-8f2a-e3033c8ee7b8.webp"
-           ,
-           "31ada58c-86c9-4e5f-b458-c1939dcc75a3.webp"
-           ,
-           "33457f74-be66-498a-95c7-aceb2cd75a2d.webp"
-           ,
-           "36963b8c-e330-41d4-99cc-8c87fc528a2f.webp"
-           ,
-           "3dc9d556-4cc7-4ada-9bcd-0dd6174c8a22.webp"
-           ,
-           "43600d39-2062-419b-9c7d-a4d02466632c.webp"
-           ,
-           "4934915f-27b0-4146-95db-4a17e57dbd7e.webp"
-           ,
-           "49e069f9-42ec-4e5c-929a-4a90c3a5c37e.webp"
-           ,
-           "4a2d4efa-efa9-4481-97f4-09b6684358f8.webp"
-           ,
-           "518d6148-aeee-4319-9c74-6d953a969a1e.webp"
-           ,
-           "524133c3-fc3f-4424-ad4b-dbd1e482ed2e.webp"
-           ,
-           "54afdc12-1c3a-4811-b253-4ee0079ca9e6.webp"
-           ,
-           "5c1dce62-db71-4c0e-a1f2-c851fd9697d8.webp"
-           ,
-           "5e4965b2-b4a5-482c-89fb-c9e0c77e6f3f.webp"
-           ,
-           "5f27c9e9-abfc-478f-9f5f-1ea3ba8d4051.webp"
-           ,
-           "61de933c-d111-48e4-84d1-536bbdf3d925.webp"
-           ,
-           "6b7ab740-bb43-4b0a-bfb4-64f6663423c5.webp"
-           ,
-           "6d8f4c68-ac60-432a-b40f-7ba3c8d8b8a1.webp"
-           ,
-           "6deb565c-3a0d-413c-be21-989cb97466d8.webp"
-           ,
-           "7198bcb7-430d-411b-aef4-a70e8706cdaf.webp"
-           ,
-           "74ae73ae-4720-4847-b085-01e21144695b.webp"
-           ,
-           "810ea3e4-43ec-4b2d-85e4-3ac09ba0f28f.webp"
-           ,
-           "88375dcc-0073-4d4a-965b-5e275e9a0242.webp"
-           ,
-           "883ff089-8be0-4064-81eb-301bdd178b84.webp"
-           ,
-           "8bb5749f-a00f-4595-9aea-f5b32d0ee9de.webp"
-           ,
-           "8c01645b-a9c1-4523-8948-c085562ea175.webp"
-           ,
-           "8f467212-e7e0-4e96-a381-e237bd6738eb.webp"
-           ,
-           "92f80447-ed9a-4746-b832-340594f67263.webp"
-           ,
-           "936dccc1-2a26-40bb-928d-8a49e23542a9.webp"
-           ,
-           "938d860d-094a-4411-8474-f8adacc056a6.webp"
-           ,
-           "9b219078-0ad6-46a7-bed0-0240c75daf45.webp"
-           ,
-           "a23463ab-0fbb-4ba5-ae7a-ff20c0bf2011.webp"
-           ,
-           "a50ce1fe-e5f2-4586-9929-f3f2d2d8fd7e.webp"
-           ,
-           "a54aee14-7be0-4183-ad3d-f42466d4c036.webp"
-           ,
-           "a7236680-dd98-4927-93a2-cd932aa72ac4.webp"
-           ,
-           "a8797e37-8f7a-4c7a-8927-be4fdbe14fcb.webp"
-           ,
-           "a8b3aca0-cefe-4e83-9288-c1f94aad8c60.webp"
-           ,
-           "af3f92ce-8054-45e2-91b6-42719594bfa2.webp"
-           ,
-           "b08fb86b-e918-4b52-aefa-f6d45681fcd1.webp"
-           ,
-           "b2c8d9eb-a50d-472f-a4af-4c9c848584ef.webp"
-           ,
-           "be21fdda-ad51-484e-98f1-dbeb24d1ecba.webp"
-           ,
-           "c1311107-2ce5-440c-ab6a-25cdc75d9571.webp"
-           ,
-           "ce52ec24-c645-4de8-883a-320d320f00d7.webp"
-           ,
-           "d07642c6-6913-422c-bca6-d50b68853d1e.webp"
-           ,
-           "d10c59c0-0311-40b7-96f3-e5923d1f2fa5.webp"
-           ,
-           "dabd56d3-28cc-4855-9145-901b46461ce9.webp"
-           ,
-           "df40c780-3e6e-433b-81d3-7f619fc01266.webp"
-           ,
-           "e0cfd6ee-0ffe-47d6-910a-0eb1323bcf40.webp"
-           ,
-           "e2ffb117-9627-4056-8505-a8764d0ba0f1.webp"
-           ,
-           "e4033615-ad58-4bd9-8b19-6b9dc1ae4a33.webp"
-           ,
-           "e52e8243-5724-4f17-ad3a-a3da63ca2a5e.webp"
-           ,
-           "ed8b8f2d-ae7c-4ca3-a216-64b831057e25.webp"
-           ,
-           "eee6e0b0-1b61-4b47-adc4-c137aa824c75.webp"
-           ,
-           "f56ac2de-399b-4a27-b04f-1103b1476291.webp"
-           ,
-           "f5dcc9c4-845e-499f-9a59-413be621f9e8.webp"
-           ,
-           "f934ed73-14bb-4f09-a72d-a312023da78c.webp"
-           ,
-           "fc91301f-83c5-4739-8b68-d61bb08f6f71.webp"
-           ,
-           "feb61a3e-0bb7-4a0b-b238-78f775499c98.webp"
-           ,
-           "IMG_3126.webp"
-           ,
-           "IMG_3127.webp"
-           ,
-           "IMG_3128.webp"
-           ,
-           "IMG_3129.webp"
-           ,
-           "IMG_3130.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "kompletni-rekonstrukce-domu-mazice",
-      "slozka": "kompletni-rekonstrukce-domu-mazice",
+      "nazev": "Kompletní rekonstrukce domu - Mažice",
+      "slozka": "Kompletní rekonstrukce domu - Mažice",
       "v_realizaci": false,
       "fotky": [
            "IMG-20190425-WA0000.webp"
@@ -2297,8 +2381,8 @@
     }
         ,
     {
-      "nazev": "kompletni-rekonstrukce-domu-s-novou-vystavbou-podkrovi",
-      "slozka": "kompletni-rekonstrukce-domu-s-novou-vystavbou-podkrovi",
+      "nazev": "Kompletní rekonstrukce domu s novou výstavbou podkroví - Mažice",
+      "slozka": "Kompletní rekonstrukce domu s novou výstavbou podkroví - Mažice",
       "v_realizaci": false,
       "fotky": [
            "03ffedfe-13d6-455b-a1fd-b95886c25d25.webp"
@@ -2788,8 +2872,8 @@
     }
         ,
     {
-      "nazev": "kompletni-rekonstrukce-fasady",
-      "slozka": "kompletni-rekonstrukce-fasady",
+      "nazev": "Kompletní rekonstrukce fasády - České Budějovice",
+      "slozka": "Kompletní rekonstrukce fasády - České Budějovice",
       "v_realizaci": false,
       "fotky": [
            "11acc515-329e-4bf6-bb97-3b393fca7900.webp"
@@ -2831,8 +2915,8 @@
     }
         ,
     {
-      "nazev": "kompletni-rekonstrukce-garsonky-ceske-budejovice",
-      "slozka": "kompletni-rekonstrukce-garsonky-ceske-budejovice",
+      "nazev": "Kompletní rekonstrukce garsonky - České Budějovice",
+      "slozka": "Kompletní rekonstrukce garsonky - České Budějovice",
       "v_realizaci": false,
       "fotky": [
            "IMG-20180326-WA0000.webp"
@@ -2874,8 +2958,8 @@
     }
         ,
     {
-      "nazev": "kompletni-rekonstrukce-koupelny-sevetin",
-      "slozka": "kompletni-rekonstrukce-koupelny-sevetin",
+      "nazev": "Kompletní rekonstrukce koupelny - Ševětín",
+      "slozka": "Kompletní rekonstrukce koupelny - Ševětín",
       "v_realizaci": false,
       "fotky": [
            "180326A4-66BF-401C-8B68-8DF708166714.webp"
@@ -2923,8 +3007,8 @@
     }
         ,
     {
-      "nazev": "kompletni-rekonstrukce-kuchyn-chodba-koupelna",
-      "slozka": "kompletni-rekonstrukce-kuchyn-chodba-koupelna",
+      "nazev": "Kompletní rekonstrukce kuchyň, chodba, koupelna - Pořežany",
+      "slozka": "Kompletní rekonstrukce kuchyň, chodba, koupelna - Pořežany",
       "v_realizaci": false,
       "fotky": [
            "0c088d4a-7885-40f2-96a0-1ee49b280494.webp"
@@ -3028,239 +3112,8 @@
     }
         ,
     {
-      "nazev": "kompletni-rekonstrukce-prizemi-domu-elektroinstalace-voda-topeni-cely-dum",
-      "slozka": "kompletni-rekonstrukce-prizemi-domu-elektroinstalace-voda-topeni-cely-dum",
-      "v_realizaci": false,
-      "fotky": [
-           "123123121.webp"
-           ,
-           "15315.webp"
-           ,
-           "153513.webp"
-           ,
-           "1704dd47-d349-490e-953b-d5468dc2ab50.webp"
-           ,
-           "192b99ca-08ed-4134-8f97-cad8c4134901.webp"
-           ,
-           "225868c0-ad5f-4da8-adce-68b422e6680c.webp"
-           ,
-           "28f4eef8-d03e-44a9-a50e-1d53a75bc9a0.webp"
-           ,
-           "31235447.webp"
-           ,
-           "32345.webp"
-           ,
-           "338cf90e-2c31-4412-b9a9-0cb62676f530.webp"
-           ,
-           "345312.webp"
-           ,
-           "37dcb42f-8830-4ead-8b87-6660415fb7ad.webp"
-           ,
-           "387345.webp"
-           ,
-           "3b47150d-e81c-46e4-be1d-36a37e5000a5.webp"
-           ,
-           "453453.webp"
-           ,
-           "45345354.webp"
-           ,
-           "45546.webp"
-           ,
-           "45631.webp"
-           ,
-           "45645.webp"
-           ,
-           "456456.webp"
-           ,
-           "4644.webp"
-           ,
-           "53432.webp"
-           ,
-           "53453455.webp"
-           ,
-           "54343.webp"
-           ,
-           "543453.webp"
-           ,
-           "54345354.webp"
-           ,
-           "5544.webp"
-           ,
-           "64564.webp"
-           ,
-           "65463b5e-8f67-4ee1-9067-bba847aa63d3.webp"
-           ,
-           "720562d0-fae0-448c-a6a4-8b4e0dd89afc.webp"
-           ,
-           "767.webp"
-           ,
-           "7867.webp"
-           ,
-           "78673453.webp"
-           ,
-           "79b2c337-6133-4c2a-88ac-0fe09ec164cf.webp"
-           ,
-           "7d5f6bcb-35b4-4a6e-b65c-766b7cf32e98.webp"
-           ,
-           "864d790d-28c4-4e98-a3d7-acc986b4eb76.webp"
-           ,
-           "966ff423-a61e-4c24-915b-1b9b0a85802b.webp"
-           ,
-           "a09ba6a6-f37e-4ad1-a78d-bbfe89a65147.webp"
-           ,
-           "bb5b7959-908e-4063-989d-c5c6229658db.webp"
-           ,
-           "eabf719b-fa3e-4ba5-abfc-e058428c2a3f.webp"
-           ,
-           "ead9a515-c077-4c50-9864-80f750a2791a.webp"
-           ,
-           "index.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "kompletrekbytcb31",
-      "slozka": "kompletrekbytcb31",
-      "v_realizaci": false,
-      "fotky": [
-           "IMG-20180513-WA0002.webp"
-           ,
-           "IMG-20180623-WA0000.webp"
-           ,
-           "IMG_20180509_082940.webp"
-           ,
-           "IMG_20180509_083012.webp"
-           ,
-           "IMG_20180509_083029.webp"
-           ,
-           "IMG_20180509_140758.webp"
-           ,
-           "IMG_20180509_140804.webp"
-           ,
-           "IMG_20180509_140811.webp"
-           ,
-           "IMG_20180509_140819.webp"
-           ,
-           "IMG_20180509_140826.webp"
-           ,
-           "IMG_20180509_140833.webp"
-           ,
-           "IMG_20180511_141814.webp"
-           ,
-           "IMG_20180524_144353.webp"
-           ,
-           "IMG_20180524_144401.webp"
-           ,
-           "IMG_20180529_075520.webp"
-           ,
-           "IMG_20180529_075526.webp"
-           ,
-           "IMG_20180529_075530.webp"
-           ,
-           "IMG_20180529_075535.webp"
-           ,
-           "IMG_20180611_105637.webp"
-           ,
-           "IMG_20180611_105654.webp"
-           ,
-           "IMG_20180616_133148.webp"
-           ,
-           "IMG_20180616_133207.webp"
-           ,
-           "IMG_20180616_133226.webp"
-           ,
-           "IMG_20180616_133233.webp"
-           ,
-           "IMG_20180616_133330.webp"
-           ,
-           "IMG_20180616_133340.webp"
-           ,
-           "IMG_20180616_133354.webp"
-           ,
-           "IMG_20180616_133414.webp"
-           ,
-           "IMG_20180616_133431.webp"
-           ,
-           "IMG_20180616_133507.webp"
-           ,
-           "IMG_20180621_151647.webp"
-           ,
-           "IMG_20180621_151658.webp"
-           ,
-           "IMG_20180621_151708.webp"
-           ,
-           "IMG_20180621_151717.webp"
-           ,
-           "IMG_20180622_151336.webp"
-           ,
-           "IMG_20180622_151359.webp"
-           ,
-           "IMG_20180622_151405.webp"
-           ,
-           "IMG_20180622_151445.webp"
-           ,
-           "IMG_20180625_130708.webp"
-           ,
-           "received_10209044781795009.webp"
-           ,
-           "received_10209044781915012.webp"
-           ,
-           "received_10209044782075016.webp"
-           ,
-           "received_10209044782155018.webp"
-           ,
-           "received_1112276762255790.webp"
-           ,
-           "received_228384964524867.webp"
-           ,
-           "received_245128696197263.webp"
-           ,
-           "received_262126147762540.webp"
-           ,
-           "received_291466758316899.webp"
-           ,
-           "received_316957292203065.webp"
-           ,
-           "received_464107340774950.webp"
-           ,
-           "received_465233773990492.webp"
-           ,
-           "received_526207231165494.webp"
-           ,
-           "received_672025053173243.webp"
-           ,
-           "received_702076940127372.webp"
-           ,
-           "received_706710503027217.webp"
-           ,
-           "received_714436758898040.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "koupelna-dolni-bukovsko",
-      "slozka": "koupelna-dolni-bukovsko",
-      "v_realizaci": false,
-      "fotky": [
-      ]
-    }
-        ,
-    {
-      "nazev": "koupelna-veseli-nad-luznici",
-      "slozka": "koupelna-veseli-nad-luznici",
-      "v_realizaci": false,
-      "fotky": [
-           "1c0817d2-accf-4983-961e-50efab718b94.webp"
-           ,
-           "a73e5825-b3e1-4874-94f0-fb551947be62.webp"
-           ,
-           "b08ab24b-7062-4bf5-901b-37a18886e674.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "lepidlo-perlinka-stuk-dodelani-fasady-pisek",
-      "slozka": "lepidlo-perlinka-stuk-dodelani-fasady-pisek",
+      "nazev": "Lepidlo, perlinka, štuk - Dodělání fasády - Písek",
+      "slozka": "Lepidlo, perlinka, štuk - Dodělání fasády - Písek",
       "v_realizaci": false,
       "fotky": [
            "20170913_152139.webp"
@@ -3280,8 +3133,8 @@
     }
         ,
     {
-      "nazev": "marmolit-mondi-ceske-budejovice",
-      "slozka": "marmolit-mondi-ceske-budejovice",
+      "nazev": "Marmolit mondi - České Budějovice",
+      "slozka": "Marmolit mondi - České Budějovice",
       "v_realizaci": false,
       "fotky": [
            "IMG_20210625_063052.webp"
@@ -3339,16 +3192,8 @@
     }
         ,
     {
-      "nazev": "mzbarakdana",
-      "slozka": "mzbarakdana",
-      "v_realizaci": false,
-      "fotky": [
-      ]
-    }
-        ,
-    {
-      "nazev": "natazeni-silikonove-omitky",
-      "slozka": "natazeni-silikonove-omitky",
+      "nazev": "Natažení silikonové omítky - Pořežany",
+      "slozka": "Natažení silikonové omítky - Pořežany",
       "v_realizaci": false,
       "fotky": [
            "47de7492-6191-49e5-a0ef-01b3ef770cf0.webp"
@@ -3364,8 +3209,8 @@
     }
         ,
     {
-      "nazev": "natazeni-silikonove-omitky-1",
-      "slozka": "natazeni-silikonove-omitky-1",
+      "nazev": "Natažení silikonové omítky - Tábor",
+      "slozka": "Natažení silikonové omítky - Tábor",
       "v_realizaci": false,
       "fotky": [
            "c72e81e5-19b7-4961-bb8b-b42efc2a3c48-1.webp"
@@ -3381,8 +3226,8 @@
     }
         ,
     {
-      "nazev": "novostavba-lekarskeho-domu-dolni-bukovsko",
-      "slozka": "novostavba-lekarskeho-domu-dolni-bukovsko",
+      "nazev": "Novostavba lékařského domu - Dolní Bukovsko",
+      "slozka": "Novostavba lékařského domu - Dolní Bukovsko",
       "v_realizaci": false,
       "fotky": [
            "0167fde6-b330-43a2-a3a8-d74cfa0988fa.webp"
@@ -3728,8 +3573,8 @@
     }
         ,
     {
-      "nazev": "obklady-dlazby-chynov",
-      "slozka": "obklady-dlazby-chynov",
+      "nazev": "Obklady a dlažby - Chýnov",
+      "slozka": "Obklady a dlažby - Chýnov",
       "v_realizaci": false,
       "fotky": [
            "IMG-20180302-WA0004.webp"
@@ -3765,8 +3610,8 @@
     }
         ,
     {
-      "nazev": "oprava-a-renovace-fasady-r-domu-sokl-marmolit-po-zam-dlazbe-d-bukovsko",
-      "slozka": "oprava-a-renovace-fasady-r-domu-sokl-marmolit-po-zam-dlazbe-d-bukovsko",
+      "nazev": "Oprava a renovace fasády rodinného domu, sokl marmolit po zámkové dlažbě - Dolní Bukovsko",
+      "slozka": "Oprava a renovace fasády rodinného domu, sokl marmolit po zámkové dlažbě - Dolní Bukovsko",
       "v_realizaci": false,
       "fotky": [
            "705F32E1-A49E-4F84-A295-A3F24B3B7CE7.webp"
@@ -3792,101 +3637,8 @@
     }
         ,
     {
-      "nazev": "oprava-omitek-sit-lepidlo-stuk",
-      "slozka": "oprava-omitek-sit-lepidlo-stuk",
-      "v_realizaci": false,
-      "fotky": [
-           "IMG-20190531-WA0000.webp"
-           ,
-           "IMG-20190531-WA0001.webp"
-           ,
-           "IMG-20190531-WA0002.webp"
-           ,
-           "IMG-20190531-WA0003.webp"
-           ,
-           "IMG-20190531-WA0004.webp"
-           ,
-           "IMG_20190527_100920.webp"
-           ,
-           "IMG_20190527_100930.webp"
-           ,
-           "IMG_20190527_100941.webp"
-           ,
-           "IMG_20190527_100958.webp"
-           ,
-           "IMG_20190527_101005.webp"
-           ,
-           "IMG_20190527_101048.webp"
-           ,
-           "IMG_20190527_101117.webp"
-           ,
-           "IMG_20190527_101125.webp"
-           ,
-           "IMG_20190527_101134.webp"
-           ,
-           "IMG_20190527_101215.webp"
-           ,
-           "IMG_20190527_141437.webp"
-           ,
-           "IMG_20190527_141505.webp"
-           ,
-           "IMG_20190527_141507.webp"
-           ,
-           "IMG_20190527_141511.webp"
-           ,
-           "IMG_20190527_141514.webp"
-           ,
-           "IMG_20190527_141523.webp"
-           ,
-           "IMG_20190527_141531.webp"
-           ,
-           "IMG_20190527_141535.webp"
-           ,
-           "IMG_20190527_141538.webp"
-           ,
-           "IMG_20190527_143251.webp"
-           ,
-           "IMG_20190528_094949.webp"
-           ,
-           "IMG_20190528_094959.webp"
-           ,
-           "IMG_20190528_095005.webp"
-           ,
-           "IMG_20190530_140642.webp"
-           ,
-           "IMG_20190530_140705.webp"
-           ,
-           "IMG_20190530_140712.webp"
-           ,
-           "IMG_20190530_140728.webp"
-           ,
-           "IMG_20190530_140734.webp"
-           ,
-           "IMG_20190530_140740.webp"
-           ,
-           "IMG_20190530_140750.webp"
-           ,
-           "IMG_20190530_140759.webp"
-           ,
-           "IMG_20190530_140816.webp"
-           ,
-           "IMG_20190530_140853.webp"
-           ,
-           "IMG_20190604_114610.webp"
-           ,
-           "IMG_20190604_114613.webp"
-           ,
-           "IMG_20190604_114617.webp"
-           ,
-           "IMG_20190604_114631.webp"
-           ,
-           "IMG_20190604_114641.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "opravy-a-ruzne-zednicke-prace-na-rod-dome-bechyne",
-      "slozka": "opravy-a-ruzne-zednicke-prace-na-rod-dome-bechyne",
+      "nazev": "Opravy a různé zednické práce na rodinném domě - Bechyně",
+      "slozka": "Opravy a různé zednické práce na rodinném domě - Bechyně",
       "v_realizaci": false,
       "fotky": [
            "IMG_8341.webp"
@@ -3914,8 +3666,8 @@
     }
         ,
     {
-      "nazev": "pergola-sit-lepidlo-silikon-fasada-strakonice",
-      "slozka": "pergola-sit-lepidlo-silikon-fasada-strakonice",
+      "nazev": "Pergola síť, lepidlo a silikonová fasáda - Strakonice",
+      "slozka": "Pergola síť, lepidlo a silikonová fasáda - Strakonice",
       "v_realizaci": false,
       "fotky": [
            "20170731_104729.webp"
@@ -3949,58 +3701,45 @@
     }
         ,
     {
-      "nazev": "pergolasitlepidlosilikonstrakonice",
-      "slozka": "pergolasitlepidlosilikonstrakonice",
+      "nazev": "Podlaha + Obložky - České Budějovice",
+      "slozka": "Podlaha + Obložky - České Budějovice",
       "v_realizaci": false,
       "fotky": [
-           "20170731_104729.webp"
+           "04969845-548d-4768-92c8-87ce4a894efa.webp"
            ,
-           "20170731_104733.webp"
+           "3ffe7fa7-2cdd-4057-a33b-a47c2e48456f.webp"
            ,
-           "20170731_113716.webp"
+           "4a4f8a22-7a5c-4f76-812e-9900e84d75ea.webp"
            ,
-           "20170731_113724.webp"
+           "6cb1d59b-d31b-4bfa-a8c6-f9ffd5fe0f10.webp"
            ,
-           "20170820_071934.webp"
+           "73eefa7c-85ad-49c2-999c-664b01c3d764.webp"
            ,
-           "20170820_073936.webp"
+           "7d91d5fb-46e3-4606-98dc-3c5d24a9f5d2.webp"
            ,
-           "20170820_073945.webp"
+           "8cbc4865-6453-4fb5-bd09-efa198f467ed.webp"
            ,
-           "20170820_090958.webp"
+           "96186a09-5630-4975-9b7e-2aa18f084aac.webp"
            ,
-           "20170820_091004.webp"
+           "9afcdaea-e75f-4103-9185-08d53141d7fe.webp"
            ,
-           "20170820_091020.webp"
+           "a2e57447-7d7e-424a-9157-06a208a32fb5.webp"
            ,
-           "20170820_091033.webp"
+           "a4bc3e80-8e5f-4877-8af1-8546e7a743bf.webp"
            ,
-           "20170820_112356.webp"
+           "a55603b5-126a-4d44-bd99-596614283217.webp"
            ,
-           "20170820_112421.webp"
+           "b3325733-8e17-44cf-ad88-671a8bf17238.webp"
            ,
-           "20170820_112542.webp"
+           "e01c234a-ae11-4ca6-b113-9dd892a870bf.webp"
+           ,
+           "e28b60a9-cf84-4104-89ee-657c4bac6314.webp"
       ]
     }
         ,
     {
-      "nazev": "podekovani-za-spolupraci-v-roce-2020",
-      "slozka": "podekovani-za-spolupraci-v-roce-2020",
-      "v_realizaci": false,
-      "fotky": [
-           "006f6982-bc2f-4b77-8c1d-876a546566cc.webp"
-           ,
-           "04396bd6-905b-415f-bb92-8d818463d18c.webp"
-           ,
-           "1b8dcaf1-8926-4810-bd6d-64aacc0428dd.webp"
-           ,
-           "56fceedb-05ad-4cbe-af07-55db4e4afd5e.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "predelani-koupelny-vana-sprchovy-kout-dolni-bukovsko",
-      "slozka": "predelani-koupelny-vana-sprchovy-kout-dolni-bukovsko",
+      "nazev": "Předělání koupelny - Dolní Bukovsko",
+      "slozka": "Předělání koupelny - Dolní Bukovsko",
       "v_realizaci": false,
       "fotky": [
            "2bfc9923-693c-4a80-9280-76151aa545ff.webp"
@@ -4016,8 +3755,8 @@
     }
         ,
     {
-      "nazev": "prevzeti-praci-stavebni-prace-na-rod-dome-hosty-1",
-      "slozka": "prevzeti-praci-stavebni-prace-na-rod-dome-hosty-1",
+      "nazev": "Převzetí stavebních prací na rodinném domě - Hosty",
+      "slozka": "Převzetí stavebních prací na rodinném domě - Hosty",
       "v_realizaci": false,
       "fotky": [
            "02CEFA2E-8FBB-40C5-B510-AB1DCC585849.webp"
@@ -4073,8 +3812,8 @@
     }
         ,
     {
-      "nazev": "priprava-koupelny-a-wc-pro-obklad",
-      "slozka": "priprava-koupelny-a-wc-pro-obklad",
+      "nazev": "Příprava koupelny pro obklady - Soběslav",
+      "slozka": "Příprava koupelny pro obklady - Soběslav",
       "v_realizaci": false,
       "fotky": [
            "0f4ef126-ed9c-40cb-b176-8bdd49331c19.webp"
@@ -4126,785 +3865,8 @@
     }
         ,
     {
-      "nazev": "priprava-penetrace-a-natazeni-silikonove-omitky-vesce",
-      "slozka": "priprava-penetrace-a-natazeni-silikonove-omitky-vesce",
-      "v_realizaci": false,
-      "fotky": [
-           "1_index.webp"
-           ,
-           "1_index2.webp"
-           ,
-           "1_index3.webp"
-           ,
-           "1_index4.webp"
-           ,
-           "1_index5.webp"
-           ,
-           "1_index6.webp"
-           ,
-           "2_index.webp"
-           ,
-           "indesx.webp"
-           ,
-           "index.webp"
-           ,
-           "index10.webp"
-           ,
-           "index11.webp"
-           ,
-           "index12.webp"
-           ,
-           "index13.webp"
-           ,
-           "index14.webp"
-           ,
-           "index2.webp"
-           ,
-           "index3.webp"
-           ,
-           "index4.webp"
-           ,
-           "index5.webp"
-           ,
-           "index6.webp"
-           ,
-           "index7.webp"
-           ,
-           "index8.webp"
-           ,
-           "index9.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "radosovice-okr-str-snizeni-ener-narocnosti",
-      "slozka": "radosovice-okr-str-snizeni-ener-narocnosti",
-      "v_realizaci": false,
-      "fotky": [
-           "20170406_131442.webp"
-           ,
-           "20170406_131523.webp"
-           ,
-           "20170406_131526.webp"
-           ,
-           "20170619_091356.webp"
-           ,
-           "20170619_091401.webp"
-           ,
-           "20170619_091408.webp"
-           ,
-           "20170619_091419.webp"
-           ,
-           "20170626_143613.webp"
-           ,
-           "20170626_143632.webp"
-           ,
-           "20170627_121110.webp"
-           ,
-           "20170627_164925-1.webp"
-           ,
-           "20170627_164925.webp"
-           ,
-           "20170627_164945.webp"
-           ,
-           "20170629_160748.webp"
-           ,
-           "20170629_160758.webp"
-           ,
-           "20170629_160815.webp"
-           ,
-           "20170629_160825.webp"
-           ,
-           "20170630_171837-1.webp"
-           ,
-           "20170630_171837.webp"
-           ,
-           "20170704_112729.webp"
-           ,
-           "20170705_183811.webp"
-           ,
-           "20170707_132234.webp"
-           ,
-           "20170707_132503.webp"
-           ,
-           "20170707_132812.webp"
-           ,
-           "20170707_132901.webp"
-           ,
-           "20170707_154926.webp"
-           ,
-           "20170707_155006.webp"
-           ,
-           "20170707_160025.webp"
-           ,
-           "20170711_070806.webp"
-           ,
-           "20170711_070907-1.webp"
-           ,
-           "20170711_070907.webp"
-           ,
-           "20170711_071454.webp"
-           ,
-           "20170711_071600.webp"
-           ,
-           "20170711_071706_HDR-1.webp"
-           ,
-           "20170711_071706_HDR.webp"
-           ,
-           "IMG-20170316-WA0001.webp"
-           ,
-           "IMG-20170316-WA0005.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "rd-mazice",
-      "slozka": "rd-mazice",
-      "v_realizaci": false,
-      "fotky": [
-           "IMG_20181002_110149.webp"
-           ,
-           "IMG_20181002_110203.webp"
-           ,
-           "IMG_20181002_110207.webp"
-           ,
-           "IMG_20181002_110214.webp"
-           ,
-           "IMG_20181002_111418.webp"
-           ,
-           "IMG_20181002_111423.webp"
-           ,
-           "IMG_20181002_112224.webp"
-           ,
-           "IMG_20181002_112233.webp"
-           ,
-           "IMG_20181002_112245.webp"
-           ,
-           "IMG_20181002_112254.webp"
-           ,
-           "IMG_20181002_112258.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "rd-mazice-1",
-      "slozka": "rd-mazice-1",
-      "v_realizaci": false,
-      "fotky": [
-           "IMG-20190425-WA0000.webp"
-           ,
-           "IMG-20190426-WA0007.webp"
-           ,
-           "IMG-20190430-WA0003.webp"
-           ,
-           "IMG_20190324_131253.webp"
-           ,
-           "IMG_20190403_105440.webp"
-           ,
-           "IMG_20190404_100628.webp"
-           ,
-           "IMG_20190404_100640.webp"
-           ,
-           "IMG_20190404_100704.webp"
-           ,
-           "IMG_20190404_100715.webp"
-           ,
-           "IMG_20190404_100725.webp"
-           ,
-           "IMG_20190404_100738.webp"
-           ,
-           "IMG_20190404_100744.webp"
-           ,
-           "IMG_20190404_100817.webp"
-           ,
-           "IMG_20190423_161220.webp"
-           ,
-           "IMG_20190424_142943.webp"
-           ,
-           "IMG_20190424_143007.webp"
-           ,
-           "IMG_20190424_143014.webp"
-           ,
-           "IMG_20190424_143033.webp"
-           ,
-           "IMG_20190424_155148.webp"
-           ,
-           "IMG_20190426_142205.webp"
-           ,
-           "IMG_20190426_142241.webp"
-           ,
-           "IMG_20190502_160251.webp"
-           ,
-           "IMG_20190502_160302.webp"
-           ,
-           "IMG_20190502_160316.webp"
-           ,
-           "IMG_20190503_094711.webp"
-           ,
-           "IMG_20190503_094719.webp"
-           ,
-           "IMG_20190503_094756.webp"
-           ,
-           "IMG_20190503_094823.webp"
-           ,
-           "IMG_20190503_130834.webp"
-           ,
-           "IMG_20190509_191744.webp"
-           ,
-           "IMG_20190513_102337.webp"
-           ,
-           "IMG_20190513_102410.webp"
-           ,
-           "IMG_20190513_102444.webp"
-           ,
-           "IMG_20190513_102457.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "rekonst",
-      "slozka": "rekonst",
-      "v_realizaci": false,
-      "fotky": [
-           "20170917_085048.webp"
-           ,
-           "20170917_085054.webp"
-           ,
-           "20170917_085105.webp"
-           ,
-           "20170917_085217.webp"
-           ,
-           "20170917_095407.webp"
-           ,
-           "20170917_125524.webp"
-           ,
-           "20170917_125534.webp"
-           ,
-           "20171001_154208.webp"
-           ,
-           "20171001_154215.webp"
-           ,
-           "20171001_154225.webp"
-           ,
-           "20171005_085550.webp"
-           ,
-           "20171009_135525.webp"
-           ,
-           "20171009_135539.webp"
-           ,
-           "20171010_113133.webp"
-           ,
-           "20171010_143154.webp"
-           ,
-           "20171010_143231.webp"
-           ,
-           "20171010_143239.webp"
-           ,
-           "20171010_143249.webp"
-           ,
-           "20171010_143306.webp"
-           ,
-           "20171010_143440.webp"
-           ,
-           "20171010_143511.webp"
-           ,
-           "20171015_111532.webp"
-           ,
-           "20171015_112052.webp"
-           ,
-           "20171015_153044.webp"
-           ,
-           "20171015_153051.webp"
-           ,
-           "20171015_153136.webp"
-           ,
-           "20171018_154814.webp"
-           ,
-           "20171018_154820.webp"
-           ,
-           "20171018_154834.webp"
-           ,
-           "20171018_154848.webp"
-           ,
-           "20171019_204540.webp"
-           ,
-           "20171019_204601.webp"
-           ,
-           "20171019_204621.webp"
-           ,
-           "20171019_204646.webp"
-           ,
-           "20171019_210132.webp"
-           ,
-           "20171019_210355.webp"
-           ,
-           "IMG-20170926-WA0002.webp"
-           ,
-           "IMG-20171001-WA0005.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "rekonstrukce-bytoveho-jadra-dlazby-ceske-budejovice",
-      "slozka": "rekonstrukce-bytoveho-jadra-dlazby-ceske-budejovice",
-      "v_realizaci": false,
-      "fotky": [
-           "0645febd-f94a-4973-9bb8-c37e14fdc82e.webp"
-           ,
-           "1291c5e4-3152-4e1f-b7bf-5f12203494b1.webp"
-           ,
-           "161bc7a9-8b9e-4fa5-b016-d997c6f6443c.webp"
-           ,
-           "2838021d-b13e-47b0-8cc6-81a84ec4f338.webp"
-           ,
-           "2af579d9-26d3-46e2-811b-985666a7c345.webp"
-           ,
-           "32901318-43d4-455c-a003-fc03f4f51a5b.webp"
-           ,
-           "3d259340-8be5-4f18-947a-a692ba0151b0.webp"
-           ,
-           "3eba0783-c2eb-4798-97a8-3bf8d65c6d36.webp"
-           ,
-           "415d80fb-d5a0-4de4-a141-538db05cd650.webp"
-           ,
-           "4607f523-227f-43e7-8857-0e9e9f67c84e.webp"
-           ,
-           "4973d60c-e7e5-49cc-8d12-ce358f4c79be.webp"
-           ,
-           "4c7cfdc0-f1f8-4bdc-8422-f4283bdcb31b.webp"
-           ,
-           "53ec168e-504a-493a-ac91-56a3e41a4f85.webp"
-           ,
-           "5b6ccc02-5e2d-40a6-8816-c80f82b3cd59.webp"
-           ,
-           "79ddda86-fa50-4cee-8467-1ac992771707.webp"
-           ,
-           "7ab52036-e7d5-427d-9e49-2b04462e892a.webp"
-           ,
-           "86a40d2a-eda7-41b3-9a35-30e09dffe417.webp"
-           ,
-           "87061edd-8168-4acf-8394-b69a10982824.webp"
-           ,
-           "8f933a62-e985-4342-bcb5-946dd31a343e.webp"
-           ,
-           "91ada8b6-6ca0-4f8a-ad78-865148bbad5f.webp"
-           ,
-           "92dd87bc-76fc-42f4-b963-eafd5148c456.webp"
-           ,
-           "953a4d5e-4215-4ae1-860e-ca4698f28da9.webp"
-           ,
-           "9676de5a-66c0-4cd9-93cb-4d0fa0341b81.webp"
-           ,
-           "97cc3e59-bb61-4de8-8f33-b1ec0e7284d2.webp"
-           ,
-           "98dcd253-8c98-4edc-aea6-4440d18bb915.webp"
-           ,
-           "9b7cc676-2ba2-4017-9b36-c2908fe5b0dc.webp"
-           ,
-           "9f896e89-1bce-43a7-b823-70702055714a.webp"
-           ,
-           "acfec37a-9bee-4b96-a786-c4bf71e7e819.webp"
-           ,
-           "addd507a-8395-4db0-b440-3ab312313c0c.webp"
-           ,
-           "c2814896-7432-4cd2-b06a-4804f2573fab.webp"
-           ,
-           "ca17999a-6752-4c37-a566-31bf082d0e77.webp"
-           ,
-           "ca755755-d233-495a-bbf0-08a952312b34.webp"
-           ,
-           "d805cc4a-3036-4c11-b3b5-bb4cbc247483.webp"
-           ,
-           "d8981d02-3cfd-4f63-a870-74ad3e02a6ed.webp"
-           ,
-           "de9becb9-1864-47a1-9018-a586d7f1577f.webp"
-           ,
-           "e27cf2a8-102e-4571-b4ac-0963448ed62c.webp"
-           ,
-           "e3abdf51-5ac4-4428-aed0-a53c6c9a0c11.webp"
-           ,
-           "f98180b8-0f21-4473-a67f-daacf384158d.webp"
-           ,
-           "f9a096c7-a0ed-4aea-bad7-65788805a839.webp"
-           ,
-           "fd11436c-ac07-47f6-86a5-24556cff49ff.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "rekonstrukce-bytoveho-jadra-dlazby-kompletni-elektroinstalace-bytu-veseli-nad-luznici",
-      "slozka": "rekonstrukce-bytoveho-jadra-dlazby-kompletni-elektroinstalace-bytu-veseli-nad-luznici",
-      "v_realizaci": false,
-      "fotky": [
-           "024a2406-3699-48d3-a2c8-afd32f03c8c7.webp"
-           ,
-           "1d5e7761-fe80-4bd7-bf15-2cf96ca4914d.webp"
-           ,
-           "2441050e-a6b3-4565-ae78-48ffd5ba74c8.webp"
-           ,
-           "31fe8535-1dc8-4cda-9281-cc75c3c9b18b.webp"
-           ,
-           "374fe71e-aaea-4504-8a42-195dd9c7b209.webp"
-           ,
-           "38e2ce14-b629-41bb-94ec-392e0107e798.webp"
-           ,
-           "3aa39437-8be8-4fb1-8589-4506ee2a6965.webp"
-           ,
-           "4c0368a6-b625-4695-b79a-560a3c6cb7da.webp"
-           ,
-           "59cb0662-04e8-4417-9bc0-d468646cd4b5.webp"
-           ,
-           "60cbc088-208c-4145-8579-4b5e1c0640da.webp"
-           ,
-           "70a99231-5227-4cf8-a31f-adde3b94f4df.webp"
-           ,
-           "78e1e00d-26c4-4962-82a5-2702d3c0ca54.webp"
-           ,
-           "797cf2f1-8aa0-4908-8e04-7e390fd08379.webp"
-           ,
-           "7af42b53-dc9c-4d7f-9738-68e758d9af5b.webp"
-           ,
-           "7d2c423f-ff08-4822-b1fe-58da43c93365.webp"
-           ,
-           "7d4e6b99-7328-48bc-b7ea-b7046217e2e9.webp"
-           ,
-           "8096b789-b9e7-43d8-a7de-c611e6d23fa0.webp"
-           ,
-           "83888076-0e72-4540-9288-ebb61edff065.webp"
-           ,
-           "8cc196f7-14b9-4a53-b2bb-e7fcc71c75a9.webp"
-           ,
-           "8d2830ea-d4f9-4ced-9f15-41a81aa634a8.webp"
-           ,
-           "a944d480-1d71-4b28-b58b-09d3bd9689ea.webp"
-           ,
-           "b31ded83-a9c6-4312-b921-96720d2aa0de.webp"
-           ,
-           "b8a1975c-67e6-4a92-82c0-7961df5901a2.webp"
-           ,
-           "bd5dc213-62b4-4d33-b38f-d8f5dd9a168a.webp"
-           ,
-           "c206e08c-bdd8-4bd3-b720-294a0eb3d11f.webp"
-           ,
-           "e08dd74e-5956-449a-a51b-81a1dcf4240b.webp"
-           ,
-           "e486478e-53f8-44c1-97f6-cfebbda1b932.webp"
-           ,
-           "e4ab2e95-cd64-4268-8e71-2d9b421d50e3.webp"
-           ,
-           "ed354958-4868-4a5e-9de2-d3c993cfe7b8.webp"
-           ,
-           "fc1982ec-5fa4-44f4-8a93-e4a9eb9d3d32.webp"
-           ,
-           "fcea0f0c-5244-4354-903e-a206e7b9c396.webp"
-           ,
-           "uvodka.webp"
-           ,
-           "WhatsApp-Image-2022-01-23-at-19.15.57-1.webp"
-           ,
-           "WhatsApp-Image-2022-01-23-at-19.15.57-2.webp"
-           ,
-           "WhatsApp-Image-2022-01-23-at-19.15.57.webp"
-           ,
-           "WhatsApp-Image-2022-01-23-at-19.15.58-1.webp"
-           ,
-           "WhatsApp-Image-2022-01-23-at-19.15.58-2.webp"
-           ,
-           "WhatsApp-Image-2022-01-23-at-19.15.58.webp"
-           ,
-           "WhatsApp-Image-2022-01-23-at-19.15.59-1.webp"
-           ,
-           "WhatsApp-Image-2022-01-23-at-19.15.59-2.webp"
-           ,
-           "WhatsApp-Image-2022-01-23-at-19.15.59-3.webp"
-           ,
-           "WhatsApp-Image-2022-01-23-at-19.15.59.webp"
-           ,
-           "WhatsApp-Image-2022-01-23-at-19.16.00-1.webp"
-           ,
-           "WhatsApp-Image-2022-01-23-at-19.16.00-2.webp"
-           ,
-           "WhatsApp-Image-2022-01-23-at-19.16.00.webp"
-           ,
-           "WhatsApp-Image-2022-01-23-at-19.16.01-1.webp"
-           ,
-           "WhatsApp-Image-2022-01-23-at-19.16.01-2.webp"
-           ,
-           "WhatsApp-Image-2022-01-23-at-19.16.01.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "rekonstrukce-bytoveho-jadra-lokalni-opravy-natery-a-vymalba-celeho-bytu-tyn-nad-vltavou",
-      "slozka": "rekonstrukce-bytoveho-jadra-lokalni-opravy-natery-a-vymalba-celeho-bytu-tyn-nad-vltavou",
-      "v_realizaci": false,
-      "fotky": [
-           "02be4145-1336-41ab-8281-d6c985f71eeb.webp"
-           ,
-           "0845e261-3ab2-4246-93af-bfb789709029.webp"
-           ,
-           "08906a11-11c9-4fc6-9a74-1982f14c8723.webp"
-           ,
-           "0b230aa7-c2d1-43f3-a6f4-85b241491323.webp"
-           ,
-           "181fe706-ad79-4cd2-b7b3-cb473ccf20ab.webp"
-           ,
-           "197d136e-175a-47c3-b6a4-cf1eaaa01283.webp"
-           ,
-           "1b42d3a2-be83-4bbb-8e0f-5f50595b74a0.webp"
-           ,
-           "1c492a73-8f90-406d-815a-9905fdbba129.webp"
-           ,
-           "2380c60f-3c2a-49ef-b2f1-567dfec479be.webp"
-           ,
-           "289bf84b-a43e-4d9e-aa1a-9c68e1994848.webp"
-           ,
-           "397fb86f-0dd3-4e41-84ee-59c31e3ad204.webp"
-           ,
-           "48e19df1-852d-4991-b987-1df2ecaffa18.webp"
-           ,
-           "4ac3e1b2-6d8e-4668-8d89-28aa65197a87.webp"
-           ,
-           "4c8a37ef-96a6-4582-a3e3-5278ae71e36a.webp"
-           ,
-           "58908f1b-197a-42cd-85b1-d44cd5001180.webp"
-           ,
-           "5b682bff-1ccb-4972-9c4c-ea20ecd45d0c.webp"
-           ,
-           "5f0cd62d-9268-44ef-a387-b11e48d9ef23.webp"
-           ,
-           "6465118a-49db-45f6-a36c-581a339a5a23.webp"
-           ,
-           "843428ba-04be-44ec-8b00-2597fb243738.webp"
-           ,
-           "885dfa9b-ed0c-495a-8d6f-ac7a21a59fa7.webp"
-           ,
-           "88732994-4b0e-4715-87e9-a20017614f47.webp"
-           ,
-           "9a0ac162-4976-4d8f-8127-991dc89d3855.webp"
-           ,
-           "9e72bf6f-6612-4b08-ae90-49ca9c72294d.webp"
-           ,
-           "a33d283d-332e-4de4-bf21-af183b8ed19d.webp"
-           ,
-           "a4b67070-fbb4-46ac-b145-27f72a7a7882.webp"
-           ,
-           "a7896be7-832f-42c4-8c55-83c1b6212163.webp"
-           ,
-           "aa41e0f0-084e-42d3-a75f-0b58cb21dfcf.webp"
-           ,
-           "bc57f731-ccd5-48ba-b411-1f77f8fc0b2e.webp"
-           ,
-           "bf12c918-0cc9-4f34-ac13-3d9e7e4712ad.webp"
-           ,
-           "c9b890fd-51a6-4bcf-adb8-1026850452e1.webp"
-           ,
-           "cd585a9a-b541-4d41-a6d4-6c8ddf0cae81.webp"
-           ,
-           "cf459cb5-705f-43d4-b25d-46325d0e672c.webp"
-           ,
-           "cfbf54c8-fe93-47cc-ac98-f0203278ddf8.webp"
-           ,
-           "d0595d04-3c07-49a6-a482-716dc3316eb3.webp"
-           ,
-           "d39f4466-adbd-42cf-8be5-835c09ee67ad.webp"
-           ,
-           "e6e8569d-a7e5-4179-9a74-819cb0af1477.webp"
-           ,
-           "ee8baab5-93ca-42cd-a697-70db262e86dc.webp"
-           ,
-           "f59af810-8b50-4984-91c4-59b742b26866.webp"
-           ,
-           "fa8af088-cc34-4816-91be-b266ae538b32.webp"
-           ,
-           "fcc5ee1e-3a94-465c-9c10-cbd31d01678b.webp"
-           ,
-           "fd97a543-4839-407e-b673-114570a6975b.webp"
-           ,
-           "WhatsApp-Image-2021-05-24-at-21.59.40.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "rekonstrukce-fasady-a-vnitrnich-prostoru-realizace-cervenec",
-      "slozka": "rekonstrukce-fasady-a-vnitrnich-prostoru-realizace-cervenec",
-      "v_realizaci": false,
-      "fotky": [
-           "a3af4a68-48cd-42c8-9208-f57e2ae27362.webp"
-           ,
-           "b11b6ef6-652d-4ed7-bd25-277a69732ac3.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "rekonstrukce-koupelny-a-podlahove-krytiny-nove-rozvody-vodaodpadtopeni-tyn-nad-vltavou",
-      "slozka": "rekonstrukce-koupelny-a-podlahove-krytiny-nove-rozvody-vodaodpadtopeni-tyn-nad-vltavou",
-      "v_realizaci": false,
-      "fotky": [
-           "0F9D93F7-2587-4525-A188-DCD1E8860A72.webp"
-           ,
-           "1489CAF5-7073-4861-9B1F-49C550C3B4DC.webp"
-           ,
-           "16730BBA-BD2D-47F6-888D-EF22ACB7BE1D.webp"
-           ,
-           "27FEFAD8-D758-4AFF-9DC3-D9999EFB0930.webp"
-           ,
-           "377EF96A-59EE-4C1B-9321-D764B3273EA1.webp"
-           ,
-           "393BBBE7-CB45-4748-A312-0B978F916685.webp"
-           ,
-           "3B1F2E28-A648-4384-B41C-FDB7CCF48DF1.webp"
-           ,
-           "3C6C12B8-414D-4E00-821E-58BEED292167.webp"
-           ,
-           "44C24157-00FB-438B-83BF-B5EAD9BC47FB.webp"
-           ,
-           "4D54E8F7-A0B8-4897-8C3A-C41AC82095F9.webp"
-           ,
-           "52A3F08B-515C-462D-9E45-9294F299EADE.webp"
-           ,
-           "695A67FC-A04C-4675-945A-6AA24F545381.webp"
-           ,
-           "6F0E8E32-4D6E-40FE-BD19-1CC4001DB739.webp"
-           ,
-           "81E0559F-94D9-4B20-82C3-500BFF11425F.webp"
-           ,
-           "A6759CD1-649E-4FED-9671-BAD8C963887D.webp"
-           ,
-           "A8766430-5A74-4998-B62F-AC6B69C52D78.webp"
-           ,
-           "BA42BF90-BD0F-4752-B199-9735BA6775FA.webp"
-           ,
-           "BC43BD69-A6F2-4D54-8642-73C45B9154C0.webp"
-           ,
-           "BC7E119A-2EDD-42E9-B59E-BD9CED425919.webp"
-           ,
-           "CA1BF3E2-7D06-4D1B-AB09-9D579E630E21.webp"
-           ,
-           "CC1D3ED5-5DB9-4346-BA19-C338782A29A5.webp"
-           ,
-           "D4ED2468-D747-4473-9C32-2AB504A1A9BD.webp"
-           ,
-           "E64E649E-175C-49EE-A752-3CB715C552E7.webp"
-           ,
-           "F24B3974-5E3F-4D1B-88C7-ED5D95C9328D.webp"
-           ,
-           "F3580230-CC87-4C12-ADF0-D76879F48B3E.webp"
-           ,
-           "IMG_8543.webp"
-           ,
-           "IMG_8544.webp"
-           ,
-           "IMG_8545.webp"
-           ,
-           "IMG_8548.webp"
-           ,
-           "IMG_8549.webp"
-           ,
-           "IMG_8550.webp"
-           ,
-           "IMG_8551.webp"
-           ,
-           "IMG_8552.webp"
-           ,
-           "IMG_8553.webp"
-           ,
-           "IMG_9184.webp"
-           ,
-           "IMG_9185.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "rekonstrukce-koupelny-a-wc-pro-mesto-veseli-nad-luznici",
-      "slozka": "rekonstrukce-koupelny-a-wc-pro-mesto-veseli-nad-luznici",
-      "v_realizaci": false,
-      "fotky": [
-           "IMG_3692.webp"
-           ,
-           "IMG_3693.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "rekonstrukce-koupelny-dolni-bukovsko",
-      "slozka": "rekonstrukce-koupelny-dolni-bukovsko",
-      "v_realizaci": false,
-      "fotky": [
-           "IMG-20180213-WA0000.webp"
-           ,
-           "IMG-20180213-WA0001.webp"
-           ,
-           "IMG-20180213-WA0002.webp"
-           ,
-           "IMG-20180213-WA0003.webp"
-           ,
-           "IMG-20180213-WA0004.webp"
-           ,
-           "IMG-20180213-WA0005.webp"
-           ,
-           "IMG-20180213-WA0006.webp"
-           ,
-           "IMG-20180213-WA0007.webp"
-           ,
-           "IMG-20180213-WA0008.webp"
-           ,
-           "IMG-20180213-WA0009.webp"
-           ,
-           "IMG-20180213-WA0010.webp"
-           ,
-           "IMG-20180213-WA0011.webp"
-           ,
-           "IMG-20180213-WA0012.webp"
-           ,
-           "IMG-20180213-WA0013.webp"
-           ,
-           "IMG-20180213-WA0014.webp"
-           ,
-           "IMG-20180213-WA0015.webp"
-           ,
-           "IMG-20180213-WA0016.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "rekonstrukce-koupelny-veseli-nad-luznici",
-      "slozka": "rekonstrukce-koupelny-veseli-nad-luznici",
-      "v_realizaci": false,
-      "fotky": [
-           "00c1c27d-5a63-45c8-9487-3e16f02992e1.webp"
-           ,
-           "16eae86d-0c5c-46ac-ae3d-e5f3f24910c6.webp"
-           ,
-           "1c0817d2-accf-4983-961e-50efab718b94.webp"
-           ,
-           "2548ce97-7fce-4e7c-a156-a2d79816abd3.webp"
-           ,
-           "6d3478a3-7757-430c-bf9d-79fc2ea8ccc6.webp"
-           ,
-           "855e2b83-e153-4c75-b380-15b810e6f6b3.webp"
-           ,
-           "99a89166-f2e7-46ed-81a5-35d3381716de.webp"
-           ,
-           "a73e5825-b3e1-4874-94f0-fb551947be62.webp"
-           ,
-           "b08ab24b-7062-4bf5-901b-37a18886e674.webp"
-           ,
-           "b9011e9a-00b7-4f6a-acdd-f318050cca89.webp"
-           ,
-           "d4c90bd2-e0c9-4111-a42c-13690088c23e.webp"
-           ,
-           "de75de99-bf11-4c58-b7cb-30af7e28206e.webp"
-           ,
-           "ebd98043-8550-40b0-af4c-aade86247085.webp"
-           ,
-           "faf4a91c-3227-4a3b-9bac-398ccc38ad0c.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "rekonstrukce-kuchyne-vystavba-verandy-mazice",
-      "slozka": "rekonstrukce-kuchyne-vystavba-verandy-mazice",
+      "nazev": "Rekonstrukce a ostatní práce - Mažice",
+      "slozka": "Rekonstrukce a ostatní práce - Mažice",
       "v_realizaci": false,
       "fotky": [
            "043c5051-9c16-4399-95d8-1fade2a8501f.webp"
@@ -4990,29 +3952,531 @@
     }
         ,
     {
-      "nazev": "rekonstrukce-podlahove-krytiny-spojovacich-chodeb-3x-podlazi",
-      "slozka": "rekonstrukce-podlahove-krytiny-spojovacich-chodeb-3x-podlazi",
+      "nazev": "Rekonstrukce bytového jádra a ostatní práce - Týn nad Vltavou",
+      "slozka": "Rekonstrukce bytového jádra a ostatní práce - Týn nad Vltavou",
       "v_realizaci": false,
       "fotky": [
-           "11e8147c-807c-4864-bc00-b4e1ebb6a66a.webp"
+           "02be4145-1336-41ab-8281-d6c985f71eeb.webp"
            ,
-           "21a4ae65-8311-4613-8eb8-aa3ef4b88ce0.webp"
+           "0845e261-3ab2-4246-93af-bfb789709029.webp"
            ,
-           "2edc46f7-03f4-41d7-8bd5-561d4aa26fe7.webp"
+           "08906a11-11c9-4fc6-9a74-1982f14c8723.webp"
            ,
-           "a1927764-b8ca-4398-bd5f-50c140024f62.webp"
+           "0b230aa7-c2d1-43f3-a6f4-85b241491323.webp"
            ,
-           "c5618bc3-41f1-443f-af9c-c230749ede0b.webp"
+           "181fe706-ad79-4cd2-b7b3-cb473ccf20ab.webp"
            ,
-           "de439937-491a-4403-85cc-740e9c050f9f.webp"
+           "197d136e-175a-47c3-b6a4-cf1eaaa01283.webp"
            ,
-           "ec3ca142-bd28-43c0-9443-35743817096e.webp"
+           "1b42d3a2-be83-4bbb-8e0f-5f50595b74a0.webp"
+           ,
+           "1c492a73-8f90-406d-815a-9905fdbba129.webp"
+           ,
+           "2380c60f-3c2a-49ef-b2f1-567dfec479be.webp"
+           ,
+           "289bf84b-a43e-4d9e-aa1a-9c68e1994848.webp"
+           ,
+           "48e19df1-852d-4991-b987-1df2ecaffa18.webp"
+           ,
+           "4ac3e1b2-6d8e-4668-8d89-28aa65197a87.webp"
+           ,
+           "4c8a37ef-96a6-4582-a3e3-5278ae71e36a.webp"
+           ,
+           "58908f1b-197a-42cd-85b1-d44cd5001180.webp"
+           ,
+           "5b682bff-1ccb-4972-9c4c-ea20ecd45d0c.webp"
+           ,
+           "5f0cd62d-9268-44ef-a387-b11e48d9ef23.webp"
+           ,
+           "6465118a-49db-45f6-a36c-581a339a5a23.webp"
+           ,
+           "843428ba-04be-44ec-8b00-2597fb243738.webp"
+           ,
+           "885dfa9b-ed0c-495a-8d6f-ac7a21a59fa7.webp"
+           ,
+           "88732994-4b0e-4715-87e9-a20017614f47.webp"
+           ,
+           "9a0ac162-4976-4d8f-8127-991dc89d3855.webp"
+           ,
+           "9e72bf6f-6612-4b08-ae90-49ca9c72294d.webp"
+           ,
+           "a33d283d-332e-4de4-bf21-af183b8ed19d.webp"
+           ,
+           "a4b67070-fbb4-46ac-b145-27f72a7a7882.webp"
+           ,
+           "a7896be7-832f-42c4-8c55-83c1b6212163.webp"
+           ,
+           "aa41e0f0-084e-42d3-a75f-0b58cb21dfcf.webp"
+           ,
+           "bc57f731-ccd5-48ba-b411-1f77f8fc0b2e.webp"
+           ,
+           "bf12c918-0cc9-4f34-ac13-3d9e7e4712ad.webp"
+           ,
+           "c9b890fd-51a6-4bcf-adb8-1026850452e1.webp"
+           ,
+           "cd585a9a-b541-4d41-a6d4-6c8ddf0cae81.webp"
+           ,
+           "cf459cb5-705f-43d4-b25d-46325d0e672c.webp"
+           ,
+           "cfbf54c8-fe93-47cc-ac98-f0203278ddf8.webp"
+           ,
+           "d0595d04-3c07-49a6-a482-716dc3316eb3.webp"
+           ,
+           "d39f4466-adbd-42cf-8be5-835c09ee67ad.webp"
+           ,
+           "e6e8569d-a7e5-4179-9a74-819cb0af1477.webp"
+           ,
+           "ee8baab5-93ca-42cd-a697-70db262e86dc.webp"
+           ,
+           "f59af810-8b50-4984-91c4-59b742b26866.webp"
+           ,
+           "fa8af088-cc34-4816-91be-b266ae538b32.webp"
+           ,
+           "fcc5ee1e-3a94-465c-9c10-cbd31d01678b.webp"
+           ,
+           "fd97a543-4839-407e-b673-114570a6975b.webp"
+           ,
+           "WhatsApp-Image-2021-05-24-at-21.59.40.webp"
       ]
     }
         ,
     {
-      "nazev": "rekonstrukce-wc-a-koupelny-byt-pisek",
-      "slozka": "rekonstrukce-wc-a-koupelny-byt-pisek",
+      "nazev": "Rekonstrukce bytového jádra a ostatní práce - Veselí nad Lužnicí",
+      "slozka": "Rekonstrukce bytového jádra a ostatní práce - Veselí nad Lužnicí",
+      "v_realizaci": false,
+      "fotky": [
+           "024a2406-3699-48d3-a2c8-afd32f03c8c7.webp"
+           ,
+           "1d5e7761-fe80-4bd7-bf15-2cf96ca4914d.webp"
+           ,
+           "2441050e-a6b3-4565-ae78-48ffd5ba74c8.webp"
+           ,
+           "374fe71e-aaea-4504-8a42-195dd9c7b209.webp"
+           ,
+           "38e2ce14-b629-41bb-94ec-392e0107e798.webp"
+           ,
+           "3aa39437-8be8-4fb1-8589-4506ee2a6965.webp"
+           ,
+           "4c0368a6-b625-4695-b79a-560a3c6cb7da.webp"
+           ,
+           "59cb0662-04e8-4417-9bc0-d468646cd4b5.webp"
+           ,
+           "60cbc088-208c-4145-8579-4b5e1c0640da.webp"
+           ,
+           "70a99231-5227-4cf8-a31f-adde3b94f4df.webp"
+           ,
+           "78e1e00d-26c4-4962-82a5-2702d3c0ca54.webp"
+           ,
+           "797cf2f1-8aa0-4908-8e04-7e390fd08379.webp"
+           ,
+           "7af42b53-dc9c-4d7f-9738-68e758d9af5b.webp"
+           ,
+           "7d4e6b99-7328-48bc-b7ea-b7046217e2e9.webp"
+           ,
+           "8096b789-b9e7-43d8-a7de-c611e6d23fa0.webp"
+           ,
+           "83888076-0e72-4540-9288-ebb61edff065.webp"
+           ,
+           "8cc196f7-14b9-4a53-b2bb-e7fcc71c75a9.webp"
+           ,
+           "8d2830ea-d4f9-4ced-9f15-41a81aa634a8.webp"
+           ,
+           "a944d480-1d71-4b28-b58b-09d3bd9689ea.webp"
+           ,
+           "b31ded83-a9c6-4312-b921-96720d2aa0de.webp"
+           ,
+           "b8a1975c-67e6-4a92-82c0-7961df5901a2.webp"
+           ,
+           "bd5dc213-62b4-4d33-b38f-d8f5dd9a168a.webp"
+           ,
+           "c206e08c-bdd8-4bd3-b720-294a0eb3d11f.webp"
+           ,
+           "e08dd74e-5956-449a-a51b-81a1dcf4240b.webp"
+           ,
+           "e486478e-53f8-44c1-97f6-cfebbda1b932.webp"
+           ,
+           "e4ab2e95-cd64-4268-8e71-2d9b421d50e3.webp"
+           ,
+           "ed354958-4868-4a5e-9de2-d3c993cfe7b8.webp"
+           ,
+           "fc1982ec-5fa4-44f4-8a93-e4a9eb9d3d32.webp"
+           ,
+           "fcea0f0c-5244-4354-903e-a206e7b9c396.webp"
+           ,
+           "uvodka.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Rekonstrukce bytového jádra a ostatní práce - České Budějovice",
+      "slozka": "Rekonstrukce bytového jádra a ostatní práce - České Budějovice",
+      "v_realizaci": false,
+      "fotky": [
+           "0645febd-f94a-4973-9bb8-c37e14fdc82e.webp"
+           ,
+           "1291c5e4-3152-4e1f-b7bf-5f12203494b1.webp"
+           ,
+           "161bc7a9-8b9e-4fa5-b016-d997c6f6443c.webp"
+           ,
+           "2838021d-b13e-47b0-8cc6-81a84ec4f338.webp"
+           ,
+           "2af579d9-26d3-46e2-811b-985666a7c345.webp"
+           ,
+           "32901318-43d4-455c-a003-fc03f4f51a5b.webp"
+           ,
+           "3d259340-8be5-4f18-947a-a692ba0151b0.webp"
+           ,
+           "3eba0783-c2eb-4798-97a8-3bf8d65c6d36.webp"
+           ,
+           "415d80fb-d5a0-4de4-a141-538db05cd650.webp"
+           ,
+           "4607f523-227f-43e7-8857-0e9e9f67c84e.webp"
+           ,
+           "4973d60c-e7e5-49cc-8d12-ce358f4c79be.webp"
+           ,
+           "4c7cfdc0-f1f8-4bdc-8422-f4283bdcb31b.webp"
+           ,
+           "53ec168e-504a-493a-ac91-56a3e41a4f85.webp"
+           ,
+           "5b6ccc02-5e2d-40a6-8816-c80f82b3cd59.webp"
+           ,
+           "79ddda86-fa50-4cee-8467-1ac992771707.webp"
+           ,
+           "7ab52036-e7d5-427d-9e49-2b04462e892a.webp"
+           ,
+           "86a40d2a-eda7-41b3-9a35-30e09dffe417.webp"
+           ,
+           "87061edd-8168-4acf-8394-b69a10982824.webp"
+           ,
+           "8f933a62-e985-4342-bcb5-946dd31a343e.webp"
+           ,
+           "91ada8b6-6ca0-4f8a-ad78-865148bbad5f.webp"
+           ,
+           "92dd87bc-76fc-42f4-b963-eafd5148c456.webp"
+           ,
+           "953a4d5e-4215-4ae1-860e-ca4698f28da9.webp"
+           ,
+           "9676de5a-66c0-4cd9-93cb-4d0fa0341b81.webp"
+           ,
+           "97cc3e59-bb61-4de8-8f33-b1ec0e7284d2.webp"
+           ,
+           "98dcd253-8c98-4edc-aea6-4440d18bb915.webp"
+           ,
+           "9b7cc676-2ba2-4017-9b36-c2908fe5b0dc.webp"
+           ,
+           "9f896e89-1bce-43a7-b823-70702055714a.webp"
+           ,
+           "acfec37a-9bee-4b96-a786-c4bf71e7e819.webp"
+           ,
+           "addd507a-8395-4db0-b440-3ab312313c0c.webp"
+           ,
+           "c2814896-7432-4cd2-b06a-4804f2573fab.webp"
+           ,
+           "ca17999a-6752-4c37-a566-31bf082d0e77.webp"
+           ,
+           "ca755755-d233-495a-bbf0-08a952312b34.webp"
+           ,
+           "d805cc4a-3036-4c11-b3b5-bb4cbc247483.webp"
+           ,
+           "d8981d02-3cfd-4f63-a870-74ad3e02a6ed.webp"
+           ,
+           "de9becb9-1864-47a1-9018-a586d7f1577f.webp"
+           ,
+           "e27cf2a8-102e-4571-b4ac-0963448ed62c.webp"
+           ,
+           "e3abdf51-5ac4-4428-aed0-a53c6c9a0c11.webp"
+           ,
+           "f98180b8-0f21-4473-a67f-daacf384158d.webp"
+           ,
+           "f9a096c7-a0ed-4aea-bad7-65788805a839.webp"
+           ,
+           "fd11436c-ac07-47f6-86a5-24556cff49ff.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Rekonstrukce bytu - České Budějovice",
+      "slozka": "Rekonstrukce bytu - České Budějovice",
+      "v_realizaci": false,
+      "fotky": [
+           "20170917_085048.webp"
+           ,
+           "20170917_085054.webp"
+           ,
+           "20170917_085105.webp"
+           ,
+           "20170917_085217.webp"
+           ,
+           "20170917_095407.webp"
+           ,
+           "20170917_125524.webp"
+           ,
+           "20170917_125534.webp"
+           ,
+           "20171001_154208.webp"
+           ,
+           "20171001_154215.webp"
+           ,
+           "20171001_154225.webp"
+           ,
+           "20171005_085550.webp"
+           ,
+           "20171009_135525.webp"
+           ,
+           "20171009_135539.webp"
+           ,
+           "20171010_113133.webp"
+           ,
+           "20171010_143154.webp"
+           ,
+           "20171010_143231.webp"
+           ,
+           "20171010_143239.webp"
+           ,
+           "20171010_143249.webp"
+           ,
+           "20171010_143306.webp"
+           ,
+           "20171010_143440.webp"
+           ,
+           "20171010_143511.webp"
+           ,
+           "20171015_111532.webp"
+           ,
+           "20171015_112052.webp"
+           ,
+           "20171015_153044.webp"
+           ,
+           "20171015_153051.webp"
+           ,
+           "20171015_153136.webp"
+           ,
+           "20171018_154814.webp"
+           ,
+           "20171018_154820.webp"
+           ,
+           "20171018_154834.webp"
+           ,
+           "20171018_154848.webp"
+           ,
+           "20171019_204540.webp"
+           ,
+           "20171019_204601.webp"
+           ,
+           "20171019_204621.webp"
+           ,
+           "20171019_204646.webp"
+           ,
+           "20171019_210132.webp"
+           ,
+           "20171019_210355.webp"
+           ,
+           "IMG-20170926-WA0002.webp"
+           ,
+           "IMG-20171001-WA0005.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Rekonstrukce domu - Mažice",
+      "slozka": "Rekonstrukce domu - Mažice",
+      "v_realizaci": false,
+      "fotky": [
+           "20151004_140838.webp"
+           ,
+           "20151011_111623.webp"
+           ,
+           "20151029_102248.webp"
+           ,
+           "20151029_102306.webp"
+           ,
+           "20151029_102316.webp"
+           ,
+           "20151029_102338.webp"
+           ,
+           "20151029_102352.webp"
+           ,
+           "20151029_102424.webp"
+           ,
+           "20160304_214704.webp"
+           ,
+           "20160304_214719.webp"
+           ,
+           "20160501_215010.webp"
+           ,
+           "20160501_215020.webp"
+           ,
+           "Kotelna-po-rekonstrukci-4.webp"
+           ,
+           "Kotelna-pred-rekonstrukci-1.webp"
+           ,
+           "Kotelna-v-rekonstrukci2.webp"
+           ,
+           "koupelna-po-rekonstrukci-2.webp"
+           ,
+           "koupelna-po-rekonstrukci.webp"
+           ,
+           "Koupelna-pred-rekonstrukci.webp"
+           ,
+           "Koupelna-v-rekonstrukci.webp"
+           ,
+           "Koupelna.webp"
+           ,
+           "Obyv.pokojkuchyn.webp"
+           ,
+           "Obyvaci-pokojKuchyn-v-rekonstrukci.webp"
+           ,
+           "Obyvyci-p.kuchyn.webp"
+           ,
+           "Obyyv.kuchyn-v-rekonstrukci.webp"
+           ,
+           "Veranda-po-rekonstrukci.webp"
+           ,
+           "Veranda-pred-rekonstrukci.webp"
+           ,
+           "Veranda-v-rekonstrukci.webp"
+           ,
+           "Vyzdeni-plotu-2.webp"
+           ,
+           "Vyzdeni-plotu.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Rekonstrukce domu - Veselí nad Lužnicí",
+      "slozka": "Rekonstrukce domu - Veselí nad Lužnicí",
+      "v_realizaci": false,
+      "fotky": [
+           "123123121.webp"
+           ,
+           "15315.webp"
+           ,
+           "153513.webp"
+           ,
+           "1704dd47-d349-490e-953b-d5468dc2ab50.webp"
+           ,
+           "192b99ca-08ed-4134-8f97-cad8c4134901.webp"
+           ,
+           "225868c0-ad5f-4da8-adce-68b422e6680c.webp"
+           ,
+           "28f4eef8-d03e-44a9-a50e-1d53a75bc9a0.webp"
+           ,
+           "31235447.webp"
+           ,
+           "32345.webp"
+           ,
+           "338cf90e-2c31-4412-b9a9-0cb62676f530.webp"
+           ,
+           "345312.webp"
+           ,
+           "37dcb42f-8830-4ead-8b87-6660415fb7ad.webp"
+           ,
+           "387345.webp"
+           ,
+           "3b47150d-e81c-46e4-be1d-36a37e5000a5.webp"
+           ,
+           "453453.webp"
+           ,
+           "45345354.webp"
+           ,
+           "45546.webp"
+           ,
+           "45631.webp"
+           ,
+           "45645.webp"
+           ,
+           "456456.webp"
+           ,
+           "4644.webp"
+           ,
+           "53432.webp"
+           ,
+           "53453455.webp"
+           ,
+           "54343.webp"
+           ,
+           "543453.webp"
+           ,
+           "54345354.webp"
+           ,
+           "5544.webp"
+           ,
+           "64564.webp"
+           ,
+           "65463b5e-8f67-4ee1-9067-bba847aa63d3.webp"
+           ,
+           "720562d0-fae0-448c-a6a4-8b4e0dd89afc.webp"
+           ,
+           "767.webp"
+           ,
+           "7867.webp"
+           ,
+           "78673453.webp"
+           ,
+           "79b2c337-6133-4c2a-88ac-0fe09ec164cf.webp"
+           ,
+           "7d5f6bcb-35b4-4a6e-b65c-766b7cf32e98.webp"
+           ,
+           "864d790d-28c4-4e98-a3d7-acc986b4eb76.webp"
+           ,
+           "966ff423-a61e-4c24-915b-1b9b0a85802b.webp"
+           ,
+           "a09ba6a6-f37e-4ad1-a78d-bbfe89a65147.webp"
+           ,
+           "bb5b7959-908e-4063-989d-c5c6229658db.webp"
+           ,
+           "eabf719b-fa3e-4ba5-abfc-e058428c2a3f.webp"
+           ,
+           "ead9a515-c077-4c50-9864-80f750a2791a.webp"
+           ,
+           "index.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Rekonstrukce koupelny - Dolní Bukovsko",
+      "slozka": "Rekonstrukce koupelny - Dolní Bukovsko",
+      "v_realizaci": false,
+      "fotky": [
+           "IMG-20180213-WA0000.webp"
+           ,
+           "IMG-20180213-WA0001.webp"
+           ,
+           "IMG-20180213-WA0002.webp"
+           ,
+           "IMG-20180213-WA0003.webp"
+           ,
+           "IMG-20180213-WA0004.webp"
+           ,
+           "IMG-20180213-WA0005.webp"
+           ,
+           "IMG-20180213-WA0006.webp"
+           ,
+           "IMG-20180213-WA0007.webp"
+           ,
+           "IMG-20180213-WA0008.webp"
+           ,
+           "IMG-20180213-WA0009.webp"
+           ,
+           "IMG-20180213-WA0010.webp"
+           ,
+           "IMG-20180213-WA0011.webp"
+           ,
+           "IMG-20180213-WA0012.webp"
+           ,
+           "IMG-20180213-WA0013.webp"
+           ,
+           "IMG-20180213-WA0014.webp"
+           ,
+           "IMG-20180213-WA0015.webp"
+           ,
+           "IMG-20180213-WA0016.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Rekonstrukce koupelny - Písek",
+      "slozka": "Rekonstrukce koupelny - Písek",
       "v_realizaci": false,
       "fotky": [
            "20171205_111818.webp"
@@ -5066,8 +4530,43 @@
     }
         ,
     {
-      "nazev": "rekonstrukce-zvetseni-koupelny-a-dalsi-prace-v-rodinnem-dome-sviny",
-      "slozka": "rekonstrukce-zvetseni-koupelny-a-dalsi-prace-v-rodinnem-dome-sviny",
+      "nazev": "Rekonstrukce koupelny - Veselí nad Lužnicí",
+      "slozka": "Rekonstrukce koupelny - Veselí nad Lužnicí",
+      "v_realizaci": false,
+      "fotky": [
+           "00c1c27d-5a63-45c8-9487-3e16f02992e1.webp"
+           ,
+           "16eae86d-0c5c-46ac-ae3d-e5f3f24910c6.webp"
+           ,
+           "1c0817d2-accf-4983-961e-50efab718b94.webp"
+           ,
+           "2548ce97-7fce-4e7c-a156-a2d79816abd3.webp"
+           ,
+           "6d3478a3-7757-430c-bf9d-79fc2ea8ccc6.webp"
+           ,
+           "855e2b83-e153-4c75-b380-15b810e6f6b3.webp"
+           ,
+           "99a89166-f2e7-46ed-81a5-35d3381716de.webp"
+           ,
+           "a73e5825-b3e1-4874-94f0-fb551947be62.webp"
+           ,
+           "b08ab24b-7062-4bf5-901b-37a18886e674.webp"
+           ,
+           "b9011e9a-00b7-4f6a-acdd-f318050cca89.webp"
+           ,
+           "d4c90bd2-e0c9-4111-a42c-13690088c23e.webp"
+           ,
+           "de75de99-bf11-4c58-b7cb-30af7e28206e.webp"
+           ,
+           "ebd98043-8550-40b0-af4c-aade86247085.webp"
+           ,
+           "faf4a91c-3227-4a3b-9bac-398ccc38ad0c.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Rekonstrukce koupelny a ostatní práce - Sviny",
+      "slozka": "Rekonstrukce koupelny a ostatní práce - Sviny",
       "v_realizaci": false,
       "fotky": [
            "0239c4ca-0ff6-4a23-b160-8355d2da097f.webp"
@@ -5129,8 +4628,87 @@
     }
         ,
     {
-      "nazev": "renovace-fasady-dolni-bukovsko",
-      "slozka": "renovace-fasady-dolni-bukovsko",
+      "nazev": "Rekonstrukce koupelny a ostatní práce - Týn nad Vltavou",
+      "slozka": "Rekonstrukce koupelny a ostatní práce - Týn nad Vltavou",
+      "v_realizaci": false,
+      "fotky": [
+           "0F9D93F7-2587-4525-A188-DCD1E8860A72.webp"
+           ,
+           "1489CAF5-7073-4861-9B1F-49C550C3B4DC.webp"
+           ,
+           "16730BBA-BD2D-47F6-888D-EF22ACB7BE1D.webp"
+           ,
+           "27FEFAD8-D758-4AFF-9DC3-D9999EFB0930.webp"
+           ,
+           "377EF96A-59EE-4C1B-9321-D764B3273EA1.webp"
+           ,
+           "393BBBE7-CB45-4748-A312-0B978F916685.webp"
+           ,
+           "3B1F2E28-A648-4384-B41C-FDB7CCF48DF1.webp"
+           ,
+           "3C6C12B8-414D-4E00-821E-58BEED292167.webp"
+           ,
+           "44C24157-00FB-438B-83BF-B5EAD9BC47FB.webp"
+           ,
+           "4D54E8F7-A0B8-4897-8C3A-C41AC82095F9.webp"
+           ,
+           "52A3F08B-515C-462D-9E45-9294F299EADE.webp"
+           ,
+           "695A67FC-A04C-4675-945A-6AA24F545381.webp"
+           ,
+           "6F0E8E32-4D6E-40FE-BD19-1CC4001DB739.webp"
+           ,
+           "81E0559F-94D9-4B20-82C3-500BFF11425F.webp"
+           ,
+           "A6759CD1-649E-4FED-9671-BAD8C963887D.webp"
+           ,
+           "A8766430-5A74-4998-B62F-AC6B69C52D78.webp"
+           ,
+           "BA42BF90-BD0F-4752-B199-9735BA6775FA.webp"
+           ,
+           "BC43BD69-A6F2-4D54-8642-73C45B9154C0.webp"
+           ,
+           "BC7E119A-2EDD-42E9-B59E-BD9CED425919.webp"
+           ,
+           "CA1BF3E2-7D06-4D1B-AB09-9D579E630E21.webp"
+           ,
+           "CC1D3ED5-5DB9-4346-BA19-C338782A29A5.webp"
+           ,
+           "D4ED2468-D747-4473-9C32-2AB504A1A9BD.webp"
+           ,
+           "E64E649E-175C-49EE-A752-3CB715C552E7.webp"
+           ,
+           "F24B3974-5E3F-4D1B-88C7-ED5D95C9328D.webp"
+           ,
+           "F3580230-CC87-4C12-ADF0-D76879F48B3E.webp"
+           ,
+           "IMG_8543.webp"
+           ,
+           "IMG_8544.webp"
+           ,
+           "IMG_8545.webp"
+           ,
+           "IMG_8548.webp"
+           ,
+           "IMG_8549.webp"
+           ,
+           "IMG_8550.webp"
+           ,
+           "IMG_8551.webp"
+           ,
+           "IMG_8552.webp"
+           ,
+           "IMG_8553.webp"
+           ,
+           "IMG_9184.webp"
+           ,
+           "IMG_9185.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Renovace fasády - Dolní Bukovsko",
+      "slozka": "Renovace fasády - Dolní Bukovsko",
       "v_realizaci": false,
       "fotky": [
            "15057ED2-612C-4B0C-B31C-2BF32852767B.webp"
@@ -5154,8 +4732,89 @@
     }
         ,
     {
-      "nazev": "snizeni-energeticke-narocnosti-fasada-puda-sklepni-prostory-veseli-nad-luznici",
-      "slozka": "snizeni-energeticke-narocnosti-fasada-puda-sklepni-prostory-veseli-nad-luznici",
+      "nazev": "Snížení energetické náročnosti - Radošovice",
+      "slozka": "Snížení energetické náročnosti - Radošovice",
+      "v_realizaci": false,
+      "fotky": [
+           "20170406_131442.webp"
+           ,
+           "20170406_131523.webp"
+           ,
+           "20170406_131526.webp"
+           ,
+           "20170619_091356.webp"
+           ,
+           "20170619_091401.webp"
+           ,
+           "20170619_091408.webp"
+           ,
+           "20170619_091419.webp"
+           ,
+           "20170626_143613.webp"
+           ,
+           "20170626_143632.webp"
+           ,
+           "20170627_121110.webp"
+           ,
+           "20170627_164925-1.webp"
+           ,
+           "20170627_164925.webp"
+           ,
+           "20170627_164945.webp"
+           ,
+           "20170629_160748.webp"
+           ,
+           "20170629_160758.webp"
+           ,
+           "20170629_160815.webp"
+           ,
+           "20170629_160825.webp"
+           ,
+           "20170630_171837-1.webp"
+           ,
+           "20170630_171837.webp"
+           ,
+           "20170704_112729.webp"
+           ,
+           "20170705_183811.webp"
+           ,
+           "20170707_132234.webp"
+           ,
+           "20170707_132503.webp"
+           ,
+           "20170707_132812.webp"
+           ,
+           "20170707_132901.webp"
+           ,
+           "20170707_154926.webp"
+           ,
+           "20170707_155006.webp"
+           ,
+           "20170707_160025.webp"
+           ,
+           "20170711_070806.webp"
+           ,
+           "20170711_070907-1.webp"
+           ,
+           "20170711_070907.webp"
+           ,
+           "20170711_071454.webp"
+           ,
+           "20170711_071600.webp"
+           ,
+           "20170711_071706_HDR-1.webp"
+           ,
+           "20170711_071706_HDR.webp"
+           ,
+           "IMG-20170316-WA0001.webp"
+           ,
+           "IMG-20170316-WA0005.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Snížení energetické náročnosti - Veselí nad Lužnicí",
+      "slozka": "Snížení energetické náročnosti - Veselí nad Lužnicí",
       "v_realizaci": false,
       "fotky": [
            "460ed278-7393-4eee-8e71-a1ccab6b14b7.webp"
@@ -5221,182 +4880,8 @@
     }
         ,
     {
-      "nazev": "snizeni-energeticke-narocnosti-zatepleni-pudy-ochranne-natery-drevene-kovove-prvky-penetracni-natery-a-dalsi-zednicke-prace-bechyne",
-      "slozka": "snizeni-energeticke-narocnosti-zatepleni-pudy-ochranne-natery-drevene-kovove-prvky-penetracni-natery-a-dalsi-zednicke-prace-bechyne",
-      "v_realizaci": false,
-      "fotky": [
-           "02559BC2-2228-4A89-8E2F-A5585DC609B8.webp"
-           ,
-           "073D2AA2-BC1E-4D85-80DD-0A330742E2B0.webp"
-           ,
-           "154A6A26-98D4-43F2-AEAB-B602235D4BA4.webp"
-           ,
-           "196AF74B-1EED-49F2-8AD3-BC704156F9C4.webp"
-           ,
-           "2B8456DA-8552-45B9-84ED-FEA6AB0FCBC3.webp"
-           ,
-           "3D2593DA-C196-4207-958F-6FFBFBE6D0BD.webp"
-           ,
-           "3F126EB8-0F5F-46BF-A126-65133B11CED3.webp"
-           ,
-           "3F79B1B7-E219-4E86-8F15-FF71C7E0A98C.webp"
-           ,
-           "4B93364E-1F6B-4A3B-85EF-A27081D85593.webp"
-           ,
-           "4D4FE52E-90A4-4EBC-954D-DBBE6B29E764.webp"
-           ,
-           "4E70F38F-6344-4806-B3FB-4E552036EEF7.webp"
-           ,
-           "5FE84514-5A4E-44C0-B9DD-DF9223D29723.webp"
-           ,
-           "624856F3-53F4-4225-95B8-4203DFFFD29C.webp"
-           ,
-           "65D03D2C-A631-497A-BFA7-25EF876D7ADC.webp"
-           ,
-           "6CE77E89-E8C2-4D68-B44A-D19E36F3B025.webp"
-           ,
-           "82C8ED9D-883B-496A-B054-FCD08D1C2AF2.webp"
-           ,
-           "83B58981-B47B-42E3-96D4-25E6FE3E1EDC.webp"
-           ,
-           "86B993A2-E7D2-4E4F-A27A-597E423FA7A9.webp"
-           ,
-           "86B9ED68-F3C9-459A-AAE0-B0C51A84C0AC.webp"
-           ,
-           "878A923B-638B-4D9B-8376-D46BA26ADF33.webp"
-           ,
-           "881480D1-3CBA-4C90-B7D1-E92639C28590.webp"
-           ,
-           "8FE214B8-D865-480C-9447-F67277832FCD.webp"
-           ,
-           "9BED499D-CBD1-4CB4-8C2E-FB9A96C0D68A.webp"
-           ,
-           "AD8B8A20-51F7-4AD7-B4EF-3DD8449FBC77.webp"
-           ,
-           "B9973560-E2CF-491B-A0F9-AEC31BAD1CAE.webp"
-           ,
-           "BBE39FEF-0C7E-4604-859C-8D9A245C36B5.webp"
-           ,
-           "CB4EB6D2-B2FF-49AA-B74D-ACF5D266647A.webp"
-           ,
-           "D7D68AF0-3BDA-4467-8659-ADBC8F876E42.webp"
-           ,
-           "E0A7440D-73D8-40B6-897E-ABF30F08ADCA.webp"
-           ,
-           "E2BCBF70-FA11-406F-9010-81B98D307B1B.webp"
-           ,
-           "EDE7C0C1-6986-4C23-A8DC-A96D348C32E7.webp"
-           ,
-           "F69BFDD3-917A-4CCF-BD79-752E503C98B3.webp"
-           ,
-           "F99D9527-CAC9-4005-8356-C4C9898DE2DB.webp"
-           ,
-           "FFEEE229-A197-4703-9818-93AB483A21E1.webp"
-           ,
-           "IMG_3500.webp"
-           ,
-           "IMG_3501.webp"
-           ,
-           "IMG_3525.webp"
-           ,
-           "IMG_3526.webp"
-           ,
-           "IMG_3527.webp"
-           ,
-           "IMG_3528.webp"
-           ,
-           "IMG_3529.webp"
-           ,
-           "IMG_3530.webp"
-           ,
-           "IMG_3531.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "ssssssssssssssssssssss",
-      "slozka": "ssssssssssssssssssssss",
-      "v_realizaci": false,
-      "fotky": [
-           "thumbs_IMG_20190613_071213.webp"
-           ,
-           "thumbs_IMG_20190613_071237.webp"
-           ,
-           "thumbs_IMG_20190613_071246.webp"
-           ,
-           "thumbs_IMG_20190613_071255.webp"
-           ,
-           "thumbs_IMG_20190613_071326.webp"
-           ,
-           "thumbs_IMG_20190613_071336.webp"
-           ,
-           "thumbs_IMG_20190613_071343.webp"
-           ,
-           "thumbs_IMG_20190613_071354.webp"
-           ,
-           "thumbs_IMG_20190614_133523.webp"
-           ,
-           "thumbs_IMG_20190614_133530.webp"
-           ,
-           "thumbs_IMG_20190619_093330.webp"
-           ,
-           "thumbs_IMG_20190619_093346.webp"
-           ,
-           "thumbs_IMG_20190620_135803.webp"
-           ,
-           "thumbs_IMG_20190620_135909.webp"
-           ,
-           "thumbs_IMG_20190621_081258.webp"
-           ,
-           "thumbs_IMG_20190621_102421.webp"
-           ,
-           "thumbs_IMG_20190627_101409.webp"
-           ,
-           "thumbs_IMG_20190627_101418.webp"
-           ,
-           "thumbs_IMG_20190627_101436.webp"
-           ,
-           "thumbs_IMG_20190627_124928.webp"
-           ,
-           "thumbs_IMG_20190627_124945.webp"
-           ,
-           "thumbs_IMG_20190701_065712.webp"
-           ,
-           "thumbs_IMG_20190701_065754.webp"
-           ,
-           "thumbs_IMG_20190705_101410.webp"
-           ,
-           "thumbs_IMG_20190705_101451.webp"
-           ,
-           "thumbs_IMG_20190705_101527.webp"
-           ,
-           "thumbs_IMG_20190705_101558.webp"
-           ,
-           "thumbs_IMG_20190705_101609.webp"
-           ,
-           "thumbs_IMG_20190705_101630.webp"
-           ,
-           "thumbs_IMG_20190705_101639.webp"
-           ,
-           "thumbs_IMG_20190705_101647.webp"
-           ,
-           "thumbs_IMG_20190705_101702.webp"
-           ,
-           "thumbs_IMG_20190705_101711.webp"
-           ,
-           "thumbs_IMG_20190705_101722.webp"
-           ,
-           "thumbs_IMG_20190705_101730.webp"
-           ,
-           "thumbs_IMG_20190705_101741.webp"
-           ,
-           "thumbs_IMG_20190705_102041.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "stavebni-prace-pro-dvstav-s-r-o-vesce",
-      "slozka": "stavebni-prace-pro-dvstav-s-r-o-vesce",
+      "nazev": "Stavební práce pro DVstav s.r.o",
+      "slozka": "Stavební práce pro DVstav s.r.o",
       "v_realizaci": false,
       "fotky": [
            "003C2F5E-630D-4DD7-BD0B-E2D25D597172.webp"
@@ -5522,339 +5007,8 @@
     }
         ,
     {
-      "nazev": "strecha-2-etapa-porezany",
-      "slozka": "strecha-2-etapa-porezany",
-      "v_realizaci": false,
-      "fotky": [
-           "4dc6e849-b603-498e-ad97-fb5adc3486f2.webp"
-           ,
-           "5ae07453-2750-4176-98f7-729dcb4e66fa.jpg.webp"
-           ,
-           "5ae07453-2750-4176-98f7-729dcb4e66fa.webp"
-           ,
-           "5fa60a15-d7e1-4a88-848a-29e6f20a1def.webp"
-           ,
-           "5fe6b3fd-1782-495c-a5e0-e054c48cb18b.webp"
-           ,
-           "686f5906-2ace-438c-a32a-92e2e197e8e5.jpg.webp"
-           ,
-           "686f5906-2ace-438c-a32a-92e2e197e8e5.webp"
-           ,
-           "7a2a54be-4c5a-4e35-91de-d774eb2aaeec.webp"
-           ,
-           "861f37d6-78a8-4b4a-b00e-4438719e6f9c.webp"
-           ,
-           "b4c7ad94-de38-4c9f-923c-7a653f7284f0.webp"
-           ,
-           "bd1f8b56-5a50-4881-ad55-baf66fe24045.webp"
-           ,
-           "e99813fb-d4ca-44ae-bd68-12fc047d0ebf.webp"
-           ,
-           "f7650462-9034-4844-b045-654efc295ff5.webp"
-           ,
-           "f9d62546-1c52-4a84-b55d-143fbc4c36d3.webp"
-           ,
-           "WhatsApp-Image-2026-05-04-at-13.32.08-1.webp"
-           ,
-           "WhatsApp-Image-2026-05-04-at-13.32.08-2.webp"
-           ,
-           "WhatsApp-Image-2026-05-04-at-13.32.08-3.webp"
-           ,
-           "WhatsApp-Image-2026-05-04-at-13.32.08.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "strecha-porezany",
-      "slozka": "strecha-porezany",
-      "v_realizaci": false,
-      "fotky": [
-           "06F7A2A8-8899-47D2-A4BD-68E98BEA3881.webp"
-           ,
-           "12B3D331-075D-4F14-890A-55F756A2DE54.webp"
-           ,
-           "212C2D22-910E-40EC-AB6E-6C3B89C34CA4.webp"
-           ,
-           "220D1A78-E582-47B9-A6DB-D07DA644E4C5.webp"
-           ,
-           "33FB7750-0169-4828-ADCE-C892907E89FD.webp"
-           ,
-           "349FB79C-7E49-4BA8-BFC8-EEDF45FCF3A7.webp"
-           ,
-           "3EEDE75D-74BE-4340-841F-C62862C7027C.webp"
-           ,
-           "5534A0B2-B351-4951-9B87-207B7823A844.webp"
-           ,
-           "6909A2FB-A21B-4E90-B1AC-44B1CBB0EC9E.webp"
-           ,
-           "70FF865C-7F65-492B-9C1C-4B739A3A3FC4.webp"
-           ,
-           "777EA07D-B4B5-49B3-A3D1-AE0EFEA3896C.webp"
-           ,
-           "9198D616-4509-4B88-BA26-BE85C1EF154F-scaled.webp"
-           ,
-           "934C7E81-8B59-4FB6-B20D-19E853965725.webp"
-           ,
-           "95FB471F-8054-4E04-AD0B-1E749A7BCE1C.webp"
-           ,
-           "9E55D8DD-65F5-4CFA-8D5C-182B6FE6F385.webp"
-           ,
-           "E963675C-0116-45BA-8E35-7661EC79D6D0.webp"
-           ,
-           "F35EC284-18F4-40D6-A76B-B3686C5F20C6.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "stuky-byt-31-c-budejovice",
-      "slozka": "stuky-byt-31-c-budejovice",
-      "v_realizaci": false,
-      "fotky": [
-           "20170808_155521.webp"
-           ,
-           "20170808_155527.webp"
-           ,
-           "20170808_155536.webp"
-           ,
-           "20170808_155544.webp"
-           ,
-           "20170808_160908.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "stukybytcbudejovice",
-      "slozka": "stukybytcbudejovice",
-      "v_realizaci": false,
-      "fotky": [
-           "20170808_155521.webp"
-           ,
-           "20170808_155527.webp"
-           ,
-           "20170808_155536.webp"
-           ,
-           "20170808_155544.webp"
-           ,
-           "20170808_160908.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "veselichalupa",
-      "slozka": "veselichalupa",
-      "v_realizaci": false,
-      "fotky": [
-           "IMG_20180311_084558.webp"
-           ,
-           "IMG_20180311_084614.webp"
-           ,
-           "IMG_20180330_123043.webp"
-           ,
-           "IMG_20180330_123056.webp"
-           ,
-           "IMG_20180330_123116.webp"
-           ,
-           "IMG_20180409_150031.webp"
-           ,
-           "IMG_20180409_150148.webp"
-           ,
-           "IMG_20180409_150436.webp"
-           ,
-           "IMG_20180409_150652.webp"
-           ,
-           "IMG_20180409_150817.webp"
-           ,
-           "IMG_20180411_134838.webp"
-           ,
-           "IMG_20180411_134914.webp"
-           ,
-           "IMG_20180427_1307412.webp"
-           ,
-           "IMG_20180427_1308132.webp"
-           ,
-           "IMG_20180427_1308372.webp"
-           ,
-           "IMG_20180427_1348332.webp"
-           ,
-           "IMG_20180427_1355042.webp"
-           ,
-           "IMG_20180427_1355242.webp"
-           ,
-           "IMG_20180427_1355342.webp"
-           ,
-           "IMG_20180427_1355452.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "vybudovani-prostoru-pro-zamestnance",
-      "slozka": "vybudovani-prostoru-pro-zamestnance",
-      "v_realizaci": false,
-      "fotky": [
-           "1463cdb9-ae4c-4d0c-a2f7-80c71e9481b1.webp"
-           ,
-           "15f4ad8c-512c-4d74-9ba6-d54e618fa340.webp"
-           ,
-           "2153b03f-f14f-4766-a375-d02d5f439204.webp"
-           ,
-           "296806ae-4791-4a50-82e7-3849891ed29c.webp"
-           ,
-           "395a1ceb-be32-4184-84b0-0a5f7573c923.webp"
-           ,
-           "4b6f08b6-ac1f-4339-a32a-94bc39f9e461.webp"
-           ,
-           "4bbf5018-9f49-4db4-9f16-59ceba47e004.webp"
-           ,
-           "58b1a3d0-dd4b-4a44-bac0-dde11d1e0435.webp"
-           ,
-           "6d73fd87-efff-4426-aaa6-dbb7c08f3627.webp"
-           ,
-           "77817601-61fa-41d4-9cb0-01e71a796f8a.webp"
-           ,
-           "90d36e84-cb68-408a-899f-969b01442fec.webp"
-           ,
-           "91973d73-e011-46d5-a9c3-47a388ed0fbc.webp"
-           ,
-           "9252376c-008e-4206-a8fb-c9fbebf07bbe.webp"
-           ,
-           "9276162f-265d-4d6f-b20c-7424580c95d7.webp"
-           ,
-           "987e7b5b-a0a9-422b-97aa-d9463540b430.webp"
-           ,
-           "99305f0a-acfd-41de-a9df-0740d0b3259b.webp"
-           ,
-           "9d832937-bbf9-4c15-af90-82d8c81c91b3.webp"
-           ,
-           "a00de534-d371-45c7-add1-5ce86d6c6a70.webp"
-           ,
-           "b2a93872-5e65-40fb-a5e3-b38857ac0e79.webp"
-           ,
-           "b556208e-ce21-4e26-b065-5f8954323ecd.webp"
-           ,
-           "c265a26c-c6c1-4b69-9c84-9313bdf0bbd4.webp"
-           ,
-           "c7a6bbc2-152b-43fe-b68d-4b3340d94d7f.webp"
-           ,
-           "c96120a6-a165-43fb-b7c2-aeeee42ecccc.webp"
-           ,
-           "cca4fe03-44a5-47d1-8e75-94de16f6c701.webp"
-           ,
-           "cd85df4a-6292-4722-b1e4-75cee4f3f2db.webp"
-           ,
-           "d5b45664-9039-44c7-ba4d-677c33d70315.webp"
-           ,
-           "e2a7202c-453a-44cd-92cd-dd0450ba72f4.webp"
-           ,
-           "f8d78561-cb11-4e0d-be43-38f9e86293f7.webp"
-           ,
-           "IMG_20191206_154733.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "vymena-stare-izolace-v-pudnim-prostoru-drevene-rosty-2xosb-zaklop",
-      "slozka": "vymena-stare-izolace-v-pudnim-prostoru-drevene-rosty-2xosb-zaklop",
-      "v_realizaci": false,
-      "fotky": [
-           "IMG_3058.webp"
-           ,
-           "IMG_3059.webp"
-           ,
-           "IMG_3416.webp"
-           ,
-           "IMG_3418.webp"
-           ,
-           "IMG_3521.webp"
-           ,
-           "IMG_3562.webp"
-           ,
-           "IMG_3563.webp"
-           ,
-           "IMG_3564.webp"
-           ,
-           "IMG_3565.webp"
-           ,
-           "IMG_3566.webp"
-           ,
-           "IMG_3567.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "vymena-zarubne-a-dveri-apod-protipozarni-opatreni-dolni-bukovsko",
-      "slozka": "vymena-zarubne-a-dveri-apod-protipozarni-opatreni-dolni-bukovsko",
-      "v_realizaci": false,
-      "fotky": [
-           "0A9B19BE-B77A-4EF6-8009-8A986121A13F.webp"
-           ,
-           "0B12EC48-F245-4FCA-A910-F31AD3B5E0DB.webp"
-           ,
-           "181CE986-3EE0-4125-883C-F9CBE47D314C.webp"
-           ,
-           "1862E44C-C899-437A-8AE2-7A220E01F74D.webp"
-           ,
-           "384D84A0-9328-413B-A8A3-A9A10A112D5C.webp"
-           ,
-           "81B9ABDA-F21F-4DB6-96DF-6C5AEF46C1C4.webp"
-           ,
-           "8B008940-7CF8-45D9-BEBC-769C976B06F0.webp"
-           ,
-           "8BA1B6C5-0EE7-4E03-A3FF-B2CF340B9377.webp"
-           ,
-           "9207965A-DC5A-4D49-8609-5D73E44170D3.webp"
-           ,
-           "938ED9E0-B0B2-4D56-B0FC-B02B4E39BFCB.webp"
-           ,
-           "9859AAF4-90E3-41A6-80BB-CB5329488BF5.webp"
-           ,
-           "B2FA05F4-6611-48C3-B4A7-AF0CCA0E0704.webp"
-           ,
-           "E40970AD-84BE-4F29-BCE4-C1466E375A13.webp"
-           ,
-           "F180F39E-DE49-4612-BA29-5D095C38801A.webp"
-           ,
-           "FAFEA4AF-1836-4E29-A1E2-67CEB79CB83B.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "vystavba-aktivni-ustajeni-koni",
-      "slozka": "vystavba-aktivni-ustajeni-koni",
-      "v_realizaci": false,
-      "fotky": [
-           "118a0ab4-95d6-4ca9-8419-9de81090bbd3.webp"
-           ,
-           "1b4f7584-95e9-4fd4-b7bf-f00987c144d6.webp"
-           ,
-           "24d69a6e-0043-4f7e-ad13-c7f1b98e98e9.webp"
-           ,
-           "4742e0dd-d1bd-46f9-a4dc-172429594ae5.webp"
-           ,
-           "4bfe0e79-0254-451e-b61c-7911b3df0b94.webp"
-           ,
-           "55a51453-38dd-4b4d-86d4-1a308d40acd7.webp"
-           ,
-           "7a644bc3-a425-4755-8c3d-a9da20851e96.webp"
-           ,
-           "7ff8f093-243f-48bc-94f0-73dd37d17a1b.webp"
-           ,
-           "8c7c0bcb-0f93-44e7-a591-16150ee060f8.webp"
-           ,
-           "8ddc979c-a7fa-4622-9b5e-96b062726a11.webp"
-           ,
-           "9af81439-3bad-4b56-9933-84f37ed2ba92.webp"
-           ,
-           "aa739659-ea95-447d-95c9-64be7b7422a3.webp"
-           ,
-           "c8cba999-414e-4c91-8628-928474044be2.webp"
-           ,
-           "IMG_20191101_162228.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "vystavba-garaze-tyn-nad-vltavou",
-      "slozka": "vystavba-garaze-tyn-nad-vltavou",
+      "nazev": "Výstavba garáže s bazénem - Týn nad Vltavou",
+      "slozka": "Výstavba garáže s bazénem - Týn nad Vltavou",
       "v_realizaci": false,
       "fotky": [
            "014d08ae-f1fd-499e-ba24-d4dfeed4737d.webp"
@@ -6032,31 +5186,8 @@
     }
         ,
     {
-      "nazev": "vystavba-kominu-instalace-nove-vany-apod-mazice",
-      "slozka": "vystavba-kominu-instalace-nove-vany-apod-mazice",
-      "v_realizaci": false,
-      "fotky": [
-           "1c64b9f4-dced-4a63-a5c9-7ddb6fd213b7.webp"
-           ,
-           "2daac980-9dd4-42bd-9aa1-a0f6974323c0.webp"
-           ,
-           "686a4a63-10dd-4e88-a155-5069ce9d5709.webp"
-           ,
-           "7564fb4c-597a-4989-a06e-73da3b20da16.webp"
-           ,
-           "97b398c2-1dbc-4d24-b57b-157c5ca453f2.webp"
-           ,
-           "994b20c0-2f17-46bd-9762-d182d30df2cb.webp"
-           ,
-           "ca6bd635-8eae-4187-b611-0b355eb15170.webp"
-           ,
-           "d7d2e14a-374a-4ab4-bc04-0797a49f188a.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "vystavba-operne-zdi-vesce",
-      "slozka": "vystavba-operne-zdi-vesce",
+      "nazev": "Výstavba opěrné zdi - Vesce",
+      "slozka": "Výstavba opěrné zdi - Vesce",
       "v_realizaci": false,
       "fotky": [
            "IMG_0958.webp"
@@ -6082,8 +5213,8 @@
     }
         ,
     {
-      "nazev": "vystavba-pergoly-plotu-obklad-imitace-kamene-stoner-okr",
-      "slozka": "vystavba-pergoly-plotu-obklad-imitace-kamene-stoner-okr",
+      "nazev": "Výstavba pergoly a obložení plotu - Mažice",
+      "slozka": "Výstavba pergoly a obložení plotu - Mažice",
       "v_realizaci": false,
       "fotky": [
            "0d0d9fa7-e64b-49dc-868a-8f086ad47fd2.webp"
@@ -6139,8 +5270,73 @@
     }
         ,
     {
-      "nazev": "vystavba-rodinneho-domu-mazice",
-      "slozka": "vystavba-rodinneho-domu-mazice",
+      "nazev": "Výstavba prostoru pro zaměstnance - Mažice",
+      "slozka": "Výstavba prostoru pro zaměstnance - Mažice",
+      "v_realizaci": false,
+      "fotky": [
+           "1463cdb9-ae4c-4d0c-a2f7-80c71e9481b1.webp"
+           ,
+           "15f4ad8c-512c-4d74-9ba6-d54e618fa340.webp"
+           ,
+           "2153b03f-f14f-4766-a375-d02d5f439204.webp"
+           ,
+           "296806ae-4791-4a50-82e7-3849891ed29c.webp"
+           ,
+           "395a1ceb-be32-4184-84b0-0a5f7573c923.webp"
+           ,
+           "4b6f08b6-ac1f-4339-a32a-94bc39f9e461.webp"
+           ,
+           "4bbf5018-9f49-4db4-9f16-59ceba47e004.webp"
+           ,
+           "58b1a3d0-dd4b-4a44-bac0-dde11d1e0435.webp"
+           ,
+           "6d73fd87-efff-4426-aaa6-dbb7c08f3627.webp"
+           ,
+           "77817601-61fa-41d4-9cb0-01e71a796f8a.webp"
+           ,
+           "90d36e84-cb68-408a-899f-969b01442fec.webp"
+           ,
+           "91973d73-e011-46d5-a9c3-47a388ed0fbc.webp"
+           ,
+           "9252376c-008e-4206-a8fb-c9fbebf07bbe.webp"
+           ,
+           "9276162f-265d-4d6f-b20c-7424580c95d7.webp"
+           ,
+           "987e7b5b-a0a9-422b-97aa-d9463540b430.webp"
+           ,
+           "99305f0a-acfd-41de-a9df-0740d0b3259b.webp"
+           ,
+           "9d832937-bbf9-4c15-af90-82d8c81c91b3.webp"
+           ,
+           "a00de534-d371-45c7-add1-5ce86d6c6a70.webp"
+           ,
+           "b2a93872-5e65-40fb-a5e3-b38857ac0e79.webp"
+           ,
+           "b556208e-ce21-4e26-b065-5f8954323ecd.webp"
+           ,
+           "c265a26c-c6c1-4b69-9c84-9313bdf0bbd4.webp"
+           ,
+           "c7a6bbc2-152b-43fe-b68d-4b3340d94d7f.webp"
+           ,
+           "c96120a6-a165-43fb-b7c2-aeeee42ecccc.webp"
+           ,
+           "cca4fe03-44a5-47d1-8e75-94de16f6c701.webp"
+           ,
+           "cd85df4a-6292-4722-b1e4-75cee4f3f2db.webp"
+           ,
+           "d5b45664-9039-44c7-ba4d-677c33d70315.webp"
+           ,
+           "e2a7202c-453a-44cd-92cd-dd0450ba72f4.webp"
+           ,
+           "f8d78561-cb11-4e0d-be43-38f9e86293f7.webp"
+           ,
+           "IMG_20191206_154733.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Výstavba rodinného domu - Mažice",
+      "slozka": "Výstavba rodinného domu - Mažice",
       "v_realizaci": false,
       "fotky": [
            "0c5f9693-74b0-4521-8066-b6dc9f3054a4.webp"
@@ -6258,158 +5454,8 @@
     }
         ,
     {
-      "nazev": "vystavba-skladu-dolni-bukovsko",
-      "slozka": "vystavba-skladu-dolni-bukovsko",
-      "v_realizaci": false,
-      "fotky": [
-           "025C6DEF-C96B-4E1F-8EF6-CB45F487D69F.webp"
-           ,
-           "09FD199C-DA1E-4D05-A010-06545CCFB54C.webp"
-           ,
-           "16E3DE86-390B-4488-9119-848A726F4BD2.webp"
-           ,
-           "1A0AAB09-B6F7-4A41-966F-72E29EB63273.webp"
-           ,
-           "1D29AE43-95D4-45C7-9F68-DFFFF0C290D6.webp"
-           ,
-           "1F0943DC-E146-4F0A-8190-A5ABF15B1B98.webp"
-           ,
-           "23966517-DDC8-4E29-A61D-48509CA93BB9.webp"
-           ,
-           "23B91759-CF8F-4810-BD26-0F5B867E6BA4.webp"
-           ,
-           "258245BA-F1B0-4FA6-9139-982A537E7490.webp"
-           ,
-           "25a98d97-b65b-48ba-b522-ce514c3f32a7.webp"
-           ,
-           "2CA8394A-096F-4A6D-83A8-CD659961B8ED.webp"
-           ,
-           "2E061132-5ABB-489F-A3C8-FB480CB405AC.webp"
-           ,
-           "3351343C-C467-4D4B-888B-7FD09F02FDAC.webp"
-           ,
-           "413CC2C6-C2CD-49AC-966A-1DF69230637A.webp"
-           ,
-           "43874654-7B19-4258-8CF1-6031E5E1AFD6.webp"
-           ,
-           "47DAF549-3C1E-4CD7-B888-88D3CD362722.webp"
-           ,
-           "4ACCACDE-C2C1-4053-B78B-807B54016430.webp"
-           ,
-           "4b7f4542-57f4-4584-b6db-72a091570d30.webp"
-           ,
-           "4E6B6556-1C91-4473-9601-31895657ECC0.webp"
-           ,
-           "56F87B61-ED04-495C-ACFB-FE1F74495C8B.webp"
-           ,
-           "5856FA3F-C35E-494E-8848-A4583DA5794A.webp"
-           ,
-           "5BC15D7D-C250-4AB4-839B-3060ED59A8A5.webp"
-           ,
-           "63EA2731-FC7A-4620-8E90-D0F64A858DF0.webp"
-           ,
-           "6AAFE9A3-5CC6-47B1-84EC-88A79F78DED8.webp"
-           ,
-           "6bdffdfc-3941-470f-b2f3-fb0f0777ba35.webp"
-           ,
-           "721A2A8E-32D8-4BB1-8567-852B2457F3AB.webp"
-           ,
-           "7324C012-F1E8-47F4-9298-EF75E85ED215.webp"
-           ,
-           "77F4268C-2019-4FDB-9082-CF071442B311.webp"
-           ,
-           "796BA88D-8174-4AFC-AA18-3303498C180F.webp"
-           ,
-           "80D24B85-E547-428E-AB92-CF184EA992C0.webp"
-           ,
-           "8CDEE1FF-773B-44B1-9699-673462E8EDA4.webp"
-           ,
-           "93CC767C-A05B-4BE8-B6E0-A464EA6D2963.webp"
-           ,
-           "9E9973D3-1E9B-486A-9257-4EA68E35BCC8.webp"
-           ,
-           "A3422767-52F6-402F-855E-C204F9750B56.webp"
-           ,
-           "A4E99610-813D-4218-B94C-3D074A5BCA4C.webp"
-           ,
-           "A76014B7-BCDA-4558-B5F1-0D580DCE1C98.webp"
-           ,
-           "B81A275E-267F-4D00-A67A-1E121D4DBD77.webp"
-           ,
-           "BEEDAFCD-50D2-44BE-93F1-35C772583565.webp"
-           ,
-           "CD95414A-EA0A-4739-8A37-BEB6226713CB.webp"
-           ,
-           "D09B1C91-1134-4982-B197-2204E7988E6A.webp"
-           ,
-           "D0ED2C72-9AA5-4512-8261-3FA65BC28492.webp"
-           ,
-           "D7CDEF95-C4CD-4D1A-92DF-FF96F2D037F4.webp"
-           ,
-           "D81CE18A-DEDF-41B2-816C-C4EF81803988.webp"
-           ,
-           "E12CEA4D-3F46-4252-ABAB-7507DDD3E9E1.webp"
-           ,
-           "F6D41B95-5F0B-4A96-AD73-6941FD47FE09.webp"
-           ,
-           "FA985AB5-2700-4F3D-A6E2-E72C51E55B50.webp"
-           ,
-           "FE94A5E7-4D3E-492D-953B-B32035E5F618.webp"
-           ,
-           "IMG_0413.webp"
-           ,
-           "IMG_1463.webp"
-           ,
-           "IMG_1466.webp"
-           ,
-           "IMG_1467.webp"
-           ,
-           "IMG_2405.webp"
-           ,
-           "IMG_2453.webp"
-           ,
-           "IMG_4221.webp"
-           ,
-           "IMG_4222.webp"
-           ,
-           "IMG_4230.webp"
-           ,
-           "IMG_4236.webp"
-           ,
-           "IMG_4237.webp"
-           ,
-           "IMG_4240.webp"
-           ,
-           "IMG_9779.webp"
-           ,
-           "IMG_9782.webp"
-           ,
-           "tempImagezB2yw6.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "zacisteni-oken-traverz-a-slicu-zverotice",
-      "slozka": "zacisteni-oken-traverz-a-slicu-zverotice",
-      "v_realizaci": false,
-      "fotky": [
-           "BD6BDD75-3241-408F-8312-0EFB0D010D54.webp"
-           ,
-           "IMG_6296.webp"
-           ,
-           "IMG_7137.webp"
-           ,
-           "IMG_7138.webp"
-           ,
-           "IMG_7139.webp"
-           ,
-           "IMG_7373.webp"
-      ]
-    }
-        ,
-    {
-      "nazev": "zakladova-deska-hruba-stavba-rodinneho-domu-zlukov",
-      "slozka": "zakladova-deska-hruba-stavba-rodinneho-domu-zlukov",
+      "nazev": "Výstavba rodinného domu - Zlukov",
+      "slozka": "Výstavba rodinného domu - Zlukov",
       "v_realizaci": false,
       "fotky": [
            "05FD8A21-7097-433A-A93A-A97774B884C2.webp"
@@ -6661,31 +5707,174 @@
     }
         ,
     {
-      "nazev": "zaklady-pod-skleniky-obrubniky-tyn-nad-vltavou",
-      "slozka": "zaklady-pod-skleniky-obrubniky-tyn-nad-vltavou",
+      "nazev": "Výstavba skladu - Dolní Bukovsko",
+      "slozka": "Výstavba skladu - Dolní Bukovsko",
       "v_realizaci": false,
       "fotky": [
-           "IMG_8966.webp"
+           "025C6DEF-C96B-4E1F-8EF6-CB45F487D69F.webp"
            ,
-           "IMG_8967.webp"
+           "09FD199C-DA1E-4D05-A010-06545CCFB54C.webp"
            ,
-           "IMG_8968.webp"
+           "16E3DE86-390B-4488-9119-848A726F4BD2.webp"
            ,
-           "IMG_8969.webp"
+           "1A0AAB09-B6F7-4A41-966F-72E29EB63273.webp"
            ,
-           "IMG_8970.webp"
+           "1D29AE43-95D4-45C7-9F68-DFFFF0C290D6.webp"
            ,
-           "IMG_8971.webp"
+           "1F0943DC-E146-4F0A-8190-A5ABF15B1B98.webp"
            ,
-           "IMG_8972.webp"
+           "23966517-DDC8-4E29-A61D-48509CA93BB9.webp"
            ,
-           "IMG_8973.webp"
+           "23B91759-CF8F-4810-BD26-0F5B867E6BA4.webp"
+           ,
+           "258245BA-F1B0-4FA6-9139-982A537E7490.webp"
+           ,
+           "25a98d97-b65b-48ba-b522-ce514c3f32a7.webp"
+           ,
+           "2CA8394A-096F-4A6D-83A8-CD659961B8ED.webp"
+           ,
+           "2E061132-5ABB-489F-A3C8-FB480CB405AC.webp"
+           ,
+           "3351343C-C467-4D4B-888B-7FD09F02FDAC.webp"
+           ,
+           "413CC2C6-C2CD-49AC-966A-1DF69230637A.webp"
+           ,
+           "43874654-7B19-4258-8CF1-6031E5E1AFD6.webp"
+           ,
+           "47DAF549-3C1E-4CD7-B888-88D3CD362722.webp"
+           ,
+           "4ACCACDE-C2C1-4053-B78B-807B54016430.webp"
+           ,
+           "4b7f4542-57f4-4584-b6db-72a091570d30.webp"
+           ,
+           "4E6B6556-1C91-4473-9601-31895657ECC0.webp"
+           ,
+           "56F87B61-ED04-495C-ACFB-FE1F74495C8B.webp"
+           ,
+           "5856FA3F-C35E-494E-8848-A4583DA5794A.webp"
+           ,
+           "5BC15D7D-C250-4AB4-839B-3060ED59A8A5.webp"
+           ,
+           "63EA2731-FC7A-4620-8E90-D0F64A858DF0.webp"
+           ,
+           "6AAFE9A3-5CC6-47B1-84EC-88A79F78DED8.webp"
+           ,
+           "6bdffdfc-3941-470f-b2f3-fb0f0777ba35.webp"
+           ,
+           "721A2A8E-32D8-4BB1-8567-852B2457F3AB.webp"
+           ,
+           "7324C012-F1E8-47F4-9298-EF75E85ED215.webp"
+           ,
+           "77F4268C-2019-4FDB-9082-CF071442B311.webp"
+           ,
+           "796BA88D-8174-4AFC-AA18-3303498C180F.webp"
+           ,
+           "80D24B85-E547-428E-AB92-CF184EA992C0.webp"
+           ,
+           "8CDEE1FF-773B-44B1-9699-673462E8EDA4.webp"
+           ,
+           "93CC767C-A05B-4BE8-B6E0-A464EA6D2963.webp"
+           ,
+           "9E9973D3-1E9B-486A-9257-4EA68E35BCC8.webp"
+           ,
+           "A3422767-52F6-402F-855E-C204F9750B56.webp"
+           ,
+           "A4E99610-813D-4218-B94C-3D074A5BCA4C.webp"
+           ,
+           "A76014B7-BCDA-4558-B5F1-0D580DCE1C98.webp"
+           ,
+           "B81A275E-267F-4D00-A67A-1E121D4DBD77.webp"
+           ,
+           "BEEDAFCD-50D2-44BE-93F1-35C772583565.webp"
+           ,
+           "CD95414A-EA0A-4739-8A37-BEB6226713CB.webp"
+           ,
+           "D09B1C91-1134-4982-B197-2204E7988E6A.webp"
+           ,
+           "D0ED2C72-9AA5-4512-8261-3FA65BC28492.webp"
+           ,
+           "D7CDEF95-C4CD-4D1A-92DF-FF96F2D037F4.webp"
+           ,
+           "D81CE18A-DEDF-41B2-816C-C4EF81803988.webp"
+           ,
+           "E12CEA4D-3F46-4252-ABAB-7507DDD3E9E1.webp"
+           ,
+           "F6D41B95-5F0B-4A96-AD73-6941FD47FE09.webp"
+           ,
+           "FA985AB5-2700-4F3D-A6E2-E72C51E55B50.webp"
+           ,
+           "FE94A5E7-4D3E-492D-953B-B32035E5F618.webp"
+           ,
+           "IMG_0413.webp"
+           ,
+           "IMG_1463.webp"
+           ,
+           "IMG_1466.webp"
+           ,
+           "IMG_1467.webp"
+           ,
+           "IMG_2405.webp"
+           ,
+           "IMG_2453.webp"
+           ,
+           "IMG_4221.webp"
+           ,
+           "IMG_4222.webp"
+           ,
+           "IMG_4230.webp"
+           ,
+           "IMG_4236.webp"
+           ,
+           "IMG_4237.webp"
+           ,
+           "IMG_4240.webp"
+           ,
+           "IMG_9779.webp"
+           ,
+           "IMG_9782.webp"
+           ,
+           "tempImagezB2yw6.webp"
       ]
     }
         ,
     {
-      "nazev": "zatepleni-isover-thermal-160mm",
-      "slozka": "zatepleni-isover-thermal-160mm",
+      "nazev": "Výstavba ustájení - Mažice",
+      "slozka": "Výstavba ustájení - Mažice",
+      "v_realizaci": false,
+      "fotky": [
+           "118a0ab4-95d6-4ca9-8419-9de81090bbd3.webp"
+           ,
+           "1b4f7584-95e9-4fd4-b7bf-f00987c144d6.webp"
+           ,
+           "24d69a6e-0043-4f7e-ad13-c7f1b98e98e9.webp"
+           ,
+           "4742e0dd-d1bd-46f9-a4dc-172429594ae5.webp"
+           ,
+           "4bfe0e79-0254-451e-b61c-7911b3df0b94.webp"
+           ,
+           "55a51453-38dd-4b4d-86d4-1a308d40acd7.webp"
+           ,
+           "7a644bc3-a425-4755-8c3d-a9da20851e96.webp"
+           ,
+           "7ff8f093-243f-48bc-94f0-73dd37d17a1b.webp"
+           ,
+           "8c7c0bcb-0f93-44e7-a591-16150ee060f8.webp"
+           ,
+           "8ddc979c-a7fa-4622-9b5e-96b062726a11.webp"
+           ,
+           "9af81439-3bad-4b56-9933-84f37ed2ba92.webp"
+           ,
+           "aa739659-ea95-447d-95c9-64be7b7422a3.webp"
+           ,
+           "c8cba999-414e-4c91-8628-928474044be2.webp"
+           ,
+           "IMG_20191101_162228.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Zateplení - Mažice",
+      "slozka": "Zateplení - Mažice",
       "v_realizaci": false,
       "fotky": [
            "29d6f489-c651-406b-8b35-2795f66058f8.webp"
@@ -6711,158 +5900,130 @@
     }
         ,
     {
-      "nazev": "zatepleni-rodinneho-domu-veseli-nad-luznici",
-      "slozka": "zatepleni-rodinneho-domu-veseli-nad-luznici",
+      "nazev": "Zateplení půdy - Mažice",
+      "slozka": "Zateplení půdy - Mažice",
       "v_realizaci": false,
       "fotky": [
-           "18F718AD-26C9-4D89-B9A5-F09F81A64510.webp"
+           "IMG_3058.webp"
            ,
-           "1B43498D-CE22-420C-8569-E9E7614B9EB8.webp"
+           "IMG_3059.webp"
            ,
-           "1bad091f-2ad3-4585-92c7-cad2af9b26a3.webp"
+           "IMG_3416.webp"
            ,
-           "39d09e87-be68-43ef-a58a-c85b4086a582.webp"
+           "IMG_3418.webp"
            ,
-           "57ccf77c-b04c-4804-93dd-1eb535784198.webp"
+           "IMG_3521.webp"
            ,
-           "615F628C-1EFD-4CDF-970C-B894C640CE39.webp"
+           "IMG_3562.webp"
            ,
-           "776F88B2-DD4A-4BA7-B176-130EF43B84AB.webp"
+           "IMG_3563.webp"
            ,
-           "78A38A23-A43C-466B-9439-A1711CD8A807.webp"
+           "IMG_3564.webp"
            ,
-           "A2E663B8-2FE9-4544-B311-44221058DEB6.webp"
+           "IMG_3565.webp"
            ,
-           "A6275DB2-74B5-4379-8BBF-C94F82CFA174.webp"
+           "IMG_3566.webp"
            ,
-           "cd860e9a-18a9-4f81-9740-dacd6ab337a1.webp"
-           ,
-           "d6e52a1b-883b-4d08-bc87-0f061bbcbdef.webp"
-           ,
-           "EC58F5CA-38BC-4E53-AEA3-EE5F2FE44985.webp"
-           ,
-           "IMG_0792.webp"
-           ,
-           "IMG_0868.webp"
-           ,
-           "IMG_5328.webp"
-           ,
-           "IMG_5332.webp"
-           ,
-           "IMG_5343.webp"
-           ,
-           "IMG_5399.webp"
-           ,
-           "IMG_5689.webp"
-           ,
-           "IMG_6312.webp"
-           ,
-           "IMG_6315.webp"
-           ,
-           "IMG_6317.webp"
-           ,
-           "IMG_6318.webp"
-           ,
-           "IMG_6419.webp"
-           ,
-           "IMG_6673.webp"
-           ,
-           "IMG_6705.webp"
-           ,
-           "IMG_6706.webp"
-           ,
-           "IMG_6764.webp"
-           ,
-           "IMG_6765.webp"
-           ,
-           "IMG_6766.webp"
-           ,
-           "IMG_6835.webp"
-           ,
-           "IMG_6931.webp"
-           ,
-           "IMG_6953.webp"
-           ,
-           "IMG_6954.webp"
-           ,
-           "IMG_7248.webp"
-           ,
-           "IMG_7249.webp"
-           ,
-           "IMG_7250.webp"
-           ,
-           "IMG_7251.webp"
-           ,
-           "IMG_7254.webp"
-           ,
-           "IMG_7255.webp"
+           "IMG_3567.webp"
       ]
     }
         ,
     {
-      "nazev": "zatepleni-stitu-fasada-ceske-budejovice",
-      "slozka": "zatepleni-stitu-fasada-ceske-budejovice",
+      "nazev": "Zateplení půdy a ostatní práce - Bechyně",
+      "slozka": "Zateplení půdy a ostatní práce - Bechyně",
       "v_realizaci": false,
       "fotky": [
-           "084abdd1-e4f4-4c7d-9c72-5d8a560cf1ba.webp"
+           "02559BC2-2228-4A89-8E2F-A5585DC609B8.webp"
            ,
-           "0e6578c8-5aa9-4ac1-ad1b-b5f57e38b7e8.webp"
+           "073D2AA2-BC1E-4D85-80DD-0A330742E2B0.webp"
            ,
-           "0ed1164c-b87f-4d56-a9cc-ee22908b7f02.webp"
+           "154A6A26-98D4-43F2-AEAB-B602235D4BA4.webp"
            ,
-           "19aa18bc-8b1b-47dd-8765-5a6f38e1a910.webp"
+           "196AF74B-1EED-49F2-8AD3-BC704156F9C4.webp"
            ,
-           "1b8e9e19-86de-4eb7-b932-f9f197c37d29.webp"
+           "2B8456DA-8552-45B9-84ED-FEA6AB0FCBC3.webp"
            ,
-           "4ced97ae-c01e-4a56-bec8-ecb8336c0c80.webp"
+           "3D2593DA-C196-4207-958F-6FFBFBE6D0BD.webp"
            ,
-           "52b5a214-39e5-4faf-9d7d-52d6f18d3677.webp"
+           "3F126EB8-0F5F-46BF-A126-65133B11CED3.webp"
            ,
-           "631a9c20-493d-451e-ab1f-2ddf7fcac248.webp"
+           "3F79B1B7-E219-4E86-8F15-FF71C7E0A98C.webp"
            ,
-           "665122df-b648-475d-83c3-9c27caee083c.webp"
+           "4B93364E-1F6B-4A3B-85EF-A27081D85593.webp"
            ,
-           "727c4be5-a24b-43f2-918e-049b6f72a144.webp"
+           "4D4FE52E-90A4-4EBC-954D-DBBE6B29E764.webp"
            ,
-           "74590f69-15d2-4eef-9cb6-a7be4fb67c80.webp"
+           "4E70F38F-6344-4806-B3FB-4E552036EEF7.webp"
            ,
-           "8151f7d2-fe14-4c16-be67-c73e2e4a53ef.webp"
+           "5FE84514-5A4E-44C0-B9DD-DF9223D29723.webp"
            ,
-           "84eac33c-160a-4f6f-bca2-e4859a07e426.webp"
+           "624856F3-53F4-4225-95B8-4203DFFFD29C.webp"
            ,
-           "87756d57-db41-43e7-9e9e-f80e9947d2b4.webp"
+           "65D03D2C-A631-497A-BFA7-25EF876D7ADC.webp"
            ,
-           "9390949f-afe4-4805-9447-c9a8e9fbc566.webp"
+           "6CE77E89-E8C2-4D68-B44A-D19E36F3B025.webp"
            ,
-           "9a99f8f7-f514-4dae-b752-fb9dcee60eee.webp"
+           "82C8ED9D-883B-496A-B054-FCD08D1C2AF2.webp"
            ,
-           "9c6498df-b423-46f1-859d-101a33868eb1.webp"
+           "83B58981-B47B-42E3-96D4-25E6FE3E1EDC.webp"
            ,
-           "9d9c41c5-b118-4903-92d6-8d9754485a60.webp"
+           "86B993A2-E7D2-4E4F-A27A-597E423FA7A9.webp"
            ,
-           "b44d7c1d-012a-4102-af42-255ea5f72816.webp"
+           "86B9ED68-F3C9-459A-AAE0-B0C51A84C0AC.webp"
            ,
-           "b9825f4e-32a7-49ee-9b89-27566283292d.webp"
+           "878A923B-638B-4D9B-8376-D46BA26ADF33.webp"
            ,
-           "c935ee5a-1bb5-4524-bf81-e952b1565aa8.webp"
+           "881480D1-3CBA-4C90-B7D1-E92639C28590.webp"
            ,
-           "cb977105-d6e4-473a-9632-02a853202f72.webp"
+           "8FE214B8-D865-480C-9447-F67277832FCD.webp"
            ,
-           "df4e8e64-8932-4333-9af2-80b11a244135.webp"
+           "9BED499D-CBD1-4CB4-8C2E-FB9A96C0D68A.webp"
            ,
-           "f0d887dd-7a85-4656-816b-7317a31b5b2b.webp"
+           "AD8B8A20-51F7-4AD7-B4EF-3DD8449FBC77.webp"
            ,
-           "f284adda-09ab-4f5a-8798-224aad969ef4.webp"
+           "B9973560-E2CF-491B-A0F9-AEC31BAD1CAE.webp"
            ,
-           "f93a308c-5abb-4728-954b-8062a715844c.webp"
+           "BBE39FEF-0C7E-4604-859C-8D9A245C36B5.webp"
            ,
-           "fc08105b-7666-4e46-953e-49cbbb938a66.webp"
+           "CB4EB6D2-B2FF-49AA-B74D-ACF5D266647A.webp"
+           ,
+           "D7D68AF0-3BDA-4467-8659-ADBC8F876E42.webp"
+           ,
+           "E0A7440D-73D8-40B6-897E-ABF30F08ADCA.webp"
+           ,
+           "E2BCBF70-FA11-406F-9010-81B98D307B1B.webp"
+           ,
+           "EDE7C0C1-6986-4C23-A8DC-A96D348C32E7.webp"
+           ,
+           "F69BFDD3-917A-4CCF-BD79-752E503C98B3.webp"
+           ,
+           "F99D9527-CAC9-4005-8356-C4C9898DE2DB.webp"
+           ,
+           "FFEEE229-A197-4703-9818-93AB483A21E1.webp"
+           ,
+           "IMG_3500.webp"
+           ,
+           "IMG_3501.webp"
+           ,
+           "IMG_3525.webp"
+           ,
+           "IMG_3526.webp"
+           ,
+           "IMG_3527.webp"
+           ,
+           "IMG_3528.webp"
+           ,
+           "IMG_3529.webp"
+           ,
+           "IMG_3530.webp"
+           ,
+           "IMG_3531.webp"
       ]
     }
         ,
     {
-      "nazev": "zednicke-prace-garaz-borkovice",
-      "slozka": "zednicke-prace-garaz-borkovice",
+      "nazev": "Zednické práce - Borkovice",
+      "slozka": "Zednické práce - Borkovice",
       "v_realizaci": false,
       "fotky": [
            "0dd7eae4-808e-4a1f-aa0a-11c69144654d.webp"
@@ -6892,8 +6053,157 @@
     }
         ,
     {
-      "nazev": "zednicke-prace-obklady-dlazby-chalupa-veseli-nad-luznici",
-      "slozka": "zednicke-prace-obklady-dlazby-chalupa-veseli-nad-luznici",
+      "nazev": "Zednické práce - Dolní Bukovsko",
+      "slozka": "Zednické práce - Dolní Bukovsko",
+      "v_realizaci": false,
+      "fotky": [
+           "0A9B19BE-B77A-4EF6-8009-8A986121A13F.webp"
+           ,
+           "0B12EC48-F245-4FCA-A910-F31AD3B5E0DB.webp"
+           ,
+           "181CE986-3EE0-4125-883C-F9CBE47D314C.webp"
+           ,
+           "1862E44C-C899-437A-8AE2-7A220E01F74D.webp"
+           ,
+           "384D84A0-9328-413B-A8A3-A9A10A112D5C.webp"
+           ,
+           "81B9ABDA-F21F-4DB6-96DF-6C5AEF46C1C4.webp"
+           ,
+           "8B008940-7CF8-45D9-BEBC-769C976B06F0.webp"
+           ,
+           "8BA1B6C5-0EE7-4E03-A3FF-B2CF340B9377.webp"
+           ,
+           "9207965A-DC5A-4D49-8609-5D73E44170D3.webp"
+           ,
+           "938ED9E0-B0B2-4D56-B0FC-B02B4E39BFCB.webp"
+           ,
+           "9859AAF4-90E3-41A6-80BB-CB5329488BF5.webp"
+           ,
+           "B2FA05F4-6611-48C3-B4A7-AF0CCA0E0704.webp"
+           ,
+           "E40970AD-84BE-4F29-BCE4-C1466E375A13.webp"
+           ,
+           "F180F39E-DE49-4612-BA29-5D095C38801A.webp"
+           ,
+           "FAFEA4AF-1836-4E29-A1E2-67CEB79CB83B.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Zednické práce - Mažice",
+      "slozka": "Zednické práce - Mažice",
+      "v_realizaci": false,
+      "fotky": [
+           "IMG-20190531-WA0000.webp"
+           ,
+           "IMG-20190531-WA0001.webp"
+           ,
+           "IMG-20190531-WA0002.webp"
+           ,
+           "IMG-20190531-WA0003.webp"
+           ,
+           "IMG-20190531-WA0004.webp"
+           ,
+           "IMG_20190527_100920.webp"
+           ,
+           "IMG_20190527_100930.webp"
+           ,
+           "IMG_20190527_100941.webp"
+           ,
+           "IMG_20190527_100958.webp"
+           ,
+           "IMG_20190527_101005.webp"
+           ,
+           "IMG_20190527_101048.webp"
+           ,
+           "IMG_20190527_101117.webp"
+           ,
+           "IMG_20190527_101125.webp"
+           ,
+           "IMG_20190527_101134.webp"
+           ,
+           "IMG_20190527_101215.webp"
+           ,
+           "IMG_20190527_141437.webp"
+           ,
+           "IMG_20190527_141505.webp"
+           ,
+           "IMG_20190527_141507.webp"
+           ,
+           "IMG_20190527_141511.webp"
+           ,
+           "IMG_20190527_141514.webp"
+           ,
+           "IMG_20190527_141523.webp"
+           ,
+           "IMG_20190527_141531.webp"
+           ,
+           "IMG_20190527_141535.webp"
+           ,
+           "IMG_20190527_141538.webp"
+           ,
+           "IMG_20190527_143251.webp"
+           ,
+           "IMG_20190528_094949.webp"
+           ,
+           "IMG_20190528_094959.webp"
+           ,
+           "IMG_20190528_095005.webp"
+           ,
+           "IMG_20190530_140642.webp"
+           ,
+           "IMG_20190530_140705.webp"
+           ,
+           "IMG_20190530_140712.webp"
+           ,
+           "IMG_20190530_140728.webp"
+           ,
+           "IMG_20190530_140734.webp"
+           ,
+           "IMG_20190530_140740.webp"
+           ,
+           "IMG_20190530_140750.webp"
+           ,
+           "IMG_20190530_140759.webp"
+           ,
+           "IMG_20190530_140816.webp"
+           ,
+           "IMG_20190530_140853.webp"
+           ,
+           "IMG_20190604_114610.webp"
+           ,
+           "IMG_20190604_114613.webp"
+           ,
+           "IMG_20190604_114617.webp"
+           ,
+           "IMG_20190604_114631.webp"
+           ,
+           "IMG_20190604_114641.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Zednické práce - Zvěrotice",
+      "slozka": "Zednické práce - Zvěrotice",
+      "v_realizaci": false,
+      "fotky": [
+           "BD6BDD75-3241-408F-8312-0EFB0D010D54.webp"
+           ,
+           "IMG_6296.webp"
+           ,
+           "IMG_7137.webp"
+           ,
+           "IMG_7138.webp"
+           ,
+           "IMG_7139.webp"
+           ,
+           "IMG_7373.webp"
+      ]
+    }
+        ,
+    {
+      "nazev": "Zednické práce, obklady a dlažby - Veselí nad Lužnicí",
+      "slozka": "Zednické práce, obklady a dlažby - Veselí nad Lužnicí",
       "v_realizaci": false,
       "fotky": [
            "IMG_20180311_084558.webp"
@@ -6939,8 +6249,8 @@
     }
         ,
     {
-      "nazev": "zednicke-prace-uprava-dispozic-sit-lepidlo-stuk",
-      "slozka": "zednicke-prace-uprava-dispozic-sit-lepidlo-stuk",
+      "nazev": "Zednické práce, štuky - Soběslav",
+      "slozka": "Zednické práce, štuky - Soběslav",
       "v_realizaci": false,
       "fotky": [
            "IMG_20190613_071213.webp"
@@ -7020,8 +6330,8 @@
     }
         ,
     {
-      "nazev": "zesileni-vaznych-tramu-dle-projektu-veseli-nad-luznici",
-      "slozka": "zesileni-vaznych-tramu-dle-projektu-veseli-nad-luznici",
+      "nazev": "Zesílení vazných trámu dle projektu - Veselí nad Lužnicí",
+      "slozka": "Zesílení vazných trámu dle projektu - Veselí nad Lužnicí",
       "v_realizaci": false,
       "fotky": [
            "IMG_8922.webp"
