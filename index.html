@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- PROFESIONÁLNÍ SEO -->
     <title>VD STAVBY | Stanislav Dvořák - Kompletní stavební práce</title>
     <meta name="description" content="VD STAVBY - Stanislav Dvořák. Profesionální stavební práce, rekonstrukce, novostavby and práce na klíč ve Veselí nad Lužnicí and okolí. Záruka na dílo a každodenní úklid.">
     <meta name="keywords" content="stavební práce, rekonstrukce, novostavby, zedník, Veselí nad Lužnicí, obklady, dlažby, stavební firma na klíč, VD stavby, Stanislav Dvořák">
@@ -12,14 +11,12 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#f2a900">
     
-    <!-- Open Graph pro hezké sdílení -->
     <meta property="og:title" content="VD STAVBY | Kompletní stavební práce">
     <meta property="og:description" content="Profesionální stavební práce, rekonstrukce a novostavby na klíč. Kvalita a spokojenost zákazníka je u nás na prvním místě.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.vdstavby.cz/">
     <meta property="og:image" content="https://www.vdstavby.cz/pozadi.webp">
     
-    <!-- Schema.org pro Google (Stavební firma) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -42,7 +39,6 @@
     }
     </script>
 
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -91,6 +87,11 @@
             background: radial-gradient(circle at top, rgba(242, 169, 0, 0.08), transparent 42%), #fcfcfc;
             mix-blend-mode: multiply;
             opacity: 1;
+        }
+
+        /* VYPNUTÍ CIHLIČEK PŘI NÍZKÉM FPS */
+        body.low-perf .bricks-bg {
+            display: none !important;
         }
 
         .brick {
@@ -193,6 +194,13 @@
         .reveal.active {
             opacity: 1;
             transform: translate3d(0, 0, 0);
+        }
+
+        /* VYPNUTÍ ANIMACÍ OBJEVOVÁNÍ PŘI NÍZKÉM FPS */
+        body.low-perf .reveal {
+            opacity: 1 !important;
+            transform: none !important;
+            transition: none !important;
         }
 
         .delay-1 { transition-delay: 0.15s; }
@@ -358,6 +366,14 @@
             animation: floatPoint 4.8s ease-in-out infinite;
             box-shadow: 0 14px 24px rgba(0, 0, 0, 0.16);
             transition: transform var(--transition), background-color var(--transition), border-color var(--transition), box-shadow var(--transition);
+        }
+
+        /* STOP STÁLÝCH ANIMACÍ PŘI NÍZKÉM FPS */
+        body.low-perf .hero-quick-points span,
+        body.low-perf .highlight-item,
+        body.low-perf .zakazka-karta.v-realizaci-karta,
+        body.low-perf .badge-realizace i {
+            animation: none !important;
         }
 
         .hero-quick-points span:nth-child(2) { animation-delay: 0.6s; }
@@ -790,6 +806,11 @@
             animation: slideUp 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
         }
 
+        /* VYPNUTÍ ANIMACE DETAILU PŘI NÍZKÉM FPS */
+        body.low-perf .zakazka-detaily.active {
+            animation: none !important;
+        }
+
         .detaily-hlavicka {
             display: flex;
             justify-content: space-between;
@@ -1046,13 +1067,8 @@
             .hamburger.active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
 
             .hero { background-attachment: scroll; min-height: 70vh; }
-            .hero-content {
-                padding: 0 10px;
-            }
-            .supplier-box {
-                align-items: center;
-                text-align: center;
-            }
+            .hero-content { padding: 0 10px; }
+            .supplier-box { align-items: center; text-align: center; }
             .supplier-box img { max-height: 150px; }
             .contact-container { gap: 30px; }
             .contact-info, .contact-form { padding: 30px 20px; }
@@ -1081,15 +1097,14 @@
             .zavrit-zakazku { width: 100%; margin-top: 15px; justify-content: center; }
             .service-item { padding: 24px 20px; }
             .zakazka-detaily { padding: 26px 18px; }
-            .zakazky-wrapper,
-            .gallery-grid { grid-template-columns: 1fr; }
+            .zakazky-wrapper, .gallery-grid { grid-template-columns: 1fr; }
         }
 
     </style>
 </head>
 <body>
 
-    <div class="bricks-bg">
+    <div class="bricks-bg" id="bricksContainer">
         <div class="brick"></div>
         <div class="brick"></div>
         <div class="brick"></div>
@@ -1151,9 +1166,9 @@
     <section id="o-nas">
         <h2 class="gradient-heading reveal">Milí zákazníci</h2>
         <div class="about-text reveal delay-1">
-            <p>Zaměřuji se na kompletní stavební práce. Prioritou je spokojený zákazník, a proto kladu veliký důraz na kvalitu odvedené práce s kvalitními stavebními materiály a též kladu veliký důraz na každodenní úklid stavby! Díla jsou dokončena vždy ve sjednaném termínu. Záruka na dílo je samozřejmostí.</p>
+            <p>Zaměřuji se na kompletní stavební práce. Prioritou je spokojený zákazník, a proto kladu veliký důraz na kvalitu odvedené práce s kvalitními stavebními materiály a též kladu veliký důraz na každodenní úklid stavby!</p>
             <br>
-            <p>Nabízím odborné poradenství a cenové kalkulace zdarma. Ceny jsou vůči investorům velice solidní. Všichni zákazníci byli vždy spokojeni jak s kvalitou a přístupem, tak i s cenou. Na každého z nich mohu předat kontakt kvůli referencím.</p>
+            <p>Díla jsou dokončena vždy ve sjednaném termínu. Záruka na dílo je samozřejmostí. Nabízím odborné poradenství a cenové kalkulace zdarma. Ceny jsou vůči investorům velice solidní. Všichni zákazníci byli vždy spokojeni jak s kvalitou a přístupem, tak i s cenou. Na každého z nich mohu předat kontakt kvůli referencím.</p>
         </div>
         <div class="highlights reveal delay-2">
             <div class="highlight-item"><i class="fa-solid fa-shield-halved" style="color:var(--primary-color); margin-right:10px;"></i>Záruka na dílo</div>
@@ -1273,8 +1288,7 @@
                     <button class="zavrit-zakazku" id="zavrit-detaily"><i class="fa-solid fa-folder-minus"></i> Zavřít galerii</button>
                 </div>
                 <div class="gallery-grid" id="detaily-fotky-grid">
-                    <!-- Vykreslení fotek -->
-                </div>
+                    </div>
             </div>
         </div>
     </section>
@@ -1295,10 +1309,45 @@
         <p class="footer-credit">Web design: Jan Minařík - <a href="https://jmweb.cz" target="_blank" rel="noopener noreferrer">jmweb.cz</a></p>
     </footer>
 
-    <!-- SKRIPTY -->
     <script src="gallery/gallery-config.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            
+            // --- PROFESIONÁLNÍ MONITORING FPS ---
+            let isLowPerformance = false;
+            
+            function monitorPerformance() {
+                let frameCount = 0;
+                let startTime = performance.now();
+                
+                function checkFPS(now) {
+                    frameCount++;
+                    if (now - startTime >= 1000) { // Test trvá přesně 1 sekundu
+                        const fps = Math.round((frameCount * 1000) / (now - startTime));
+                        
+                        // Hranice plynulosti u starších PC (pod 45 FPS přepínáme do low-perf)
+                        if (fps < 45) {
+                            isLowPerformance = true;
+                            document.body.classList.add("low-perf");
+                            
+                            // Úplně vymažeme cihličky z paměti, aby nezatěžovaly procesor
+                            const bricksBg = document.getElementById("bricksContainer");
+                            if (bricksBg) bricksBg.remove();
+                            
+                            console.log(`[Perf Monitor] Detekován slabší hardware (${fps} FPS). Animace byly bezpečně vypnuty.`);
+                        } else {
+                            console.log(`[Perf Monitor] Výkon v pořádku (${fps} FPS).`);
+                        }
+                    } else {
+                        requestAnimationFrame(checkFPS);
+                    }
+                }
+                requestAnimationFrame(checkFPS);
+            }
+            // Spuštění testu ihned po načtení
+            monitorPerformance();
+            // -------------------------------------
+
             const galleryApi = window.VDGallery;
             const hamburger = document.getElementById("hamburger");
             const navMenu = document.getElementById("nav-menu");
@@ -1336,6 +1385,8 @@
             }, { rootMargin: "0px 0px -50px 0px", threshold: 0.1 });
 
             function observeRevealElements(scope = document) {
+                // Pokud máme nízké FPS, nezatěžujeme prohlížeč sledováním elementů
+                if (isLowPerformance) return; 
                 scope.querySelectorAll(".reveal:not(.active)").forEach(element => revealObserver.observe(element));
             }
 
@@ -1432,7 +1483,7 @@
                                     <h3>${zakazka._displayName}</h3>
                                 </div>
                                 <div class="zakazka-footer">
-                                    <button class="btn otevrit-galerii" data-id="${zakazka._id}"><i class="fa-solid fa-images"></i> Ukázat stavbu</button>
+                                  <button class="btn otevrit-galerii" data-id="${zakazka._id}"><i class="fa-solid fa-images"></i> Ukázat stavbu</button>
                                 </div>
                             </div>
                         </article>
@@ -1484,7 +1535,7 @@
 
             function zobrazLightbox(index) {
                 if (!aktivniFotkyKolekce.length) return;
-                lightboxImg.src = aktivniFotkyKolekce[index];
+                lightboxImg.src = aktivkiFotkyKolekce[index];
                 lightboxImg.alt = aktivniZakazka ? `${aktivniZakazka._displayName} - foto ${index + 1}` : "Zvětšený náhled";
                 lightbox.classList.add("active");
             }
@@ -1504,6 +1555,7 @@
                 aktualniIndex = (aktualniIndex + 1) % aktivniFotkyKolekce.length;
                 zobrazLightbox(aktualniIndex);
             });
+
             lightboxPrev.addEventListener("click", () => {
                 if (!aktivniFotkyKolekce.length) return;
                 aktualniIndex = (aktualniIndex - 1 + aktivniFotkyKolekce.length) % aktivniFotkyKolekce.length;
