@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VD STAVBY | Správa galerie</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #f2a900;
+            --primary-soft: rgba(242, 169, 0, 0.12);
+            --dark: #111827;
+            --muted: #6b7280;
+            --light: #f8fafc;
+            --border: rgba(17, 24, 39, 0.08);
+            --shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+            --radius: 18px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background:
+                radial-gradient(circle at top right, rgba(242, 169, 0, 0.18), transparent 30%),
+                linear-gradient(180deg, #fefefe 0%, #f5f7fb 100%);
+            color: var(--dark);
+            min-height: 100vh;
+        }
+
+        body.dragging-projects {
+            user-select: none;
+            cursor: grabbing;
+        }
+
+        a { color: inherit; }
+
+        .page {
+            width: min(2400px, calc(100vw - 24px));
+            margin: 0 auto;
+            padding: 32px 20px 56px;
+        }
+
+        .hero {
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 28px;
+            padding: 32px;
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(12px);
+        }
+
+        .hero-top {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .hero h1 {
+            font-size: clamp(30px, 5vw, 46px);
+            margin-bottom: 14px;
+        }
+
+        .hero p {
+            max-width: 760px;
+            line-height: 1.7;
+            color: #374151;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            padding: 12px 18px;
+            border-radius: 999px;
+            background: var(--dark);
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .notice {
+            margin-top: 20px;
+            padding: 16px 18px;
+            border-radius: 16px;
+            background: var(--primary-soft);
+            border: 1px solid rgba(242, 169, 0, 0.22);
+            color: #5c4300;
+        }
+
+        .stats,
+        .controls {
+            display: grid;
+            gap: 18px;
+            margin-top: 24px;
+        }
+
+        .stats {
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        }
+
+        .stat-card,
+        .panel {
+            background: rgba(255, 255, 255, 0.94);
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            box-shadow: var(--shadow);
+        }
+
+        .stat-card {
+            padding: 22px;
+        }
+
+        .stat-label {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .stat-value {
+            font-size: 30px;
+            font-weight: 800;
+        }
+
+        .controls {
+            grid-template-columns: 1.35fr 0.95fr;
+            align-items: start;
+        }
+
+        .panel {
+            padding: 24px;
+        }
+
+        .panel h2 {
+            margin-bottom: 16px;
+            font-size: 22px;
+        }
+
+        .control-grid {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+
+        label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .field-note {
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.5;
+            margin-top: 6px;
+        }
+
+        select,
+        input[type="search"] {
+            width: 100%;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 14px 16px;
+            font: inherit;
+            background: #fff;
+        }
+
+        .toggle {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 14px 16px;
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            background: #fff;
+            min-height: 52px;
+        }
+
+        .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .btn {
+            border: none;
+            border-radius: 999px;
+            padding: 13px 18px;
+            font: inherit;
+            font-weight: 800;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #f2a900 0%, #ffc84d 100%);
+            color: #111827;
+            box-shadow: 0 12px 24px rgba(242, 169, 0, 0.28);
+        }
+
+        .btn-secondary {
+            background: #111827;
+            color: #fff;
+        }
+
+        .btn-light {
+            background: #fff;
+            color: var(--dark);
+            border: 1px solid var(--border);
+        }
+
+        .status-box {
+            display: grid;
+            gap: 14px;
+        }
+
+        .status-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 14px;
+            border-radius: 999px;
+            background: rgba(17, 24, 39, 0.05);
+            width: fit-content;
+            font-weight: 700;
+        }
+
+        .list-section {
+            margin-top: 26px;
+        }
+
+        .list-head {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .helper {
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .item-list {
+            display: grid;
+            gap: 18px;
+            grid-template-columns: repeat(var(--admin-columns, 3), minmax(0, 1fr));
+            align-items: stretch;
+        }
+
+        .admin-item {
+            background: rgba(255, 255, 255, 0.98);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            overflow: hidden;
+            display: grid;
+            grid-template-rows: 220px auto;
+            box-shadow: 0 16px 30px rgba(15, 23, 42, 0.06);
+            position: relative;
+            transition: transform 0.22s ease, box-shadow 0.22s ease;
+        }
+
+        .admin-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 22px 36px rgba(15, 23, 42, 0.08);
+        }
+
+        .admin-item.dragging {
+            opacity: 0.22;
+            transform: scale(0.98);
+        }
+
+        .admin-item.drag-source {
+            pointer-events: none;
+        }
+
+        .admin-item.drag-over {
+            outline: 2px solid rgba(242, 169, 0, 0.35);
+            outline-offset: 4px;
+        }
+
+        .drag-handle {
+            width: 42px;
+            height: 42px;
+            border-radius: 14px;
+            background: rgba(17, 24, 39, 0.78);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            cursor: grab;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            z-index: 2;
+            backdrop-filter: blur(6px);
+            touch-action: none;
+        }
+
+        .drag-handle:active {
+            cursor: grabbing;
+        }
+
+        .thumb {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #111827;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .thumb::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0 0;
+            height: 45%;
+            background: linear-gradient(180deg, rgba(17, 24, 39, 0) 0%, rgba(17, 24, 39, 0.78) 100%);
+        }
+
+        .card-body {
+            display: grid;
+            gap: 16px;
+            padding: 18px;
+        }
+
+        .item-title {
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .meta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .meta-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: rgba(17, 24, 39, 0.06);
+            color: #374151;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .meta-pill.active {
+            background: rgba(242, 169, 0, 0.18);
+            color: #6a4d00;
+        }
+
+        .card-topline {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .cover-badge {
+            position: absolute;
+            left: 16px;
+            bottom: 16px;
+            z-index: 1;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 14px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.92);
+            color: #111827;
+            font-weight: 800;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+        }
+
+        .cover-badge i {
+            color: #f59e0b;
+        }
+
+        .category-wrap {
+            display: grid;
+            gap: 8px;
+        }
+
+        .item-actions {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .mini-btn {
+            border: 1px solid var(--border);
+            background: #fff;
+            color: var(--dark);
+            border-radius: 14px;
+            padding: 10px 12px;
+            font: inherit;
+            font-weight: 700;
+            cursor: pointer;
+            min-width: 96px;
+        }
+
+        .mini-btn.primary {
+            background: var(--primary-soft);
+            border-color: rgba(242, 169, 0, 0.25);
+            color: #7a5600;
+        }
+
+        .mini-btn:disabled {
+            opacity: 0.45;
+            cursor: not-allowed;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 36px 18px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.82);
+            color: var(--muted);
+        }
+
+        .project-drop-slot {
+            min-height: 220px;
+            border-radius: 24px;
+            border: 2px dashed rgba(242, 169, 0, 0.55);
+            background:
+                linear-gradient(135deg, rgba(242, 169, 0, 0.08), rgba(255, 255, 255, 0.94));
+            display: grid;
+            place-items: center;
+            color: #8a6500;
+            font-weight: 800;
+            text-align: center;
+            padding: 18px;
+            box-shadow: inset 0 0 0 1px rgba(242, 169, 0, 0.18);
+        }
+
+        .project-drop-slot span {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .project-drag-ghost {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1400;
+            width: min(360px, calc(100vw - 24px));
+            pointer-events: none;
+            opacity: 0.94;
+            transform-origin: top left;
+            box-shadow: 0 30px 60px rgba(15, 23, 42, 0.22);
+            will-change: transform;
+        }
+
+        .editor-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.55);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            z-index: 1200;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease;
+            backdrop-filter: blur(6px);
+        }
+
+        .editor-modal.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .editor-panel {
+            width: min(1180px, 100%);
+            max-height: 90vh;
+            overflow: auto;
+            background: #fff;
+            border-radius: 28px;
+            box-shadow: 0 30px 70px rgba(15, 23, 42, 0.22);
+            padding: 24px;
+            display: grid;
+            gap: 22px;
+        }
+
+        .editor-head {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .editor-head h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .editor-grid {
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 20px;
+        }
+
+        .editor-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .editor-side,
+        .editor-main {
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            padding: 18px;
+            background: rgba(248, 250, 252, 0.85);
+        }
+
+        .editor-preview {
+            aspect-ratio: 4 / 3;
+            border-radius: 18px;
+            overflow: hidden;
+            background: #111827;
+            margin-bottom: 14px;
+        }
+
+        .editor-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .editor-side .toggle {
+            margin-top: 12px;
+        }
+
+        .editor-side-actions {
+            display: grid;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        .editor-side-actions .mini-btn,
+        .editor-toolbar .mini-btn {
+            min-width: 0;
+        }
+
+        .editor-main-top {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .photo-summary {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(var(--editor-columns, 4), minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 14px;
+        }
+
+        .photo-card {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
+            transition: transform 0.18s ease, box-shadow 0.18s ease;
+        }
+
+        .photo-card.dragging {
+            opacity: 0.45;
+            transform: scale(0.98);
+        }
+
+        .photo-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 22px rgba(15, 23, 42, 0.08);
+        }
+
+        .photo-card img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            display: block;
+            background: #111827;
+        }
+
+        .photo-card-body {
+            padding: 12px;
+            display: grid;
+            gap: 10px;
+        }
+
+        .photo-name {
+            font-size: 13px;
+            color: #374151;
+            line-height: 1.45;
+            word-break: break-word;
+        }
+
+        .photo-actions {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px;
+        }
+
+        @media (max-width: 1100px) {
+            .controls {
+                grid-template-columns: 1fr;
+            }
+
+            .editor-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .item-list {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .photo-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 680px) {
+            .page {
+                padding: 18px 14px 42px;
+            }
+
+            .hero,
+            .panel,
+            .stat-card,
+            .admin-item {
+                border-radius: 18px;
+            }
+
+            .hero {
+                padding: 24px 18px;
+            }
+
+            .editor-modal {
+                padding: 12px;
+            }
+
+            .editor-panel {
+                padding: 18px;
+            }
+
+            .photo-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .item-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <section class="hero">
+            <div class="hero-top">
+                <div>
+                    <h1>Správa galerie</h1>
+                    <p>Jednoduchá interní administrace pro pořadí realizací, úvodní fotky a rozložení gridu. Nastavení se ukládá do prohlížeče, takže si vzhled galerie upravíte bez zásahu do datového souboru.</p>
+                </div>
+                <a class="back-link" href="./index.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Zpět na web
+                </a>
+            </div>
+
+            <div class="notice">
+                Nastavení je lokální pro aktuální prohlížeč a doménu. Pořadí, úvodní fotky i počet sloupců si můžete přenést exportem a následným importem konfigurace.
+            </div>
+
+            <div class="stats" id="stats"></div>
+        </section>
+
+        <div class="controls">
+            <section class="panel">
+                <h2>Pořadí a rozložení</h2>
+                <div class="control-grid">
+                    <div>
+                        <label for="sort-mode">Výchozí režim řazení</label>
+                        <select id="sort-mode"></select>
+                        <div class="field-note">Nejjednodušší je režim `Vlastní pořadí`, kde si karty přeskládáte ručně myší nebo šipkami.</div>
+                    </div>
+
+                    <div>
+                        <label for="search-input">Najít realizaci</label>
+                        <input id="search-input" type="search" placeholder="Název nebo složka realizace">
+                        <div class="field-note">Ruční přesuny se při aktivním hledání záměrně vypínají, aby se neměnilo pořadí jen části seznamu.</div>
+                    </div>
+
+                    <div>
+                        <label>Zvýraznění stavu</label>
+                        <div class="toggle">
+                            <input id="pin-progress" type="checkbox">
+                            <span>Položky "V realizaci" držet vždy nahoře</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="admin-columns">Sloupce v přehledu</label>
+                        <select id="admin-columns"></select>
+                        <div class="field-note">Počet karet na řádek v této administraci.</div>
+                    </div>
+
+                    <div>
+                        <label for="editor-columns">Sloupce v editoru fotek</label>
+                        <select id="editor-columns"></select>
+                        <div class="field-note">Počet fotek na řádek v editoru projektu.</div>
+                    </div>
+
+                    <div>
+                        <label for="public-project-columns">Sloupce na webu</label>
+                        <select id="public-project-columns"></select>
+                        <div class="field-note">Počet realizací na řádek ve veřejné galerii.</div>
+                    </div>
+
+                    <div>
+                        <label for="public-detail-columns">Sloupce detailu na webu</label>
+                        <select id="public-detail-columns"></select>
+                        <div class="field-note">Počet fotek na řádek po otevření konkrétní stavby.</div>
+                    </div>
+                </div>
+
+                <div class="button-row">
+                    <button class="btn btn-primary" id="apply-auto-to-custom">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        Vytvořit vlastní pořadí z aktuálního řazení
+                    </button>
+                    <button class="btn btn-light" id="reset-settings">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        Obnovit výchozí nastavení
+                    </button>
+                </div>
+            </section>
+
+            <section class="panel">
+                <h2>Ukládání konfigurace</h2>
+                <div class="status-box">
+                    <div class="status-pill" id="save-status">
+                        <i class="fa-solid fa-floppy-disk"></i>
+                        Připraveno
+                    </div>
+                    <div class="helper">Změny se ukládají automaticky po úpravě pořadí, úvodní fotky, stavu realizace nebo počtu sloupců.</div>
+                </div>
+
+                <div class="button-row">
+                    <button class="btn btn-secondary" id="export-settings">
+                        <i class="fa-solid fa-file-export"></i>
+                        Exportovat JSON
+                    </button>
+                    <button class="btn btn-light" id="import-settings">
+                        <i class="fa-solid fa-file-import"></i>
+                        Importovat JSON
+                    </button>
+                    <input id="import-file" type="file" accept="application/json,.json" hidden>
+                </div>
+            </section>
+        </div>
+
+        <section class="list-section">
+            <div class="list-head">
+                <div>
+                    <h2>Seznam realizací</h2>
+                    <div class="helper">Každá karta umožňuje změnit pořadí, otevřít editor fotek a případně označit projekt jako „v realizaci“.</div>
+                </div>
+                <div class="helper" id="list-helper"></div>
+            </div>
+            <div class="item-list" id="item-list"></div>
+        </section>
+    </div>
+
+    <div class="editor-modal" id="editor-modal">
+        <div class="editor-panel">
+            <div class="editor-head">
+                <div>
+                    <h3 id="editor-title">Správa projektu</h3>
+                    <div class="helper">V editoru nastavíte úvodní fotku a pořadí fotek. Změny se uloží okamžitě.</div>
+                </div>
+                <div class="editor-toolbar">
+                    <button class="mini-btn primary" id="editor-sort-photos">
+                        <i class="fa-solid fa-arrow-down-a-z"></i> Seřadit A-Z
+                    </button>
+                    <button class="mini-btn" id="editor-reset-photos">
+                        <i class="fa-solid fa-clock-rotate-left"></i> Výchozí fotky
+                    </button>
+                    <button class="btn btn-light" id="editor-close">
+                        <i class="fa-solid fa-xmark"></i>
+                        Zavřít editor
+                    </button>
+                </div>
+            </div>
+
+            <div class="editor-grid">
+                <aside class="editor-side">
+                    <div class="editor-preview" id="editor-preview"></div>
+                    <div class="helper" id="editor-cover-label">Úvodní fotka se nastavuje tlačítkem u konkrétního snímku.</div>
+                    <div class="toggle">
+                        <input id="editor-in-progress" type="checkbox">
+                        <span>Označit projekt jako „v realizaci“</span>
+                    </div>
+                    <div class="field-note">Tento přepis má přednost před hodnotou v `galerie.json`.</div>
+                    <div class="editor-side-actions">
+                        <button class="mini-btn primary" id="editor-set-first-cover">
+                            <i class="fa-solid fa-star"></i> První foto jako úvodní
+                        </button>
+                        <button class="mini-btn" id="editor-move-cover-first">
+                            <i class="fa-solid fa-turn-up"></i> Úvodní foto nahoru
+                        </button>
+                        <button class="mini-btn" id="editor-reset-progress">
+                            <i class="fa-solid fa-rotate-left"></i> Zrušit přepis stavu
+                        </button>
+                    </div>
+                </aside>
+
+                <section class="editor-main">
+                    <div class="editor-main-top">
+                        <div class="helper">Fotky můžete přesouvat tažením nebo tlačítky. Tlačítko „Úvodní“ nastaví náhled pro veřejnou galerii.</div>
+                        <div class="photo-summary" id="editor-photo-summary"></div>
+                    </div>
+                    <div class="photo-grid" id="editor-photo-grid"></div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="./gallery/gallery-config.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            const galleryApi = window.VDGallery;
+            const sortModeSelect = document.getElementById("sort-mode");
+            const searchInput = document.getElementById("search-input");
+            const pinProgressCheckbox = document.getElementById("pin-progress");
+            const adminColumnsSelect = document.getElementById("admin-columns");
+            const editorColumnsSelect = document.getElementById("editor-columns");
+            const publicProjectColumnsSelect = document.getElementById("public-project-columns");
+            const publicDetailColumnsSelect = document.getElementById("public-detail-columns");
+            const statsContainer = document.getElementById("stats");
+            const itemList = document.getElementById("item-list");
+            const saveStatus = document.getElementById("save-status");
+            const listHelper = document.getElementById("list-helper");
+            const importFile = document.getElementById("import-file");
+
+            const editorModal = document.getElementById("editor-modal");
+            const editorClose = document.getElementById("editor-close");
+            const editorTitle = document.getElementById("editor-title");
+            const editorPreview = document.getElementById("editor-preview");
+            const editorCoverLabel = document.getElementById("editor-cover-label");
+            const editorInProgress = document.getElementById("editor-in-progress");
+            const editorPhotoGrid = document.getElementById("editor-photo-grid");
+            const editorPhotoSummary = document.getElementById("editor-photo-summary");
+            const editorSortPhotos = document.getElementById("editor-sort-photos");
+            const editorResetPhotos = document.getElementById("editor-reset-photos");
+            const editorSetFirstCover = document.getElementById("editor-set-first-cover");
+            const editorMoveCoverFirst = document.getElementById("editor-move-cover-first");
+            const editorResetProgress = document.getElementById("editor-reset-progress");
+
+            let rawProjects = [];
+            let settings = galleryApi.getStoredSettings();
+            let draggedPhotoName = null;
+            let activeEditorProjectId = null;
+            let projectDrag = null;
+
+            const projectDropSlot = document.createElement("article");
+            projectDropSlot.className = "project-drop-slot";
+            projectDropSlot.innerHTML = '<span><i class="fa-solid fa-up-down-left-right"></i> Přesuňte galerii sem</span>';
+
+            galleryApi.SORT_MODES.forEach(mode => {
+                const option = document.createElement("option");
+                option.value = mode.value;
+                option.textContent = mode.label;
+                sortModeSelect.appendChild(option);
+            });
+
+            [adminColumnsSelect, editorColumnsSelect, publicProjectColumnsSelect, publicDetailColumnsSelect].forEach(select => {
+                for (let i = 1; i <= 10; i += 1) {
+                    const option = document.createElement("option");
+                    option.value = String(i);
+                    option.textContent = `${i} sloupec${i === 1 ? "" : i < 5 ? "e" : "ů"}`;
+                    select.appendChild(option);
+                }
+            });
+
+            try {
+                const response = await fetch("./gallery/galerie.json");
+                if (!response.ok) throw new Error("Soubor galerie.json se nepodařilo načíst.");
+                const data = await response.json();
+                rawProjects = Array.isArray(data.zakazky) ? data.zakazky : [];
+            } catch (error) {
+                itemList.innerHTML = '<div class="empty-state">Galerii se nepodařilo načíst. Zkontrolujte soubor <code>gallery/galerie.json</code>.</div>';
+                console.error(error);
+                return;
+            }
+
+            if (!settings.customOrder.length) {
+                settings.customOrder = galleryApi.createCustomOrder(rawProjects);
+                settings = persistSettings(settings, "Výchozí pořadí bylo inicializováno.");
+            }
+
+            if ((settings.layout?.adminColumns || 0) < 10) {
+                settings.layout.adminColumns = 10;
+                settings = persistSettings(settings, "Šířka admin gridu byla rozšířena na 10 sloupců.");
+            }
+
+            syncControls();
+            render();
+
+            sortModeSelect.addEventListener("change", () => {
+                settings.sortMode = sortModeSelect.value;
+                settings = persistSettings(settings, "Výchozí režim řazení byl uložen.");
+                render();
+            });
+
+            searchInput.addEventListener("input", () => render());
+
+            itemList.addEventListener("pointerdown", event => {
+                const handle = event.target.closest(".drag-handle");
+                if (!handle) return;
+                if (settings.sortMode !== "custom" || searchInput.value.trim()) return;
+
+                const sourceItem = handle.closest(".admin-item");
+                if (!sourceItem) return;
+
+                event.preventDefault();
+                startProjectDrag(sourceItem, handle, event);
+            });
+
+            pinProgressCheckbox.addEventListener("change", () => {
+                settings.pinInProgress = pinProgressCheckbox.checked;
+                settings = persistSettings(settings, "Priorita stavu realizace byla aktualizována.");
+                render();
+            });
+
+            adminColumnsSelect.addEventListener("change", () => {
+                settings.layout.adminColumns = Number(adminColumnsSelect.value);
+                settings = persistSettings(settings, "Počet sloupců v přehledu byl uložen.");
+                render();
+            });
+
+            editorColumnsSelect.addEventListener("change", () => {
+                settings.layout.editorColumns = Number(editorColumnsSelect.value);
+                settings = persistSettings(settings, "Počet sloupců v editoru byl uložen.");
+                render();
+            });
+
+            publicProjectColumnsSelect.addEventListener("change", () => {
+                settings.layout.publicProjectColumns = Number(publicProjectColumnsSelect.value);
+                settings = persistSettings(settings, "Počet sloupců veřejné galerie byl uložen.");
+                render();
+            });
+
+            publicDetailColumnsSelect.addEventListener("change", () => {
+                settings.layout.publicDetailColumns = Number(publicDetailColumnsSelect.value);
+                settings = persistSettings(settings, "Počet sloupců detailu galerie byl uložen.");
+                render();
+            });
+
+            document.getElementById("apply-auto-to-custom").addEventListener("click", () => {
+                const orderedProjects = getOrderedProjects();
+                settings.customOrder = orderedProjects.map(project => project._id);
+                settings.sortMode = "custom";
+                settings = persistSettings(settings, "Aktuální řazení bylo převedeno na vlastní pořadí.");
+                syncControls();
+                render();
+            });
+
+            document.getElementById("reset-settings").addEventListener("click", () => {
+                settings = galleryApi.resetSettings();
+                settings.customOrder = galleryApi.createCustomOrder(rawProjects);
+                settings = persistSettings(settings, "Nastavení galerie bylo obnoveno.");
+                syncControls();
+                searchInput.value = "";
+                closeEditor();
+                render();
+            });
+
+            document.getElementById("export-settings").addEventListener("click", () => {
+                const blob = new Blob([galleryApi.exportSettings(settings)], { type: "application/json" });
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement("a");
+                link.href = url;
+                link.download = "vdstavby-gallery-settings.json";
+                link.click();
+                URL.revokeObjectURL(url);
+                setStatus("Konfigurace byla exportována.", "fa-file-export");
+            });
+
+            document.getElementById("import-settings").addEventListener("click", () => {
+                importFile.click();
+            });
+
+            importFile.addEventListener("change", async () => {
+                const file = importFile.files[0];
+                if (!file) return;
+
+                try {
+                    const text = await file.text();
+                    settings = galleryApi.importSettings(text);
+                    if (!settings.customOrder.length) {
+                        settings.customOrder = galleryApi.createCustomOrder(rawProjects);
+                        settings = persistSettings(settings, "Importované nastavení bylo doplněno o výchozí pořadí.");
+                    } else {
+                        setStatus("Konfigurace byla importována.", "fa-file-import");
+                    }
+                    syncControls();
+                    render();
+                } catch (error) {
+                    console.error(error);
+                    setStatus("Import se nepodařil. Zkontrolujte formát JSON.", "fa-triangle-exclamation");
+                } finally {
+                    importFile.value = "";
+                }
+            });
+
+            editorClose.addEventListener("click", closeEditor);
+            editorModal.addEventListener("click", event => {
+                if (event.target === editorModal) closeEditor();
+            });
+
+            editorInProgress.addEventListener("change", () => {
+                if (!activeEditorProjectId) return;
+                settings.inProgressOverrides[activeEditorProjectId] = editorInProgress.checked;
+                settings = persistSettings(settings, "Stav realizace byl uložen.");
+                render();
+            });
+
+            editorSortPhotos.addEventListener("click", () => {
+                if (!activeEditorProjectId) return;
+                const sortedPhotos = [...ensurePhotoOrder(activeEditorProjectId)].sort((a, b) => a.localeCompare(b, "cs", { sensitivity: "base" }));
+                setPhotoOrder(activeEditorProjectId, sortedPhotos, "Fotky byly seřazeny podle názvu.");
+            });
+
+            editorResetPhotos.addEventListener("click", () => {
+                if (!activeEditorProjectId) return;
+                delete settings.photoOrders[activeEditorProjectId];
+                delete settings.coverPhotos[activeEditorProjectId];
+                settings = persistSettings(settings, "Fotky projektu byly vráceny do výchozího pořadí.");
+                render();
+            });
+
+            editorSetFirstCover.addEventListener("click", () => {
+                if (!activeEditorProjectId) return;
+                const firstPhoto = ensurePhotoOrder(activeEditorProjectId)[0];
+                if (!firstPhoto) return;
+                setCoverPhoto(activeEditorProjectId, firstPhoto);
+            });
+
+            editorMoveCoverFirst.addEventListener("click", () => {
+                if (!activeEditorProjectId) return;
+                const currentOrder = [...ensurePhotoOrder(activeEditorProjectId)];
+                const currentCover = settings.coverPhotos[activeEditorProjectId] || currentOrder[0];
+                if (!currentCover) return;
+                const reordered = currentOrder.filter(photo => photo !== currentCover);
+                reordered.unshift(currentCover);
+                setPhotoOrder(activeEditorProjectId, reordered, "Úvodní fotka byla přesunuta na první pozici.");
+            });
+
+            editorResetProgress.addEventListener("click", () => {
+                if (!activeEditorProjectId) return;
+                delete settings.inProgressOverrides[activeEditorProjectId];
+                settings = persistSettings(settings, "Ruční přepis stavu realizace byl zrušen.");
+                render();
+            });
+
+            function syncControls() {
+                sortModeSelect.value = settings.sortMode;
+                pinProgressCheckbox.checked = settings.pinInProgress !== false;
+                adminColumnsSelect.value = String(settings.layout.adminColumns);
+                editorColumnsSelect.value = String(settings.layout.editorColumns);
+                publicProjectColumnsSelect.value = String(settings.layout.publicProjectColumns);
+                publicDetailColumnsSelect.value = String(settings.layout.publicDetailColumns);
+            }
+
+            function persistSettings(nextSettings, message) {
+                const saved = galleryApi.saveSettings(nextSettings);
+                setStatus(message, "fa-floppy-disk");
+                return saved;
+            }
+
+            function setStatus(message, iconName) {
+                saveStatus.innerHTML = `<i class="fa-solid ${iconName}"></i> ${message}`;
+            }
+
+            function applyLayoutSettings() {
+                document.documentElement.style.setProperty("--admin-columns", String(settings.layout.adminColumns));
+                document.documentElement.style.setProperty("--editor-columns", String(settings.layout.editorColumns));
+            }
+
+            function getRawProject(projectId) {
+                return rawProjects.find(project => galleryApi.getProjectId(project) === projectId) || null;
+            }
+
+            function getEnhancedProject(projectId) {
+                return galleryApi.applyGalleryPreferences(rawProjects, settings).find(project => project._id === projectId) || null;
+            }
+
+            function getOrderedProjects() {
+                return galleryApi.applyGalleryPreferences(rawProjects, settings);
+            }
+
+            function startProjectDrag(sourceItem, handle, event) {
+                const sourceId = sourceItem.dataset.id;
+                if (!sourceId) return;
+
+                const rect = sourceItem.getBoundingClientRect();
+                const ghost = sourceItem.cloneNode(true);
+                ghost.classList.remove("dragging", "drag-over");
+                ghost.classList.add("project-drag-ghost");
+                ghost.style.width = `${rect.width}px`;
+                document.body.appendChild(ghost);
+
+                projectDropSlot.style.minHeight = `${Math.round(rect.height)}px`;
+
+                projectDrag = {
+                    pointerId: event.pointerId,
+                    sourceId,
+                    sourceItem,
+                    handle,
+                    ghost,
+                    offsetX: event.clientX - rect.left,
+                    offsetY: event.clientY - rect.top,
+                    currentSlotKey: "",
+                    pendingPointer: null,
+                    frameRequest: 0
+                };
+
+                sourceItem.classList.add("dragging", "drag-source");
+                handle.setPointerCapture(event.pointerId);
+                document.body.classList.add("dragging-projects");
+                positionProjectGhost(event.clientX, event.clientY);
+                moveDropSlot(sourceItem, "before");
+
+                window.addEventListener("pointermove", onProjectPointerMove, { passive: false });
+                window.addEventListener("pointerup", onProjectPointerUp, { passive: false });
+                window.addEventListener("pointercancel", onProjectPointerCancel, { passive: false });
+            }
+
+            function positionProjectGhost(clientX, clientY) {
+                if (!projectDrag) return;
+                const nextLeft = clientX - projectDrag.offsetX;
+                const nextTop = clientY - projectDrag.offsetY;
+                projectDrag.ghost.style.transform = `translate3d(${nextLeft}px, ${nextTop}px, 0) scale(1.02)`;
+            }
+
+            function autoScrollDuringDrag(clientY) {
+                const edge = 110;
+                const delta = 14;
+                if (clientY < edge) {
+                    window.scrollBy({ top: -delta, behavior: "auto" });
+                } else if (clientY > window.innerHeight - edge) {
+                    window.scrollBy({ top: delta, behavior: "auto" });
+                }
+            }
+
+            function clearProjectDropHints() {
+                itemList.querySelectorAll(".admin-item.drag-over").forEach(item => item.classList.remove("drag-over"));
+            }
+
+            function moveDropSlot(referenceItem, position) {
+                if (!referenceItem || referenceItem === projectDropSlot) return;
+                const nextKey = `${referenceItem.dataset.id || "unknown"}:${position}`;
+                if (projectDrag && projectDrag.currentSlotKey === nextKey && projectDropSlot.parentElement === itemList) {
+                    return;
+                }
+                if (projectDrag) {
+                    projectDrag.currentSlotKey = nextKey;
+                }
+                clearProjectDropHints();
+                referenceItem.classList.add("drag-over");
+                if (position === "after") {
+                    itemList.insertBefore(projectDropSlot, referenceItem.nextSibling);
+                } else {
+                    itemList.insertBefore(projectDropSlot, referenceItem);
+                }
+            }
+
+            function updateProjectDropTarget(clientX, clientY) {
+                if (!projectDrag) return;
+
+                const rawTarget = document.elementFromPoint(clientX, clientY);
+                const hoveredItem = rawTarget ? rawTarget.closest(".admin-item") : null;
+
+                if (hoveredItem && hoveredItem.parentElement === itemList && hoveredItem !== projectDrag.sourceItem) {
+                    const rect = hoveredItem.getBoundingClientRect();
+                    const sameRow = Math.abs(clientY - (rect.top + rect.height / 2)) < rect.height * 0.2;
+                    const insertAfter = sameRow
+                        ? clientX > rect.left + rect.width / 2
+                        : clientY > rect.top + rect.height / 2;
+                    moveDropSlot(hoveredItem, insertAfter ? "after" : "before");
+                    return;
+                }
+
+                const siblings = [...itemList.querySelectorAll(".admin-item:not(.drag-source)")];
+                if (!siblings.length) {
+                    if (projectDrag) {
+                        projectDrag.currentSlotKey = "empty";
+                    }
+                    itemList.appendChild(projectDropSlot);
+                    clearProjectDropHints();
+                    return;
+                }
+
+                const beforeItem = siblings.find(item => {
+                    const rect = item.getBoundingClientRect();
+                    return clientY < rect.top + rect.height / 2;
+                });
+
+                if (beforeItem) {
+                    moveDropSlot(beforeItem, "before");
+                } else {
+                    if (projectDrag && projectDrag.currentSlotKey === "end" && projectDropSlot.parentElement === itemList) {
+                        return;
+                    }
+                    if (projectDrag) {
+                        projectDrag.currentSlotKey = "end";
+                    }
+                    clearProjectDropHints();
+                    itemList.appendChild(projectDropSlot);
+                }
+            }
+
+            function finalizeProjectOrder() {
+                if (!projectDrag || !projectDropSlot.parentElement) return false;
+
+                const idsWithoutSource = [...itemList.querySelectorAll(".admin-item")]
+                    .map(item => item.dataset.id)
+                    .filter(id => id && id !== projectDrag.sourceId);
+
+                const slotIndex = [...itemList.children].indexOf(projectDropSlot);
+                const insertIndex = [...itemList.children]
+                    .slice(0, Math.max(0, slotIndex))
+                    .filter(node => node.classList && node.classList.contains("admin-item") && node.dataset.id !== projectDrag.sourceId)
+                    .length;
+
+                const nextOrder = [...idsWithoutSource];
+                nextOrder.splice(insertIndex, 0, projectDrag.sourceId);
+
+                if (!nextOrder.length) return false;
+
+                settings.customOrder = nextOrder;
+                settings = persistSettings(settings, "Pořadí galerií bylo uloženo přetažením.");
+                render();
+                return true;
+            }
+
+            function cleanupProjectDrag() {
+                if (!projectDrag) return;
+                clearProjectDropHints();
+                if (projectDrag.ghost.parentElement) {
+                    projectDrag.ghost.remove();
+                }
+                projectDrag.sourceItem.classList.remove("dragging", "drag-source");
+                if (projectDrag.frameRequest) {
+                    cancelAnimationFrame(projectDrag.frameRequest);
+                }
+                if (projectDrag.handle && projectDrag.handle.hasPointerCapture?.(projectDrag.pointerId)) {
+                    projectDrag.handle.releasePointerCapture(projectDrag.pointerId);
+                }
+                if (projectDropSlot.parentElement) {
+                    projectDropSlot.remove();
+                }
+                document.body.classList.remove("dragging-projects");
+                window.removeEventListener("pointermove", onProjectPointerMove);
+                window.removeEventListener("pointerup", onProjectPointerUp);
+                window.removeEventListener("pointercancel", onProjectPointerCancel);
+                projectDrag = null;
+            }
+
+            function onProjectPointerMove(event) {
+                if (!projectDrag || event.pointerId !== projectDrag.pointerId) return;
+                event.preventDefault();
+                projectDrag.pendingPointer = {
+                    clientX: event.clientX,
+                    clientY: event.clientY
+                };
+                if (projectDrag.frameRequest) return;
+                projectDrag.frameRequest = requestAnimationFrame(() => {
+                    if (!projectDrag || !projectDrag.pendingPointer) return;
+                    const { clientX, clientY } = projectDrag.pendingPointer;
+                    positionProjectGhost(clientX, clientY);
+                    autoScrollDuringDrag(clientY);
+                    updateProjectDropTarget(clientX, clientY);
+                    projectDrag.frameRequest = 0;
+                });
+            }
+
+            function onProjectPointerUp(event) {
+                if (!projectDrag || event.pointerId !== projectDrag.pointerId) return;
+                event.preventDefault();
+                positionProjectGhost(event.clientX, event.clientY);
+                updateProjectDropTarget(event.clientX, event.clientY);
+                finalizeProjectOrder();
+                cleanupProjectDrag();
+            }
+
+            function onProjectPointerCancel(event) {
+                if (!projectDrag || event.pointerId !== projectDrag.pointerId) return;
+                cleanupProjectDrag();
+            }
+
+            function getFilteredProjects() {
+                const ordered = getOrderedProjects();
+                const query = searchInput.value.trim().toLocaleLowerCase("cs");
+                if (!query) return ordered;
+
+                return ordered.filter(project => {
+                    const haystack = [
+                        project._displayName,
+                        project.slozka
+                    ].join(" ").toLocaleLowerCase("cs");
+                    return haystack.includes(query);
+                });
+            }
+
+            function ensurePhotoOrder(projectId) {
+                const rawProject = getRawProject(projectId);
+                if (!rawProject) return [];
+                const orderedPhotos = galleryApi.getOrderedPhotos(rawProject, settings);
+                settings.photoOrders[projectId] = orderedPhotos;
+                return orderedPhotos;
+            }
+
+            function setPhotoOrder(projectId, orderedPhotos, message) {
+                settings.photoOrders[projectId] = [...orderedPhotos];
+                if (!settings.coverPhotos[projectId] || !orderedPhotos.includes(settings.coverPhotos[projectId])) {
+                    settings.coverPhotos[projectId] = orderedPhotos[0] || null;
+                }
+                settings = persistSettings(settings, message);
+                render();
+            }
+
+            function setCoverPhoto(projectId, photoName) {
+                settings.coverPhotos[projectId] = photoName;
+                settings = persistSettings(settings, "Úvodní fotka byla nastavena.");
+                render();
+            }
+
+            function render() {
+                applyLayoutSettings();
+                const orderedProjects = getOrderedProjects();
+                const filteredProjects = getFilteredProjects();
+                const customMode = settings.sortMode === "custom";
+                const searchActive = searchInput.value.trim().length > 0;
+                const customizedCovers = Object.keys(settings.coverPhotos).length;
+
+                statsContainer.innerHTML = `
+                    <div class="stat-card">
+                        <div class="stat-label">Zakázek celkem</div>
+                        <div class="stat-value">${rawProjects.length}</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Viditelných po filtru</div>
+                        <div class="stat-value">${filteredProjects.length}</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Úvodních fotek</div>
+                        <div class="stat-value">${customizedCovers}</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">V realizaci</div>
+                        <div class="stat-value">${orderedProjects.filter(project => project._inProgress).length}</div>
+                    </div>
+                `;
+
+                listHelper.textContent = customMode && !searchActive
+                    ? "Karty lze přeskládat tažením i tlačítky. Grid teď podporuje až 10 sloupců."
+                    : "Přeskládání karet se aktivuje v režimu Vlastní pořadí bez vyhledávání.";
+
+                if (!filteredProjects.length) {
+                    itemList.innerHTML = '<div class="empty-state">Zadanému filtru neodpovídá žádná realizace.</div>';
+                    return;
+                }
+
+                itemList.innerHTML = "";
+                filteredProjects.forEach((project, index) => {
+                    const item = document.createElement("article");
+                    item.className = "admin-item";
+                    item.dataset.id = project._id;
+
+                    const thumbSrc = project._coverPhoto
+                        ? `./gallery/${project.slozka}/${project._coverPhoto}`
+                        : "";
+
+                    item.innerHTML = `
+                        <div class="drag-handle" title="Přetáhněte pro změnu pořadí">
+                            <i class="fa-solid fa-grip-vertical"></i>
+                        </div>
+                        <div class="thumb">
+                            ${thumbSrc ? `<img src="${thumbSrc}" alt="${project._displayName}" loading="lazy">` : ""}
+                            ${project._coverPhoto ? `<div class="cover-badge"><i class="fa-solid fa-star"></i> Úvodní fotka</div>` : ""}
+                        </div>
+                        <div class="card-body">
+                            <div class="card-topline">
+                                <div>
+                                    <div class="item-title">${index + 1}. ${project._displayName}</div>
+                                    <div class="meta-row">
+                                        <span class="meta-pill"><i class="fa-solid fa-images"></i> ${project._photoCount} fotek</span>
+                                        ${project._inProgress ? '<span class="meta-pill active"><i class="fa-solid fa-helmet-safety"></i> V realizaci</span>' : ""}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="toggle">
+                                <input type="checkbox" data-role="in-progress" ${project._inProgress ? "checked" : ""}>
+                                <span>Označit jako „v realizaci“</span>
+                            </div>
+                            <div class="item-actions">
+                                <button class="mini-btn primary" data-role="edit-photos">
+                                    <i class="fa-solid fa-sliders"></i> Otevřít editor
+                                </button>
+                                <button class="mini-btn" data-role="move-up" ${(!customMode || searchActive || index === 0) ? "disabled" : ""}>
+                                    <i class="fa-solid fa-arrow-up"></i> Nahoru
+                                </button>
+                                <button class="mini-btn" data-role="move-down" ${(!customMode || searchActive || index === filteredProjects.length - 1) ? "disabled" : ""}>
+                                    <i class="fa-solid fa-arrow-down"></i> Dolů
+                                </button>
+                            </div>
+                        </div>
+                    `;
+
+                    item.querySelector('[data-role="in-progress"]').addEventListener("change", event => {
+                        settings.inProgressOverrides[project._id] = event.target.checked;
+                        settings = persistSettings(settings, `Stav realizace "${project._displayName}" byl uložen.`);
+                        render();
+                    });
+
+                    item.querySelector('[data-role="edit-photos"]').addEventListener("click", () => {
+                        openEditor(project._id);
+                    });
+
+                    item.querySelector(".thumb").addEventListener("click", () => {
+                        openEditor(project._id);
+                    });
+
+                    item.querySelector(".item-title").addEventListener("click", () => {
+                        openEditor(project._id);
+                    });
+
+                    item.querySelector('[data-role="move-up"]').addEventListener("click", () => moveProject(project._id, -1));
+                    item.querySelector('[data-role="move-down"]').addEventListener("click", () => moveProject(project._id, 1));
+
+                    itemList.appendChild(item);
+                });
+
+                renderEditor();
+            }
+
+            function openEditor(projectId) {
+                activeEditorProjectId = projectId;
+                renderEditor();
+                editorModal.classList.add("active");
+            }
+
+            function closeEditor() {
+                editorModal.classList.remove("active");
+                activeEditorProjectId = null;
+                draggedPhotoName = null;
+            }
+
+            function renderEditor() {
+                if (!activeEditorProjectId) return;
+
+                const project = getEnhancedProject(activeEditorProjectId);
+                if (!project) {
+                    closeEditor();
+                    return;
+                }
+
+                editorTitle.textContent = project._displayName;
+                editorPreview.innerHTML = project._coverPhoto
+                    ? `<img src="./gallery/${project.slozka}/${project._coverPhoto}" alt="${project._displayName}" loading="lazy">`
+                    : "";
+                editorCoverLabel.textContent = project._coverPhoto
+                    ? `Aktuální úvodní fotka: ${project._coverPhoto}`
+                    : "Úvodní fotka zatím není nastavena.";
+                editorInProgress.checked = project._inProgress;
+                editorPhotoSummary.innerHTML = `
+                    <span class="meta-pill"><i class="fa-solid fa-images"></i> ${project._photoCount} fotek</span>
+                    <span class="meta-pill"><i class="fa-solid fa-star"></i> ${project._coverPhoto || "Bez úvodní fotky"}</span>
+                `;
+
+                editorPhotoGrid.innerHTML = "";
+                project._photos.forEach((photoName, index) => {
+                    const photoCard = document.createElement("article");
+                    photoCard.className = "photo-card";
+                    photoCard.dataset.photo = photoName;
+                    photoCard.draggable = true;
+
+                    const isCover = project._coverPhoto === photoName;
+                    photoCard.innerHTML = `
+                        <img src="./gallery/${project.slozka}/${photoName}" alt="${project._displayName} - ${photoName}" loading="lazy">
+                        <div class="photo-card-body">
+                            <div class="meta-row">
+                                <span class="meta-pill"><i class="fa-solid fa-hashtag"></i> ${index + 1}</span>
+                                ${isCover ? '<span class="meta-pill active"><i class="fa-solid fa-star"></i> Úvodní</span>' : ''}
+                            </div>
+                            <div class="photo-name">${photoName}</div>
+                            <div class="photo-actions">
+                                <button class="mini-btn primary" data-role="set-cover">
+                                    <i class="fa-solid fa-star"></i> Úvodní
+                                </button>
+                                <button class="mini-btn" data-role="move-left" ${index === 0 ? "disabled" : ""}>
+                                    <i class="fa-solid fa-arrow-left"></i> Dřív
+                                </button>
+                                <button class="mini-btn" data-role="move-right" ${index === project._photos.length - 1 ? "disabled" : ""}>
+                                    <i class="fa-solid fa-arrow-right"></i> Později
+                                </button>
+                            </div>
+                        </div>
+                    `;
+
+                    photoCard.querySelector('[data-role="set-cover"]').addEventListener("click", () => {
+                        setCoverPhoto(project._id, photoName);
+                    });
+                    photoCard.querySelector('[data-role="move-left"]').addEventListener("click", () => {
+                        movePhoto(project._id, photoName, -1);
+                    });
+                    photoCard.querySelector('[data-role="move-right"]').addEventListener("click", () => {
+                        movePhoto(project._id, photoName, 1);
+                    });
+
+                    photoCard.addEventListener("dragstart", () => {
+                        draggedPhotoName = photoName;
+                        photoCard.classList.add("dragging");
+                    });
+
+                    photoCard.addEventListener("dragend", () => {
+                        draggedPhotoName = null;
+                        photoCard.classList.remove("dragging");
+                    });
+
+                    photoCard.addEventListener("dragover", event => {
+                        event.preventDefault();
+                    });
+
+                    photoCard.addEventListener("drop", event => {
+                        if (!draggedPhotoName || draggedPhotoName === photoName) return;
+                        event.preventDefault();
+                        movePhotoBefore(project._id, draggedPhotoName, photoName);
+                    });
+
+                    editorPhotoGrid.appendChild(photoCard);
+                });
+            }
+
+            function moveProject(projectId, direction) {
+                const currentOrder = [...settings.customOrder];
+                const currentIndex = currentOrder.indexOf(projectId);
+                if (currentIndex === -1) return;
+
+                const nextIndex = currentIndex + direction;
+                if (nextIndex < 0 || nextIndex >= currentOrder.length) return;
+
+                [currentOrder[currentIndex], currentOrder[nextIndex]] = [currentOrder[nextIndex], currentOrder[currentIndex]];
+                settings.customOrder = currentOrder;
+                settings = persistSettings(settings, "Vlastní pořadí bylo upraveno.");
+                render();
+            }
+
+            function moveProjectBefore(sourceId, targetId) {
+                const currentOrder = settings.customOrder.filter(id => id !== sourceId);
+                const targetIndex = currentOrder.indexOf(targetId);
+                if (targetIndex === -1) return;
+                currentOrder.splice(targetIndex, 0, sourceId);
+                settings.customOrder = currentOrder;
+                settings = persistSettings(settings, "Vlastní pořadí bylo upraveno přetažením.");
+                render();
+            }
+
+            function movePhoto(projectId, photoName, direction) {
+                const currentOrder = [...ensurePhotoOrder(projectId)];
+                const currentIndex = currentOrder.indexOf(photoName);
+                if (currentIndex === -1) return;
+                const nextIndex = currentIndex + direction;
+                if (nextIndex < 0 || nextIndex >= currentOrder.length) return;
+                [currentOrder[currentIndex], currentOrder[nextIndex]] = [currentOrder[nextIndex], currentOrder[currentIndex]];
+                setPhotoOrder(projectId, currentOrder, "Pořadí fotek bylo upraveno.");
+            }
+
+            function movePhotoBefore(projectId, sourcePhoto, targetPhoto) {
+                const currentOrder = ensurePhotoOrder(projectId).filter(photo => photo !== sourcePhoto);
+                const targetIndex = currentOrder.indexOf(targetPhoto);
+                if (targetIndex === -1) return;
+                currentOrder.splice(targetIndex, 0, sourcePhoto);
+                setPhotoOrder(projectId, currentOrder, "Pořadí fotek bylo upraveno přetažením.");
+            }
+        });
+    </script>
+</body>
+</html>
