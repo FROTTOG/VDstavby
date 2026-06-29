@@ -1,8 +1,8 @@
 {
   "zakazky": [
     {
-      "nazev": "1",
-      "slozka": "1",
+      "nazev": "1. Etapa - Základová deska - Veselí nad Lužnicí",
+      "slozka": "1. Etapa - Základová deska - Veselí nad Lužnicí",
       "v_realizaci": false,
       "fotky": [
            "106f11da-b47d-4f33-9566-f3e6bffd6eee.webp"
@@ -40,8 +40,8 @@
     }
         ,
     {
-      "nazev": "1",
-      "slozka": "1",
+      "nazev": "1. Etapa střechy - Pořežany",
+      "slozka": "1. Etapa střechy - Pořežany",
       "v_realizaci": false,
       "fotky": [
            "06F7A2A8-8899-47D2-A4BD-68E98BEA3881.webp"
@@ -81,8 +81,8 @@
     }
         ,
     {
-      "nazev": "2",
-      "slozka": "2",
+      "nazev": "2. Etapa - Kompletní rekonstrukce domu s novou výstavbou podkroví - Mažice",
+      "slozka": "2. Etapa - Kompletní rekonstrukce domu s novou výstavbou podkroví - Mažice",
       "v_realizaci": false,
       "fotky": [
            "1A234578-4F3A-4E58-8E22-B9D2916BBB12.webp"
@@ -204,8 +204,8 @@
     }
         ,
     {
-      "nazev": "2",
-      "slozka": "2",
+      "nazev": "2. Etapa střechy - Pořežany",
+      "slozka": "2. Etapa střechy - Pořežany",
       "v_realizaci": false,
       "fotky": [
            "4dc6e849-b603-498e-ad97-fb5adc3486f2.webp"
@@ -247,8 +247,8 @@
     }
         ,
     {
-      "nazev": "2",
-      "slozka": "2",
+      "nazev": "2. Etapa výstavba rodinného domu - Veselí nad Lužnicí",
+      "slozka": "2. Etapa výstavba rodinného domu - Veselí nad Lužnicí",
       "v_realizaci": false,
       "fotky": [
            "021F2CF1-B6B6-416B-990D-9C24A478CD30.webp"
@@ -1063,8 +1063,8 @@
     }
         ,
     {
-      "nazev": "Fasáda, kamen",
-      "slozka": "Fasáda, kamen",
+      "nazev": "Fasáda, kamen. obklad - Veselí nad Lužnicí",
+      "slozka": "Fasáda, kamen. obklad - Veselí nad Lužnicí",
       "v_realizaci": false,
       "fotky": [
            "18F718AD-26C9-4D89-B9A5-F09F81A64510.webp"
@@ -1196,8 +1196,8 @@
     }
         ,
     {
-      "nazev": "Komp",
-      "slozka": "Komp",
+      "nazev": "Komp. rekonstrukce domu - Mažice",
+      "slozka": "Komp. rekonstrukce domu - Mažice",
       "v_realizaci": false,
       "fotky": [
            "IMG-20190425-WA0000.webp"
@@ -4880,8 +4880,8 @@
     }
         ,
     {
-      "nazev": "Stavební práce pro DVstav s.r.o",
-      "slozka": "Stavební práce pro DVstav s.r.o",
+      "nazev": "Stavební práce pro DVstav s.r.o. - Vesce",
+      "slozka": "Stavební práce pro DVstav s.r.o. - Vesce",
       "v_realizaci": false,
       "fotky": [
            "003C2F5E-630D-4DD7-BD0B-E2D25D597172.webp"

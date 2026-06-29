@@ -15,7 +15,8 @@ for /d %%D in (*) do (
     )
     set "first_dir=0"
     
-    set "folder_name=%%~nD"
+    rem Pouzijeme cely nazev slozky, aby se nezkracoval text pred teckou.
+    set "folder_name=%%D"
     set "is_active=false"
     
     rem Přesná kontrola, zda název složky obsahuje text "v realizaci"
@@ -23,15 +24,15 @@ for /d %%D in (*) do (
     if !errorlevel! equ 0 set "is_active=true"
     
     echo     {>> "%json_file%"
-    echo       "nazev": "%%~nD",>> "%json_file%"
-    echo       "slozka": "%%~nD",>> "%json_file%"
+    echo       "nazev": "!folder_name!",>> "%json_file%"
+    echo       "slozka": "!folder_name!",>> "%json_file%"
     echo       "v_realizaci": !is_active!,>> "%json_file%"
     echo       "fotky": [>> "%json_file%"
     
     set "first_file=1"
     
-    rem OPRAVENO: Uvozovky nyní obalují celou cestu včetně hvězdičky
-    for %%F in ("%%~D\*.jpg" "%%~D\*.jpeg" "%%~D\*.png" "%%~D\*.webp") do (
+    rem Uvozovky obaluji celou cestu vcetne hvezdicky a zachovaji mezery i diakritiku.
+    for %%F in ("!folder_name!\*.jpg" "!folder_name!\*.jpeg" "!folder_name!\*.png" "!folder_name!\*.webp") do (
         if "!first_file!"=="0" (
             echo            ,>> "%json_file%"
         )
