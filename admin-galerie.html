@@ -221,6 +221,39 @@
             border: 1px solid var(--border);
         }
 
+        .btn-save-disk {
+            position: relative;
+        }
+
+        .btn-save-disk.is-dirty {
+            background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+            color: #ffffff;
+            box-shadow: 0 16px 32px rgba(34, 197, 94, 0.28);
+            animation: pulse-save 1.25s ease-in-out infinite;
+        }
+
+        .btn-save-disk.is-saving {
+            opacity: 0.8;
+            pointer-events: none;
+        }
+
+        .btn-warning {
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+            color: #ffffff;
+            box-shadow: 0 14px 28px rgba(220, 38, 38, 0.2);
+        }
+
+        @keyframes pulse-save {
+            0%, 100% {
+                transform: translateY(0);
+                box-shadow: 0 16px 32px rgba(34, 197, 94, 0.28);
+            }
+            50% {
+                transform: translateY(-2px) scale(1.01);
+                box-shadow: 0 20px 40px rgba(34, 197, 94, 0.4);
+            }
+        }
+
         .status-box {
             display: grid;
             gap: 14px;
@@ -235,6 +268,38 @@
             background: rgba(17, 24, 39, 0.05);
             width: fit-content;
             font-weight: 700;
+        }
+
+        .status-pill.is-success {
+            background: rgba(22, 163, 74, 0.12);
+            color: #166534;
+        }
+
+        .status-pill.is-warning {
+            background: rgba(220, 38, 38, 0.12);
+            color: #991b1b;
+        }
+
+        .status-pill.is-info {
+            background: rgba(37, 99, 235, 0.1);
+            color: #1d4ed8;
+        }
+
+        .save-target {
+            padding: 14px 16px;
+            border-radius: 16px;
+            background: rgba(17, 24, 39, 0.04);
+            border: 1px dashed rgba(17, 24, 39, 0.12);
+            color: #374151;
+            line-height: 1.55;
+        }
+
+        .validation-list {
+            display: grid;
+            gap: 8px;
+            padding-left: 20px;
+            color: #7f1d1d;
+            font-size: 14px;
         }
 
         .list-section {
@@ -281,17 +346,45 @@
         }
 
         .admin-item.dragging {
-            opacity: 0.22;
-            transform: scale(0.98);
+            opacity: 0.16;
+            transform: scale(0.975);
         }
 
         .admin-item.drag-source {
             pointer-events: none;
         }
 
-        .admin-item.drag-over {
-            outline: 2px solid rgba(242, 169, 0, 0.35);
-            outline-offset: 4px;
+        .admin-item.drop-before::before,
+        .admin-item.drop-after::after {
+            content: "";
+            position: absolute;
+            left: 16px;
+            right: 16px;
+            height: 6px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, rgba(242, 169, 0, 0.2), rgba(242, 169, 0, 0.95), rgba(242, 169, 0, 0.2));
+            box-shadow: 0 0 0 4px rgba(242, 169, 0, 0.12);
+            z-index: 5;
+            animation: slot-pulse 0.9s ease-in-out infinite;
+        }
+
+        .admin-item.drop-before::before {
+            top: 12px;
+        }
+
+        .admin-item.drop-after::after {
+            bottom: 12px;
+        }
+
+        @keyframes slot-pulse {
+            0%, 100% {
+                opacity: 0.72;
+                transform: scaleX(0.98);
+            }
+            50% {
+                opacity: 1;
+                transform: scaleX(1);
+            }
         }
 
         .drag-handle {
@@ -458,6 +551,15 @@
             text-align: center;
             padding: 18px;
             box-shadow: inset 0 0 0 1px rgba(242, 169, 0, 0.18);
+            transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+        }
+
+        .project-drop-slot.active {
+            transform: scale(1.015);
+            box-shadow:
+                inset 0 0 0 1px rgba(242, 169, 0, 0.28),
+                0 16px 28px rgba(242, 169, 0, 0.12);
+            background: linear-gradient(135deg, rgba(242, 169, 0, 0.14), rgba(255, 255, 255, 0.98));
         }
 
         .project-drop-slot span {
@@ -477,6 +579,7 @@
             transform-origin: top left;
             box-shadow: 0 30px 60px rgba(15, 23, 42, 0.22);
             will-change: transform;
+            filter: saturate(1.05);
         }
 
         .editor-modal {
@@ -609,6 +712,12 @@
             transform: scale(0.98);
         }
 
+        .photo-card.drag-over {
+            outline: 2px solid rgba(242, 169, 0, 0.42);
+            outline-offset: 4px;
+            box-shadow: 0 16px 28px rgba(242, 169, 0, 0.16);
+        }
+
         .photo-card:hover {
             transform: translateY(-2px);
             box-shadow: 0 14px 22px rgba(15, 23, 42, 0.08);
@@ -699,7 +808,7 @@
             <div class="hero-top">
                 <div>
                     <h1>Správa galerie</h1>
-                    <p>Jednoduchá interní administrace pro pořadí realizací, úvodní fotky a rozložení gridu. Nastavení se ukládá do prohlížeče, takže si vzhled galerie upravíte bez zásahu do datového souboru.</p>
+                    <p>Lokální administrace pro pořadí realizací, úvodní fotky, stav „v realizaci“ a rozložení gridu. Nově umí připravit i finální soubory projektu pro commit na GitHub.</p>
                 </div>
                 <a class="back-link" href="./index.html">
                     <i class="fa-solid fa-arrow-left"></i>
@@ -708,7 +817,7 @@
             </div>
 
             <div class="notice">
-                Nastavení je lokální pro aktuální prohlížeč a doménu. Pořadí, úvodní fotky i počet sloupců si můžete přenést exportem a následným importem konfigurace.
+                Nejprve si změny upravíte lokálně v prohlížeči, potom je tlačítkem <strong>Uložit do projektu</strong> zapíšete do <code>gallery/galerie.json</code> a <code>gallery/gallery-config.js</code>. Po commitu na GitHub se změny propíší i do produkčního webu.
             </div>
 
             <div class="stats" id="stats"></div>
@@ -780,15 +889,32 @@
                 <div class="status-box">
                     <div class="status-pill" id="save-status">
                         <i class="fa-solid fa-floppy-disk"></i>
-                        Připraveno
+                        Připraveno k lokálním úpravám
                     </div>
-                    <div class="helper">Změny se ukládají automaticky po úpravě pořadí, úvodní fotky, stavu realizace nebo počtu sloupců.</div>
+                    <div class="helper" id="dirty-helper">Lokální změny se ukládají automaticky do prohlížeče. Pro produkční web je ještě potřeba uložit je do souborů projektu.</div>
+                    <div class="save-target" id="save-target">Cíl zápisu: zatím není vybraná složka projektu. Můžete vybrat kořen projektu nebo přímo složku <code>gallery</code>.</div>
                 </div>
 
                 <div class="button-row">
+                    <button class="btn btn-primary btn-save-disk" id="save-to-project">
+                        <i class="fa-solid fa-hard-drive"></i>
+                        Uložit do projektu
+                    </button>
+                    <button class="btn btn-light" id="choose-project-folder">
+                        <i class="fa-solid fa-folder-open"></i>
+                        Vybrat složku projektu
+                    </button>
                     <button class="btn btn-secondary" id="export-settings">
                         <i class="fa-solid fa-file-export"></i>
                         Exportovat JSON
+                    </button>
+                    <button class="btn btn-light" id="download-project-json">
+                        <i class="fa-solid fa-download"></i>
+                        Stáhnout galerie.json
+                    </button>
+                    <button class="btn btn-light" id="download-project-config">
+                        <i class="fa-solid fa-download"></i>
+                        Stáhnout gallery-config.js
                     </button>
                     <button class="btn btn-light" id="import-settings">
                         <i class="fa-solid fa-file-import"></i>
@@ -796,6 +922,8 @@
                     </button>
                     <input id="import-file" type="file" accept="application/json,.json" hidden>
                 </div>
+                <div class="helper" id="save-hint">V Chrome/Edge klikněte na „Vybrat složku projektu“, potvrďte přístup a potom na „Uložit do projektu“. Pokud API není dostupné, použijte tlačítka pro stažení souborů.</div>
+                <ol class="validation-list" id="validation-errors" hidden></ol>
             </section>
         </div>
 
@@ -879,8 +1007,18 @@
             const statsContainer = document.getElementById("stats");
             const itemList = document.getElementById("item-list");
             const saveStatus = document.getElementById("save-status");
+            const dirtyHelper = document.getElementById("dirty-helper");
+            const saveTarget = document.getElementById("save-target");
+            const saveHint = document.getElementById("save-hint");
+            const validationErrors = document.getElementById("validation-errors");
             const listHelper = document.getElementById("list-helper");
             const importFile = document.getElementById("import-file");
+            const saveToProjectButton = document.getElementById("save-to-project");
+            const chooseProjectFolderButton = document.getElementById("choose-project-folder");
+            const exportSettingsButton = document.getElementById("export-settings");
+            const importSettingsButton = document.getElementById("import-settings");
+            const downloadProjectJsonButton = document.getElementById("download-project-json");
+            const downloadProjectConfigButton = document.getElementById("download-project-config");
 
             const editorModal = document.getElementById("editor-modal");
             const editorClose = document.getElementById("editor-close");
@@ -897,10 +1035,15 @@
             const editorResetProgress = document.getElementById("editor-reset-progress");
 
             let rawProjects = [];
+            let galleryConfigSourceText = "";
             let settings = galleryApi.getStoredSettings();
             let draggedPhotoName = null;
             let activeEditorProjectId = null;
             let projectDrag = null;
+            let diskBaselineSignature = "";
+            let currentValidationErrors = [];
+            let saveLocation = null;
+            let saveInProgress = false;
 
             const projectDropSlot = document.createElement("article");
             projectDropSlot.className = "project-drop-slot";
@@ -923,32 +1066,45 @@
             });
 
             try {
-                const response = await fetch("./gallery/galerie.json");
-                if (!response.ok) throw new Error("Soubor galerie.json se nepodařilo načíst.");
-                const data = await response.json();
+                const [galleryResponse, galleryConfigResponse] = await Promise.all([
+                    fetch("./gallery/galerie.json"),
+                    fetch("./gallery/gallery-config.js")
+                ]);
+
+                if (!galleryResponse.ok) {
+                    throw new Error("Soubor galerie.json se nepodařilo načíst.");
+                }
+                if (!galleryConfigResponse.ok) {
+                    throw new Error("Soubor gallery-config.js se nepodařilo načíst.");
+                }
+
+                const data = await galleryResponse.json();
+                galleryConfigSourceText = await galleryConfigResponse.text();
                 rawProjects = Array.isArray(data.zakazky) ? data.zakazky : [];
             } catch (error) {
-                itemList.innerHTML = '<div class="empty-state">Galerii se nepodařilo načíst. Zkontrolujte soubor <code>gallery/galerie.json</code>.</div>';
+                itemList.innerHTML = '<div class="empty-state">Administraci se nepodařilo načíst. Zkontrolujte soubory <code>gallery/galerie.json</code> a <code>gallery/gallery-config.js</code>.</div>';
+                setStatus(error.message || "Načtení konfigurace selhalo.", "fa-triangle-exclamation", "warning");
                 console.error(error);
                 return;
             }
 
             if (!settings.customOrder.length) {
                 settings.customOrder = galleryApi.createCustomOrder(rawProjects);
-                settings = persistSettings(settings, "Výchozí pořadí bylo inicializováno.");
+                settings = persistSettings(settings, "Výchozí pořadí bylo inicializováno v prohlížeči.");
             }
 
-            if ((settings.layout?.adminColumns || 0) < 10) {
-                settings.layout.adminColumns = 10;
-                settings = persistSettings(settings, "Šířka admin gridu byla rozšířena na 10 sloupců.");
+            const diskBundle = prepareProjectFiles(galleryApi.PROJECT_DEFAULTS);
+            if (diskBundle.valid) {
+                diskBaselineSignature = diskBundle.signature;
             }
 
             syncControls();
             render();
+            updateDiskState();
 
             sortModeSelect.addEventListener("change", () => {
                 settings.sortMode = sortModeSelect.value;
-                settings = persistSettings(settings, "Výchozí režim řazení byl uložen.");
+                settings = persistSettings(settings, "Výchozí režim řazení byl uložen lokálně.");
                 render();
             });
 
@@ -968,31 +1124,31 @@
 
             pinProgressCheckbox.addEventListener("change", () => {
                 settings.pinInProgress = pinProgressCheckbox.checked;
-                settings = persistSettings(settings, "Priorita stavu realizace byla aktualizována.");
+                settings = persistSettings(settings, "Priorita stavu realizace byla aktualizována lokálně.");
                 render();
             });
 
             adminColumnsSelect.addEventListener("change", () => {
                 settings.layout.adminColumns = Number(adminColumnsSelect.value);
-                settings = persistSettings(settings, "Počet sloupců v přehledu byl uložen.");
+                settings = persistSettings(settings, "Počet sloupců v přehledu byl uložen lokálně.");
                 render();
             });
 
             editorColumnsSelect.addEventListener("change", () => {
                 settings.layout.editorColumns = Number(editorColumnsSelect.value);
-                settings = persistSettings(settings, "Počet sloupců v editoru byl uložen.");
+                settings = persistSettings(settings, "Počet sloupců v editoru byl uložen lokálně.");
                 render();
             });
 
             publicProjectColumnsSelect.addEventListener("change", () => {
                 settings.layout.publicProjectColumns = Number(publicProjectColumnsSelect.value);
-                settings = persistSettings(settings, "Počet sloupců veřejné galerie byl uložen.");
+                settings = persistSettings(settings, "Počet sloupců veřejné galerie byl uložen lokálně.");
                 render();
             });
 
             publicDetailColumnsSelect.addEventListener("change", () => {
                 settings.layout.publicDetailColumns = Number(publicDetailColumnsSelect.value);
-                settings = persistSettings(settings, "Počet sloupců detailu galerie byl uložen.");
+                settings = persistSettings(settings, "Počet sloupců detailu galerie byl uložen lokálně.");
                 render();
             });
 
@@ -1008,25 +1164,19 @@
             document.getElementById("reset-settings").addEventListener("click", () => {
                 settings = galleryApi.resetSettings();
                 settings.customOrder = galleryApi.createCustomOrder(rawProjects);
-                settings = persistSettings(settings, "Nastavení galerie bylo obnoveno.");
+                settings = persistSettings(settings, "Nastavení galerie bylo obnoveno do výchozího stavu.");
                 syncControls();
                 searchInput.value = "";
                 closeEditor();
                 render();
             });
 
-            document.getElementById("export-settings").addEventListener("click", () => {
-                const blob = new Blob([galleryApi.exportSettings(settings)], { type: "application/json" });
-                const url = URL.createObjectURL(blob);
-                const link = document.createElement("a");
-                link.href = url;
-                link.download = "vdstavby-gallery-settings.json";
-                link.click();
-                URL.revokeObjectURL(url);
-                setStatus("Konfigurace byla exportována.", "fa-file-export");
+            exportSettingsButton.addEventListener("click", () => {
+                downloadTextFile("vdstavby-gallery-settings.json", galleryApi.exportSettings(settings), "application/json");
+                setStatus("Lokální nastavení bylo exportováno.", "fa-file-export", "success");
             });
 
-            document.getElementById("import-settings").addEventListener("click", () => {
+            importSettingsButton.addEventListener("click", () => {
                 importFile.click();
             });
 
@@ -1041,16 +1191,46 @@
                         settings.customOrder = galleryApi.createCustomOrder(rawProjects);
                         settings = persistSettings(settings, "Importované nastavení bylo doplněno o výchozí pořadí.");
                     } else {
-                        setStatus("Konfigurace byla importována.", "fa-file-import");
+                        setStatus("Konfigurace byla importována do prohlížeče.", "fa-file-import", "success");
                     }
                     syncControls();
                     render();
                 } catch (error) {
                     console.error(error);
-                    setStatus("Import se nepodařil. Zkontrolujte formát JSON.", "fa-triangle-exclamation");
+                    setStatus("Import se nepodařil. Zkontrolujte formát JSON.", "fa-triangle-exclamation", "warning");
                 } finally {
                     importFile.value = "";
                 }
+            });
+
+            chooseProjectFolderButton.addEventListener("click", async () => {
+                await chooseProjectFolder();
+            });
+
+            saveToProjectButton.addEventListener("click", async () => {
+                await saveProjectFiles();
+            });
+
+            downloadProjectJsonButton.addEventListener("click", () => {
+                const bundle = prepareProjectFiles();
+                if (!bundle.valid) {
+                    setStatus("Soubor galerie.json nejde vygenerovat, data nejsou validní.", "fa-triangle-exclamation", "warning");
+                    updateDiskState();
+                    return;
+                }
+                downloadTextFile("galerie.json", bundle.galerieJsonText, "application/json");
+                setStatus("Vygenerovaný galerie.json byl stažen.", "fa-download", "success");
+            });
+
+            downloadProjectConfigButton.addEventListener("click", () => {
+                const bundle = prepareProjectFiles();
+                if (!bundle.valid) {
+                    setStatus("Soubor gallery-config.js nejde vygenerovat, data nejsou validní.", "fa-triangle-exclamation", "warning");
+                    updateDiskState();
+                    return;
+                }
+                downloadTextFile("gallery-config.js", bundle.galleryConfigText, "text/javascript");
+                setStatus("Vygenerovaný gallery-config.js byl stažen.", "fa-download", "success");
             });
 
             editorClose.addEventListener("click", closeEditor);
@@ -1061,7 +1241,7 @@
             editorInProgress.addEventListener("change", () => {
                 if (!activeEditorProjectId) return;
                 settings.inProgressOverrides[activeEditorProjectId] = editorInProgress.checked;
-                settings = persistSettings(settings, "Stav realizace byl uložen.");
+                settings = persistSettings(settings, "Stav realizace byl uložen lokálně.");
                 render();
             });
 
@@ -1103,6 +1283,13 @@
                 render();
             });
 
+            window.addEventListener("beforeunload", event => {
+                const dirty = hasUnsavedDiskChanges();
+                if (!dirty) return;
+                event.preventDefault();
+                event.returnValue = "";
+            });
+
             function syncControls() {
                 sortModeSelect.value = settings.sortMode;
                 pinProgressCheckbox.checked = settings.pinInProgress !== false;
@@ -1114,12 +1301,31 @@
 
             function persistSettings(nextSettings, message) {
                 const saved = galleryApi.saveSettings(nextSettings);
-                setStatus(message, "fa-floppy-disk");
+                setStatus(message, "fa-floppy-disk", "info");
                 return saved;
             }
 
-            function setStatus(message, iconName) {
+            function setStatus(message, iconName, tone = "info") {
+                saveStatus.className = "status-pill";
+                if (tone === "success") saveStatus.classList.add("is-success");
+                if (tone === "warning") saveStatus.classList.add("is-warning");
+                if (tone === "info") saveStatus.classList.add("is-info");
                 saveStatus.innerHTML = `<i class="fa-solid ${iconName}"></i> ${message}`;
+            }
+
+            function setValidationErrors(errors) {
+                currentValidationErrors = Array.isArray(errors) ? errors : [];
+                validationErrors.innerHTML = "";
+                if (!currentValidationErrors.length) {
+                    validationErrors.hidden = true;
+                    return;
+                }
+                currentValidationErrors.forEach(error => {
+                    const item = document.createElement("li");
+                    item.textContent = error;
+                    validationErrors.appendChild(item);
+                });
+                validationErrors.hidden = false;
             }
 
             function applyLayoutSettings() {
@@ -1139,18 +1345,217 @@
                 return galleryApi.applyGalleryPreferences(rawProjects, settings);
             }
 
+            function prepareProjectFiles(sourceSettings = settings) {
+                const settingsValidation = galleryApi.validateSettings(sourceSettings, rawProjects);
+                if (!settingsValidation.valid) {
+                    return {
+                        valid: false,
+                        errors: settingsValidation.errors
+                    };
+                }
+
+                const projectsForSave = galleryApi.buildProjectsForSave(rawProjects, settingsValidation.normalized);
+                const projectValidation = galleryApi.validateProjectsData(projectsForSave);
+                if (!projectValidation.valid) {
+                    return {
+                        valid: false,
+                        errors: projectValidation.errors
+                    };
+                }
+
+                try {
+                    const projectDefaults = galleryApi.createProjectDefaultsForSave(rawProjects, settingsValidation.normalized);
+                    const galerieJsonText = galleryApi.serializeProjectsJson(projectValidation.sanitizedProjects);
+                    const galleryConfigText = galleryApi.replaceProjectDefaultsInSource(galleryConfigSourceText, projectDefaults);
+                    const signature = JSON.stringify({
+                        projects: projectValidation.sanitizedProjects,
+                        projectDefaults
+                    });
+
+                    return {
+                        valid: true,
+                        errors: [],
+                        projectDefaults,
+                        projects: projectValidation.sanitizedProjects,
+                        galerieJsonText,
+                        galleryConfigText,
+                        signature
+                    };
+                } catch (error) {
+                    return {
+                        valid: false,
+                        errors: [error.message || "Nepodařilo se připravit projektové soubory."]
+                    };
+                }
+            }
+
+            function hasUnsavedDiskChanges() {
+                const bundle = prepareProjectFiles();
+                if (!bundle.valid) return true;
+                return bundle.signature !== diskBaselineSignature;
+            }
+
+            function updateDiskState() {
+                const bundle = prepareProjectFiles();
+                setValidationErrors(bundle.errors || []);
+
+                if (!bundle.valid) {
+                    saveToProjectButton.classList.add("btn-warning");
+                    saveToProjectButton.classList.remove("is-dirty");
+                    dirtyHelper.textContent = "Konfigurace nejde uložit do souboru, protože data neprošla validací. Zkontrolujte chyby níže.";
+                    saveHint.textContent = "Nejprve opravte chyby validace, teprve potom ukládejte do projektu nebo stahujte finální soubory.";
+                    return;
+                }
+
+                saveToProjectButton.classList.remove("btn-warning");
+                const dirty = bundle.signature !== diskBaselineSignature;
+                saveToProjectButton.classList.toggle("is-dirty", dirty && !saveInProgress);
+
+                if (dirty) {
+                    dirtyHelper.textContent = "Máte neuložené změny na disku. Lokální úpravy jsou v prohlížeči, ale produkční soubory je ještě neobsahují.";
+                    saveHint.textContent = "Doporučený postup: vyberte složku projektu, klikněte na „Uložit do projektu“, zkontrolujte změny v Git diffu a commitněte je.";
+                } else {
+                    dirtyHelper.textContent = "Aktuální stav v prohlížeči odpovídá vygenerovaným souborům projektu. Můžete rovnou commitnout změny.";
+                    saveHint.textContent = "Pokud upravíte pořadí, fotky nebo layout, tlačítko „Uložit do projektu“ se znovu zvýrazní.";
+                }
+            }
+
+            function downloadTextFile(fileName, content, mimeType) {
+                const blob = new Blob([content], { type: mimeType });
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement("a");
+                link.href = url;
+                link.download = fileName;
+                link.click();
+                URL.revokeObjectURL(url);
+            }
+
+            async function directoryHasProjectFiles(directoryHandle) {
+                try {
+                    await directoryHandle.getFileHandle("galerie.json");
+                    await directoryHandle.getFileHandle("gallery-config.js");
+                    return true;
+                } catch (error) {
+                    return false;
+                }
+            }
+
+            async function resolveGalleryDirectory(rootHandle) {
+                if (await directoryHasProjectFiles(rootHandle)) {
+                    return {
+                        rootHandle,
+                        galleryHandle: rootHandle,
+                        label: `Vybraná je přímo složka gallery: ${rootHandle.name}`
+                    };
+                }
+
+                const nestedGalleryHandle = await rootHandle.getDirectoryHandle("gallery");
+                if (await directoryHasProjectFiles(nestedGalleryHandle)) {
+                    return {
+                        rootHandle,
+                        galleryHandle: nestedGalleryHandle,
+                        label: `Vybraný projekt: ${rootHandle.name} / gallery`
+                    };
+                }
+
+                throw new Error("Ve vybrané složce jsem nenašel soubory gallery/galerie.json a gallery/gallery-config.js.");
+            }
+
+            async function ensurePermission(handle) {
+                const options = { mode: "readwrite" };
+                if ((await handle.queryPermission(options)) === "granted") {
+                    return true;
+                }
+                return (await handle.requestPermission(options)) === "granted";
+            }
+
+            async function chooseProjectFolder() {
+                if (!window.showDirectoryPicker) {
+                    setStatus("Tento prohlížeč nepodporuje přímý výběr složky. Použijte tlačítka pro stažení souborů.", "fa-folder-open", "warning");
+                    return null;
+                }
+
+                try {
+                    const rootHandle = await window.showDirectoryPicker({ mode: "readwrite" });
+                    const resolved = await resolveGalleryDirectory(rootHandle);
+                    const permissionGranted = await ensurePermission(resolved.galleryHandle);
+                    if (!permissionGranted) {
+                        throw new Error("Přístup k zápisu do vybrané složky nebyl povolen.");
+                    }
+                    saveLocation = resolved;
+                    saveTarget.innerHTML = `Cíl zápisu: <strong>${resolved.label}</strong>`;
+                    setStatus("Složka projektu byla připravena pro zápis.", "fa-folder-open", "success");
+                    return resolved;
+                } catch (error) {
+                    if (error && error.name === "AbortError") {
+                        return null;
+                    }
+                    setStatus(error.message || "Výběr složky se nepodařil.", "fa-triangle-exclamation", "warning");
+                    return null;
+                }
+            }
+
+            async function writeFile(directoryHandle, fileName, content) {
+                const fileHandle = await directoryHandle.getFileHandle(fileName, { create: true });
+                const writable = await fileHandle.createWritable();
+                await writable.write(content);
+                await writable.close();
+            }
+
+            async function saveProjectFiles() {
+                const bundle = prepareProjectFiles();
+                updateDiskState();
+
+                if (!bundle.valid) {
+                    setStatus("Uložení se zastavilo, protože data neprošla validací.", "fa-triangle-exclamation", "warning");
+                    return;
+                }
+
+                let resolvedSaveLocation = saveLocation;
+                if (!resolvedSaveLocation) {
+                    resolvedSaveLocation = await chooseProjectFolder();
+                }
+
+                if (!resolvedSaveLocation) {
+                    return;
+                }
+
+                try {
+                    saveInProgress = true;
+                    saveToProjectButton.classList.add("is-saving");
+                    saveToProjectButton.classList.remove("is-dirty");
+                    setStatus("Probíhá zápis galerie.json a gallery-config.js do projektu...", "fa-spinner", "info");
+
+                    await writeFile(resolvedSaveLocation.galleryHandle, "galerie.json", bundle.galerieJsonText);
+                    await writeFile(resolvedSaveLocation.galleryHandle, "gallery-config.js", bundle.galleryConfigText);
+
+                    diskBaselineSignature = bundle.signature;
+                    setStatus("Konfigurace byla zapsána do souborů projektu.", "fa-circle-check", "success");
+                    saveTarget.innerHTML = `Cíl zápisu: <strong>${resolvedSaveLocation.label}</strong>`;
+                    updateDiskState();
+                } catch (error) {
+                    console.error(error);
+                    setStatus(error.message || "Zápis do projektu selhal.", "fa-triangle-exclamation", "warning");
+                } finally {
+                    saveInProgress = false;
+                    saveToProjectButton.classList.remove("is-saving");
+                    updateDiskState();
+                }
+            }
+
             function startProjectDrag(sourceItem, handle, event) {
                 const sourceId = sourceItem.dataset.id;
                 if (!sourceId) return;
 
                 const rect = sourceItem.getBoundingClientRect();
                 const ghost = sourceItem.cloneNode(true);
-                ghost.classList.remove("dragging", "drag-over");
+                ghost.classList.remove("dragging", "drop-before", "drop-after");
                 ghost.classList.add("project-drag-ghost");
                 ghost.style.width = `${rect.width}px`;
                 document.body.appendChild(ghost);
 
                 projectDropSlot.style.minHeight = `${Math.round(rect.height)}px`;
+                projectDropSlot.classList.add("active");
 
                 projectDrag = {
                     pointerId: event.pointerId,
@@ -1180,7 +1585,7 @@
                 if (!projectDrag) return;
                 const nextLeft = clientX - projectDrag.offsetX;
                 const nextTop = clientY - projectDrag.offsetY;
-                projectDrag.ghost.style.transform = `translate3d(${nextLeft}px, ${nextTop}px, 0) scale(1.02)`;
+                projectDrag.ghost.style.transform = `translate3d(${nextLeft}px, ${nextTop}px, 0) scale(1.02) rotate(-1deg)`;
             }
 
             function autoScrollDuringDrag(clientY) {
@@ -1194,7 +1599,10 @@
             }
 
             function clearProjectDropHints() {
-                itemList.querySelectorAll(".admin-item.drag-over").forEach(item => item.classList.remove("drag-over"));
+                itemList.querySelectorAll(".admin-item.drop-before, .admin-item.drop-after").forEach(item => {
+                    item.classList.remove("drop-before", "drop-after");
+                });
+                projectDropSlot.classList.remove("active");
             }
 
             function moveDropSlot(referenceItem, position) {
@@ -1203,11 +1611,15 @@
                 if (projectDrag && projectDrag.currentSlotKey === nextKey && projectDropSlot.parentElement === itemList) {
                     return;
                 }
+
                 if (projectDrag) {
                     projectDrag.currentSlotKey = nextKey;
                 }
+
                 clearProjectDropHints();
-                referenceItem.classList.add("drag-over");
+                projectDropSlot.classList.add("active");
+                referenceItem.classList.add(position === "after" ? "drop-after" : "drop-before");
+
                 if (position === "after") {
                     itemList.insertBefore(projectDropSlot, referenceItem.nextSibling);
                 } else {
@@ -1223,7 +1635,7 @@
 
                 if (hoveredItem && hoveredItem.parentElement === itemList && hoveredItem !== projectDrag.sourceItem) {
                     const rect = hoveredItem.getBoundingClientRect();
-                    const sameRow = Math.abs(clientY - (rect.top + rect.height / 2)) < rect.height * 0.2;
+                    const sameRow = Math.abs(clientY - (rect.top + rect.height / 2)) < rect.height * 0.18;
                     const insertAfter = sameRow
                         ? clientX > rect.left + rect.width / 2
                         : clientY > rect.top + rect.height / 2;
@@ -1236,8 +1648,9 @@
                     if (projectDrag) {
                         projectDrag.currentSlotKey = "empty";
                     }
-                    itemList.appendChild(projectDropSlot);
                     clearProjectDropHints();
+                    projectDropSlot.classList.add("active");
+                    itemList.appendChild(projectDropSlot);
                     return;
                 }
 
@@ -1249,13 +1662,11 @@
                 if (beforeItem) {
                     moveDropSlot(beforeItem, "before");
                 } else {
-                    if (projectDrag && projectDrag.currentSlotKey === "end" && projectDropSlot.parentElement === itemList) {
-                        return;
-                    }
                     if (projectDrag) {
                         projectDrag.currentSlotKey = "end";
                     }
                     clearProjectDropHints();
+                    projectDropSlot.classList.add("active");
                     itemList.appendChild(projectDropSlot);
                 }
             }
@@ -1279,7 +1690,7 @@
                 if (!nextOrder.length) return false;
 
                 settings.customOrder = nextOrder;
-                settings = persistSettings(settings, "Pořadí galerií bylo uloženo přetažením.");
+                settings = persistSettings(settings, "Pořadí galerií bylo upraveno přetažením.");
                 render();
                 return true;
             }
@@ -1404,11 +1815,12 @@
                 `;
 
                 listHelper.textContent = customMode && !searchActive
-                    ? "Karty lze přeskládat tažením i tlačítky. Grid teď podporuje až 10 sloupců."
+                    ? "Karty lze přeskládat tažením nebo tlačítky. Zvýrazněná linka ukazuje přesné místo vložení."
                     : "Přeskládání karet se aktivuje v režimu Vlastní pořadí bez vyhledávání.";
 
                 if (!filteredProjects.length) {
                     itemList.innerHTML = '<div class="empty-state">Zadanému filtru neodpovídá žádná realizace.</div>';
+                    updateDiskState();
                     return;
                 }
 
@@ -1483,6 +1895,7 @@
                 });
 
                 renderEditor();
+                updateDiskState();
             }
 
             function openEditor(projectId) {
@@ -1566,14 +1979,29 @@
 
                     photoCard.addEventListener("dragend", () => {
                         draggedPhotoName = null;
-                        photoCard.classList.remove("dragging");
+                        photoCard.classList.remove("dragging", "drag-over");
+                    });
+
+                    photoCard.addEventListener("dragenter", event => {
+                        event.preventDefault();
+                        if (draggedPhotoName && draggedPhotoName !== photoName) {
+                            photoCard.classList.add("drag-over");
+                        }
+                    });
+
+                    photoCard.addEventListener("dragleave", () => {
+                        photoCard.classList.remove("drag-over");
                     });
 
                     photoCard.addEventListener("dragover", event => {
                         event.preventDefault();
+                        if (draggedPhotoName && draggedPhotoName !== photoName) {
+                            photoCard.classList.add("drag-over");
+                        }
                     });
 
                     photoCard.addEventListener("drop", event => {
+                        photoCard.classList.remove("drag-over");
                         if (!draggedPhotoName || draggedPhotoName === photoName) return;
                         event.preventDefault();
                         movePhotoBefore(project._id, draggedPhotoName, photoName);
@@ -1594,16 +2022,6 @@
                 [currentOrder[currentIndex], currentOrder[nextIndex]] = [currentOrder[nextIndex], currentOrder[currentIndex]];
                 settings.customOrder = currentOrder;
                 settings = persistSettings(settings, "Vlastní pořadí bylo upraveno.");
-                render();
-            }
-
-            function moveProjectBefore(sourceId, targetId) {
-                const currentOrder = settings.customOrder.filter(id => id !== sourceId);
-                const targetIndex = currentOrder.indexOf(targetId);
-                if (targetIndex === -1) return;
-                currentOrder.splice(targetIndex, 0, sourceId);
-                settings.customOrder = currentOrder;
-                settings = persistSettings(settings, "Vlastní pořadí bylo upraveno přetažením.");
                 render();
             }
 

@@ -1,20 +1,140 @@
 (function () {
     const STORAGE_KEY = "vdstavby.gallery.preferences.v2";
-    const DEFAULT_LAYOUT = {
-        adminColumns: 10,
-        editorColumns: 4,
-        publicProjectColumns: 3,
-        publicDetailColumns: 5
+    const PROJECT_DEFAULTS_MARKER_START = "/* VDSTAVBY_PROJECT_DEFAULTS_START */
+const PROJECT_DEFAULTS = {
+    "sortMode": "custom",
+    "pinInProgress": true,
+    "customOrder": [
+        "Převzetí stavebních prací na rodinném domě - Hosty",
+        "Výstavba rodinného domu - Zlukov",
+        "2. Etapa střechy - Pořežany",
+        "1. Etapa střechy - Pořežany",
+        "2. Etapa - Kompletní rekonstrukce domu s novou výstavbou podkroví - Mažice",
+        "1. Etapa - Základová deska - Veselí nad Lužnicí",
+        "2. Etapa výstavba rodinného domu - Veselí nad Lužnicí",
+        "Balkóny - Borkovice",
+        "Betony - Zálší",
+        "Chalupa - Veselí nad Lužnicí",
+        "Dlažby - DVstav",
+        "Dodělání rekonstrukce domu - Mažice",
+        "Drobné zednické práce - Mažice",
+        "Drobné zednické práce - Týn nad Vltavou",
+        "Fasáda - Vesce",
+        "Fasáda - České Budějovice",
+        "Fasáda pro DVstav - Tábor",
+        "Fasáda pásky klinker - Širočiny",
+        "Fasáda rodinného domu - Veselí nad Lužnicí",
+        "Fasáda zateplení zadní stěny - Veselí nad Lužnicí",
+        "Fasáda, kamen. obklad - Veselí nad Lužnicí",
+        "Garsonka - České Budějovice",
+        "Izolace podlah pod podlahové topení - Bechyně",
+        "Komp. rekonstrukce domu - Mažice",
+        "Kompletní dodělání rodinného domu - Mažice",
+        "Kompletní dodělání rodinného domu, zdobená fasáda podle foto a památkářů - Mažice",
+        "Kompletní rekonstrukce bytu - Bechyně",
+        "Kompletní rekonstrukce bytu - Jihlava",
+        "Kompletní rekonstrukce bytu 3+1  Týn nad Vltavou",
+        "Kompletní rekonstrukce bytu 3+1 - České Budějovice",
+        "Kompletní rekonstrukce bytu 3+1 na 2 bytové jednotky - České Budějovice",
+        "Kompletní rekonstrukce domu - Mažice",
+        "Kompletní rekonstrukce domu s novou výstavbou podkroví - Mažice",
+        "Kompletní rekonstrukce fasády - České Budějovice",
+        "Kompletní rekonstrukce garsonky - České Budějovice",
+        "Kompletní rekonstrukce koupelny - Ševětín",
+        "Kompletní rekonstrukce kuchyň, chodba, koupelna - Pořežany",
+        "Lepidlo, perlinka, štuk - Dodělání fasády - Písek",
+        "Marmolit mondi - České Budějovice",
+        "Natažení silikonové omítky - Pořežany",
+        "Natažení silikonové omítky - Tábor",
+        "Novostavba lékařského domu - Dolní Bukovsko",
+        "Obklady a dlažby - Chýnov",
+        "Oprava a renovace fasády rodinného domu, sokl marmolit po zámkové dlažbě - Dolní Bukovsko",
+        "Opravy a různé zednické práce na rodinném domě - Bechyně",
+        "Pergola síť, lepidlo a silikonová fasáda - Strakonice",
+        "Podlaha + Obložky - České Budějovice",
+        "Předělání koupelny - Dolní Bukovsko",
+        "Příprava koupelny pro obklady - Soběslav",
+        "Rekonstrukce a ostatní práce - Mažice",
+        "Rekonstrukce bytového jádra a ostatní práce - Týn nad Vltavou",
+        "Rekonstrukce bytového jádra a ostatní práce - Veselí nad Lužnicí",
+        "Rekonstrukce bytového jádra a ostatní práce - České Budějovice",
+        "Rekonstrukce bytu - České Budějovice",
+        "Rekonstrukce domu - Mažice",
+        "Rekonstrukce domu - Veselí nad Lužnicí",
+        "Rekonstrukce koupelny - Dolní Bukovsko",
+        "Rekonstrukce koupelny - Písek",
+        "Rekonstrukce koupelny - Veselí nad Lužnicí",
+        "Rekonstrukce koupelny a ostatní práce - Sviny",
+        "Rekonstrukce koupelny a ostatní práce - Týn nad Vltavou",
+        "Renovace fasády - Dolní Bukovsko",
+        "Snížení energetické náročnosti - Radošovice",
+        "Snížení energetické náročnosti - Veselí nad Lužnicí",
+        "Stavební práce pro DVstav s.r.o. - Vesce",
+        "Výstavba garáže s bazénem - Týn nad Vltavou",
+        "Výstavba opěrné zdi - Vesce",
+        "Výstavba pergoly a obložení plotu - Mažice",
+        "Výstavba prostoru pro zaměstnance - Mažice",
+        "Výstavba rodinného domu - Mažice",
+        "Výstavba skladu - Dolní Bukovsko",
+        "Výstavba ustájení - Mažice",
+        "Zateplení - Mažice",
+        "Zateplení půdy - Mažice",
+        "Zateplení půdy a ostatní práce - Bechyně",
+        "Zednické práce - Borkovice",
+        "Zednické práce - Dolní Bukovsko",
+        "Zednické práce - Mažice",
+        "Zednické práce - Zvěrotice",
+        "Zednické práce, obklady a dlažby - Veselí nad Lužnicí",
+        "Zednické práce, štuky - Soběslav",
+        "Zesílení vazných trámu dle projektu - Veselí nad Lužnicí"
+    ],
+    "coverPhotos": {},
+    "photoOrders": {},
+    "inProgressOverrides": {},
+    "layout": {
+        "adminColumns": 10,
+        "editorColumns": 4,
+        "publicProjectColumns": 3,
+        "publicDetailColumns": 5
+    },
+    "updatedAt": "2026-06-30T15:58:12.580Z"
+};
+/* VDSTAVBY_PROJECT_DEFAULTS_END */";
+
+    /* VDSTAVBY_PROJECT_DEFAULTS_START */
+    const PROJECT_DEFAULTS = {
+        "sortMode": "custom",
+        "pinInProgress": true,
+        "customOrder": [],
+        "coverPhotos": {},
+        "photoOrders": {},
+        "inProgressOverrides": {},
+        "layout": {
+            "adminColumns": 5,
+            "editorColumns": 4,
+            "publicProjectColumns": 3,
+            "publicDetailColumns": 5
+        },
+        "updatedAt": null
     };
+    /* VDSTAVBY_PROJECT_DEFAULTS_END */
+
+    const DEFAULT_LAYOUT = {
+        adminColumns: normalizeColumnCount(PROJECT_DEFAULTS.layout && PROJECT_DEFAULTS.layout.adminColumns, 5),
+        editorColumns: normalizeColumnCount(PROJECT_DEFAULTS.layout && PROJECT_DEFAULTS.layout.editorColumns, 4),
+        publicProjectColumns: normalizeColumnCount(PROJECT_DEFAULTS.layout && PROJECT_DEFAULTS.layout.publicProjectColumns, 3),
+        publicDetailColumns: normalizeColumnCount(PROJECT_DEFAULTS.layout && PROJECT_DEFAULTS.layout.publicDetailColumns, 5)
+    };
+
     const DEFAULT_SETTINGS = {
-        sortMode: "custom",
-        pinInProgress: true,
-        customOrder: [],
-        coverPhotos: {},
-        photoOrders: {},
-        inProgressOverrides: {},
+        sortMode: PROJECT_DEFAULTS.sortMode || "custom",
+        pinInProgress: PROJECT_DEFAULTS.pinInProgress !== false,
+        customOrder: Array.isArray(PROJECT_DEFAULTS.customOrder) ? [...PROJECT_DEFAULTS.customOrder] : [],
+        coverPhotos: PROJECT_DEFAULTS.coverPhotos && typeof PROJECT_DEFAULTS.coverPhotos === "object" ? { ...PROJECT_DEFAULTS.coverPhotos } : {},
+        photoOrders: PROJECT_DEFAULTS.photoOrders && typeof PROJECT_DEFAULTS.photoOrders === "object" ? { ...PROJECT_DEFAULTS.photoOrders } : {},
+        inProgressOverrides: PROJECT_DEFAULTS.inProgressOverrides && typeof PROJECT_DEFAULTS.inProgressOverrides === "object" ? { ...PROJECT_DEFAULTS.inProgressOverrides } : {},
         layout: { ...DEFAULT_LAYOUT },
-        updatedAt: null
+        updatedAt: PROJECT_DEFAULTS.updatedAt || null
     };
 
     const SORT_MODES = [
@@ -25,6 +145,10 @@
 
     function compareText(a, b) {
         return String(a || "").localeCompare(String(b || ""), "cs", { sensitivity: "base" });
+    }
+
+    function escapeRegExp(text) {
+        return String(text).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     }
 
     function normalizeColumnCount(value, fallback) {
@@ -43,16 +167,53 @@
     }
 
     function cloneSettings(settings) {
+        const source = settings && typeof settings === "object" ? settings : {};
         return {
-            sortMode: SORT_MODES.some(mode => mode.value === settings.sortMode) ? settings.sortMode : DEFAULT_SETTINGS.sortMode,
-            pinInProgress: settings.pinInProgress !== false,
-            customOrder: Array.isArray(settings.customOrder) ? [...settings.customOrder] : [],
-            coverPhotos: settings.coverPhotos && typeof settings.coverPhotos === "object" ? { ...settings.coverPhotos } : {},
-            photoOrders: settings.photoOrders && typeof settings.photoOrders === "object" ? { ...settings.photoOrders } : {},
-            inProgressOverrides: settings.inProgressOverrides && typeof settings.inProgressOverrides === "object" ? { ...settings.inProgressOverrides } : {},
-            layout: cloneLayout(settings.layout),
-            updatedAt: settings.updatedAt || null
+            sortMode: SORT_MODES.some(mode => mode.value === source.sortMode) ? source.sortMode : DEFAULT_SETTINGS.sortMode,
+            pinInProgress: source.pinInProgress !== false,
+            customOrder: Array.isArray(source.customOrder) ? [...source.customOrder].map(String).map(item => item.trim()).filter(Boolean) : [],
+            coverPhotos: source.coverPhotos && typeof source.coverPhotos === "object" ? { ...source.coverPhotos } : {},
+            photoOrders: source.photoOrders && typeof source.photoOrders === "object" ? { ...source.photoOrders } : {},
+            inProgressOverrides: source.inProgressOverrides && typeof source.inProgressOverrides === "object" ? { ...source.inProgressOverrides } : {},
+            layout: cloneLayout(source.layout),
+            updatedAt: source.updatedAt || null
         };
+    }
+
+    function sanitizePhotoList(photos) {
+        if (!Array.isArray(photos)) return [];
+        const unique = new Set();
+        return photos
+            .map(photo => String(photo || "").trim())
+            .filter(Boolean)
+            .filter(photo => {
+                if (unique.has(photo)) return false;
+                unique.add(photo);
+                return true;
+            });
+    }
+
+    function sanitizeProject(project) {
+        const source = project && typeof project === "object" ? project : {};
+        const nazev = String(source.nazev || source.slozka || "").trim();
+        const slozka = String(source.slozka || source.nazev || "").trim();
+        return {
+            ...source,
+            nazev,
+            slozka,
+            v_realizaci: source.v_realizaci === true,
+            fotky: sanitizePhotoList(source.fotky)
+        };
+    }
+
+    function stripInternalKeys(project) {
+        const output = {};
+        Object.entries(project || {}).forEach(([key, value]) => {
+            if (!key.startsWith("_")) {
+                output[key] = value;
+            }
+        });
+        return output;
     }
 
     function getStoredSettings() {
@@ -91,7 +252,7 @@
     }
 
     function getOrderedPhotos(project, settings) {
-        const sourcePhotos = Array.isArray(project.fotky) ? [...project.fotky] : [];
+        const sourcePhotos = sanitizePhotoList(project && project.fotky);
         const projectId = getProjectId(project);
         const storedOrder = Array.isArray(settings.photoOrders[projectId]) ? settings.photoOrders[projectId] : [];
         const sourceSet = new Set(sourcePhotos);
@@ -105,7 +266,7 @@
         if (Object.prototype.hasOwnProperty.call(settings.inProgressOverrides, projectId)) {
             return settings.inProgressOverrides[projectId] === true;
         }
-        return project.v_realizaci === true;
+        return project && project.v_realizaci === true;
     }
 
     function getCoverPhoto(project, settings, orderedPhotos) {
@@ -118,25 +279,26 @@
     }
 
     function enrichProject(project, settings, fallbackIndex) {
-        const id = getProjectId(project);
-        const baseName = String(project.nazev || id).replace(/\s*-\s*v\s*realizaci/i, "").trim();
-        const orderedPhotos = getOrderedPhotos(project, settings);
-        const inProgress = getInProgressState(project, settings);
+        const sanitized = sanitizeProject(project);
+        const id = getProjectId(sanitized);
+        const baseName = String(sanitized.nazev || id).replace(/\s*-\s*v\s*realizaci/i, "").trim();
+        const orderedPhotos = getOrderedPhotos(sanitized, settings);
+        const inProgress = getInProgressState(sanitized, settings);
 
         return {
-            ...project,
+            ...sanitized,
             _id: id,
             _displayName: baseName,
             _inProgress: inProgress,
             _photos: orderedPhotos,
-            _coverPhoto: getCoverPhoto(project, settings, orderedPhotos),
+            _coverPhoto: getCoverPhoto(sanitized, settings, orderedPhotos),
             _photoCount: orderedPhotos.length,
             _fallbackIndex: fallbackIndex
         };
     }
 
     function createOrderMap(customOrder) {
-        return new Map(customOrder.map((id, index) => [id, index]));
+        return new Map((Array.isArray(customOrder) ? customOrder : []).map((id, index) => [id, index]));
     }
 
     function getComparator(settings) {
@@ -173,6 +335,145 @@
             .sort(getComparator(mergedSettings));
     }
 
+    function createCustomOrder(projects) {
+        return projects.map(project => getProjectId(project)).filter(Boolean);
+    }
+
+    function validateProjectsData(projects) {
+        const errors = [];
+        if (!Array.isArray(projects)) {
+            return {
+                valid: false,
+                errors: ["Data galerie nejsou pole projektů."],
+                sanitizedProjects: []
+            };
+        }
+
+        const sanitizedProjects = projects.map(sanitizeProject);
+        const seenIds = new Set();
+
+        sanitizedProjects.forEach((project, index) => {
+            const label = project.nazev || project.slozka || `Projekt #${index + 1}`;
+            if (!project.nazev) {
+                errors.push(`Projekt #${index + 1} nemá vyplněný název.`);
+            }
+            if (!project.slozka) {
+                errors.push(`Projekt "${label}" nemá vyplněnou složku.`);
+            }
+            if (project.slozka) {
+                if (seenIds.has(project.slozka)) {
+                    errors.push(`Složka "${project.slozka}" se v datech vyskytuje vícekrát.`);
+                }
+                seenIds.add(project.slozka);
+            }
+            if (!Array.isArray(project.fotky) || !project.fotky.length) {
+                errors.push(`Projekt "${label}" neobsahuje žádné fotky.`);
+            }
+            if (Array.isArray(project.fotky)) {
+                const uniqueCount = new Set(project.fotky).size;
+                if (uniqueCount !== project.fotky.length) {
+                    errors.push(`Projekt "${label}" obsahuje duplicitní názvy fotek.`);
+                }
+            }
+        });
+
+        return {
+            valid: errors.length === 0,
+            errors,
+            sanitizedProjects
+        };
+    }
+
+    function validateSettings(settings, projects) {
+        const errors = [];
+        const normalized = cloneSettings(settings);
+        const projectIds = new Set((Array.isArray(projects) ? projects : []).map(getProjectId).filter(Boolean));
+
+        normalized.customOrder.forEach(id => {
+            if (!projectIds.has(id)) {
+                errors.push(`Pořadí obsahuje neznámý projekt "${id}".`);
+            }
+        });
+
+        Object.keys(normalized.coverPhotos).forEach(projectId => {
+            if (!projectIds.has(projectId)) {
+                errors.push(`Úvodní fotka odkazuje na neznámý projekt "${projectId}".`);
+            }
+        });
+
+        Object.keys(normalized.photoOrders).forEach(projectId => {
+            if (!projectIds.has(projectId)) {
+                errors.push(`Pořadí fotek odkazuje na neznámý projekt "${projectId}".`);
+            }
+        });
+
+        Object.keys(normalized.inProgressOverrides).forEach(projectId => {
+            if (!projectIds.has(projectId)) {
+                errors.push(`Přepis stavu odkazuje na neznámý projekt "${projectId}".`);
+            }
+        });
+
+        return {
+            valid: errors.length === 0,
+            errors,
+            normalized
+        };
+    }
+
+    function buildProjectsForSave(projects, settings) {
+        const mergedSettings = cloneSettings({ ...DEFAULT_SETTINGS, ...settings });
+        return applyGalleryPreferences(projects, mergedSettings).map(project => {
+            const cleanProject = stripInternalKeys(project);
+            const orderedPhotos = getOrderedPhotos(project, mergedSettings);
+            const coverPhoto = getCoverPhoto(project, mergedSettings, orderedPhotos);
+            const photosForSave = orderedPhotos.filter(photo => photo !== coverPhoto);
+
+            if (coverPhoto) {
+                photosForSave.unshift(coverPhoto);
+            }
+
+            return sanitizeProject({
+                ...cleanProject,
+                nazev: cleanProject.nazev || project._displayName || project.nazev,
+                slozka: cleanProject.slozka || project._id || project.slozka,
+                v_realizaci: getInProgressState(project, mergedSettings),
+                fotky: photosForSave
+            });
+        });
+    }
+
+    function createProjectDefaultsForSave(projects, settings) {
+        const mergedSettings = cloneSettings({ ...DEFAULT_SETTINGS, ...settings });
+        const projectsForSave = buildProjectsForSave(projects, mergedSettings);
+
+        return cloneSettings({
+            sortMode: "custom",
+            pinInProgress: mergedSettings.pinInProgress,
+            customOrder: projectsForSave.map(project => getProjectId(project)),
+            coverPhotos: {},
+            photoOrders: {},
+            inProgressOverrides: {},
+            layout: cloneLayout(mergedSettings.layout),
+            updatedAt: new Date().toISOString()
+        });
+    }
+
+    function serializeProjectsJson(projects) {
+        return `${JSON.stringify({ zakazky: projects.map(sanitizeProject) }, null, 2)}\n`;
+    }
+
+    function serializeProjectDefaultsBlock(projectDefaults) {
+        return `${PROJECT_DEFAULTS_MARKER_START}\nconst PROJECT_DEFAULTS = ${JSON.stringify(cloneSettings(projectDefaults), null, 4)};\n${PROJECT_DEFAULTS_MARKER_END}`;
+    }
+
+    function replaceProjectDefaultsInSource(sourceText, projectDefaults) {
+        const pattern = new RegExp(`${escapeRegExp(PROJECT_DEFAULTS_MARKER_START)}[\\s\\S]*?${escapeRegExp(PROJECT_DEFAULTS_MARKER_END)}`);
+        if (!pattern.test(sourceText)) {
+            throw new Error("Ve gallery-config.js chybí blok projektových defaultů pro automatickou aktualizaci.");
+        }
+        return sourceText.replace(pattern, serializeProjectDefaultsBlock(projectDefaults));
+    }
+
     function exportSettings(settings) {
         return JSON.stringify(cloneSettings(settings), null, 2);
     }
@@ -182,12 +483,11 @@
         return saveSettings(parsed);
     }
 
-    function createCustomOrder(projects) {
-        return projects.map(project => getProjectId(project));
-    }
-
     window.VDGallery = {
         STORAGE_KEY,
+        PROJECT_DEFAULTS_MARKER_START,
+        PROJECT_DEFAULTS_MARKER_END,
+        PROJECT_DEFAULTS: cloneSettings(PROJECT_DEFAULTS),
         DEFAULT_SETTINGS: cloneSettings(DEFAULT_SETTINGS),
         SORT_MODES: [...SORT_MODES],
         getStoredSettings,
@@ -201,6 +501,14 @@
         getInProgressState,
         applyGalleryPreferences,
         createCustomOrder,
-        cloneLayout
+        cloneLayout,
+        cloneSettings,
+        sanitizeProject,
+        validateProjectsData,
+        validateSettings,
+        buildProjectsForSave,
+        createProjectDefaultsForSave,
+        serializeProjectsJson,
+        replaceProjectDefaultsInSource
     };
 })();
