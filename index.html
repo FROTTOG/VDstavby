@@ -50,6 +50,7 @@
             --text-color: #2b2b2b;
             --surface-color: rgba(255, 255, 255, 0.98);
             --surface-strong: rgba(255, 255, 255, 0.98);
+            --header-offset: 92px;
             --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             --shadow-hover: 0 20px 40px rgba(242, 169, 0, 0.18);
             --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -916,11 +917,11 @@
 
         .zakazka-detaily {
             position: fixed;
-            inset: 0;
+            inset: var(--header-offset) 0 0;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
-            padding: 32px;
+            padding: 24px 32px 32px;
             background: rgba(10, 10, 10, 0.72);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
@@ -939,7 +940,7 @@
 
         .zakazka-detaily-panel {
             width: min(1380px, calc(100vw - 48px));
-            max-height: calc(100vh - 48px);
+            max-height: calc(100vh - var(--header-offset) - 40px);
             background: #ffffff;
             border-radius: 28px;
             box-shadow: 0 30px 80px rgba(0,0,0,0.24);
@@ -1236,7 +1237,7 @@
             .zakazky-wrapper { grid-template-columns: repeat(2, minmax(0, 1fr)); }
             .gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
             .zakazka-detaily { padding: 18px; }
-            .zakazka-detaily-panel { width: min(100%, calc(100vw - 24px)); max-height: calc(100vh - 24px); border-radius: 22px; }
+            .zakazka-detaily-panel { width: min(100%, calc(100vw - 24px)); max-height: calc(100vh - var(--header-offset) - 24px); border-radius: 22px; }
             .detaily-hlavicka { padding: 24px 24px 20px; }
             .zakazka-detaily-body { padding: 24px; }
         }
@@ -1260,7 +1261,7 @@
             .service-item { padding: 24px 20px; }
             .zakazky-wrapper, .gallery-grid { grid-template-columns: 1fr; }
             .zakazka-detaily { padding: 12px; }
-            .zakazka-detaily-panel { width: calc(100vw - 24px); max-height: calc(100vh - 24px); border-radius: 18px; }
+            .zakazka-detaily-panel { width: calc(100vw - 24px); max-height: calc(100vh - var(--header-offset) - 24px); border-radius: 18px; }
             .detaily-hlavicka { padding: 20px 18px 18px; }
             .zakazka-detaily-body { padding: 18px; }
         }
@@ -1537,6 +1538,7 @@
             const navMenu = document.getElementById("nav-menu");
             const navLinks = document.querySelectorAll("#nav-menu li a");
             const backToTopBtn = document.getElementById("backToTop");
+            const header = document.getElementById("header");
 
             const zakazkyPrehled = document.getElementById("zakazky-prehled");
             const detailyBlok = document.getElementById("zakazka-detaily-blok");
@@ -1597,6 +1599,11 @@
                 });
             }
 
+            function updateHeaderOffset() {
+                const headerHeight = header ? header.offsetHeight : 68;
+                document.documentElement.style.setProperty("--header-offset", `${headerHeight + 16}px`);
+            }
+
             hamburger.addEventListener("click", () => {
                 hamburger.classList.toggle("active");
                 navMenu.classList.toggle("active");
@@ -1610,6 +1617,8 @@
             });
 
             window.addEventListener("scroll", scheduleBackToTopVisibilityUpdate, { passive: true });
+            window.addEventListener("resize", updateHeaderOffset, { passive: true });
+            updateHeaderOffset();
             updateBackToTopVisibility();
             observeRevealElements();
             monitorPerformance();
