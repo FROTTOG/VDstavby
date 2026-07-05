@@ -8,9 +8,9 @@ const PROJECT_DEFAULTS = {
     "sortMode": "custom",
     "pinInProgress": true,
     "customOrder": [
+        "Kompletní rekonstrukce bytu 2+1 pro D&D Homeinvest - Bechyně",
         "Převzetí stavebních prací na rodinném domě - Hosty",
         "Výstavba rodinného domu - Zlukov",
-        "Kompletní rekonstrukce bytu 2+1 pro D&D Homeinvest - Bechyně",
         "Snížení energetické náročnosti - Veselí nad Lužnicí",
         "2. Etapa střechy - Pořežany",
         "Zesílení vazných trámu dle projektu - Veselí nad Lužnicí",
