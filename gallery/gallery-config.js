@@ -8,9 +8,9 @@ const PROJECT_DEFAULTS = {
     "sortMode": "custom",
     "pinInProgress": true,
     "customOrder": [
-        "Kompletní rekonstrukce bytu 2+1 pro D&D Homeinvest - Bechyně",
         "Převzetí stavebních prací na rodinném domě - Hosty",
         "Výstavba rodinného domu - Zlukov",
+        "Kompletní rekonstrukce bytu 2+1 pro D&D Homeinvest - Bechyně",
         "Snížení energetické náročnosti - Veselí nad Lužnicí",
         "2. Etapa střechy - Pořežany",
         "Zesílení vazných trámu dle projektu - Veselí nad Lužnicí",
@@ -57,7 +57,6 @@ const PROJECT_DEFAULTS = {
         "Garsonka - České Budějovice",
         "Izolace podlah pod podlahové topení - Bechyně",
         "Kompletní rekonstrukce bytu - Jihlava",
-        "Kompletní rekonstrukce domu - Mažice",
         "Kompletní rekonstrukce domu s novou výstavbou podkroví - Mažice",
         "Kompletní rekonstrukce fasády - České Budějovice",
         "Kompletní rekonstrukce garsonky - České Budějovice",
@@ -89,7 +88,8 @@ const PROJECT_DEFAULTS = {
         "Zednické práce - Borkovice",
         "Zednické práce - Mažice",
         "Zednické práce, obklady a dlažby - Veselí nad Lužnicí",
-        "Zednické práce, štuky - Soběslav"
+        "Zednické práce, štuky - Soběslav",
+        "Komp. rekonstrukce domu - Mažice"
     ],
     "coverPhotos": {},
     "photoOrders": {},
@@ -100,7 +100,7 @@ const PROJECT_DEFAULTS = {
         "publicProjectColumns": 3,
         "publicDetailColumns": 5
     },
-    "updatedAt": "2026-07-03T16:51:36.256Z"
+    "updatedAt": "2026-07-05T14:59:28.493Z"
 };
 /* VDSTAVBY_PROJECT_DEFAULTS_END */
 
