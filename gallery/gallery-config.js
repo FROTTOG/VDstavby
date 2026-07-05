@@ -8,6 +8,7 @@ const PROJECT_DEFAULTS = {
     "sortMode": "custom",
     "pinInProgress": true,
     "customOrder": [
+        "Kompletní rekonstrukce bytu 2+1 pro D&D Homeinvest - Bechyně",
         "Převzetí stavebních prací na rodinném domě - Hosty",
         "Výstavba rodinného domu - Zlukov",
         "Snížení energetické náročnosti - Veselí nad Lužnicí",
@@ -88,8 +89,7 @@ const PROJECT_DEFAULTS = {
         "Zednické práce - Borkovice",
         "Zednické práce - Mažice",
         "Zednické práce, obklady a dlažby - Veselí nad Lužnicí",
-        "Zednické práce, štuky - Soběslav",
-        "Komp. rekonstrukce domu - Mažice"
+        "Zednické práce, štuky - Soběslav"
     ],
     "coverPhotos": {},
     "photoOrders": {},
